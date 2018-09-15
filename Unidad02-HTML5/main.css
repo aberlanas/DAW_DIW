@@ -10,3 +10,9 @@ textarea{
     padding-bottom: 20px!ie7;
     max-height: 600px;
   }
+
+section{
+  border: #444444 solid 2px;
+  margin: 3px;
+
+}
