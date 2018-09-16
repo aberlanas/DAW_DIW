@@ -6,6 +6,7 @@ Temario Disenyo
 
 https://developer.mozilla.org/es/docs/Learn/HTML/Forms
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets
 
 ## Utilidades
 
