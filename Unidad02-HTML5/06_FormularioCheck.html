@@ -1,0 +1,101 @@
+<DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>06 Formulario Check Items + Botones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+        <header>
+                <h1>
+                    06 - Formulario Elementos Checks + Botones
+                </h1>
+            </header>
+        
+            <section>
+                <p>
+                    <h2> Campo Checkbox </h2>
+        
+                </p>
+            
+        
+                <fieldset style="margin: 20px">
+                    <legend> Checkbox -> Selecciona Tipo de Tropa : </legend>
+                    <form>
+            
+                        <label for="cbGrunt"> Grunt </label>
+                        <input type="checkbox" checked id="cbGrunt" name="cbGrunt" value="grunt">
+                        <br/>
+                        <label for="cbSpearman"> spearman </label>
+                        <input type="checkbox"  id="cbSpearman" name="cbSpearman" value="spearman">
+                        <br/>
+                        <label for="cbWolfRaider"> Wolf Raider </label>
+                        <input type="checkbox"  id="cbWolfRaider" name="cbWolfRaider" value="wolfRaider">
+                        <br/>
+                    </form>
+                </fieldset>
+                </section>
+
+                <section>
+                        <p>
+                            <h2> Campo Radio </h2>
+                
+                        </p>
+                    
+                
+                        <fieldset style="margin: 20px">
+                            <legend> Radio -> Selecciona Tipo de Tropa : </legend>
+                            <form>
+                    
+                                <label for="cbGrunt"> Grunt </label>
+                                <input type="radio" checked id="cbGrunt" name="rbTropa" value="grunt">
+                                <br/>
+                                <label for="cbSpearman"> spearman </label>
+                                <input type="radio"  id="cbSpearman" name="rbTropa" value="spearman">
+                                <br/>
+                                <label for="cbWolfRaider"> Wolf Raider </label>
+                                <input type="radio"  id="cbWolfRaider" name="rbTropa" value="wolfRaider">
+                                <br/>
+                            </form>
+                        </fieldset>
+                        </section>
+        
+
+                        <section>
+                                <p>
+                                    <h2> Botones </h2>
+                        
+                                </p>
+                            
+                        
+                                <fieldset style="margin: 20px">
+                                    <legend> Boton de Submit </legend>
+                                    <form>
+                                        <button type="submit"> Esto es un submit </button>
+                                       <input type="submit" value="Esto también!">
+                                    </form>
+                                </fieldset>
+
+
+                                <fieldset style="margin: 20px">
+                                        <legend> Boton de Reset </legend>
+                                        <form>
+                                            <button type="reset"> Esto es un Reset </button>
+                                           <input type="reset" value="Esto también es un reset!">
+                                        </form>
+                                </fieldset>
+
+                                <fieldset style="margin: 20px">
+                                        <legend> Boton Anonimo! </legend>
+                                        <form>
+                                            <button type="button"> Esto es un botón Anonimo </button>
+                                           <input type="button" value="Esto también es anonimo!">
+                                        </form>
+                                </fieldset>
+                            </section>
+
+</body>
+</html>

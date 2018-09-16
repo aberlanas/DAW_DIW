@@ -1,0 +1,54 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>03 Formulario Básico</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <header>
+        <h1>
+            03 - Formularios Básicos
+        </h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                Un formulario es la manera básica y más común de recoger datos
+                del usuario.
+                Vamos a ver ahora algunos ejemplos.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <p> Formulario 01 </p>
+        <form action="/buscaUsuario.html" method="POST" style="margin:1em;border:solid 1px black">
+            <label for="inputNombre01">Nombre</label>
+            <input id="inputNombre01" name="inputNombre01" placeholder="Nombre del alumno" type="text" />
+            <label for="inputDNI01">DNI</label>
+            <input id="inputDNI01" name="inputDNI01" placeholder="DNI" pattern="[0-9]{8}[A-Z]{1}" maxlength="9" autofocus="true" required="true" type="text" />
+            <input type="submit">
+        </form>
+
+    </section>
+
+
+    <section>
+            <p> Formulario 02 </p>
+            <form action="/buscaUsuario.html" method="POST" style="margin:1em;border:solid 1px blue">
+                <fieldset>
+                    <legend> Busca Usuario </legend>
+                    <label for="inputNombre02">Nombre</label>
+                    <input id="inputNombre02" name="inputNombre02" placeholder="Nombre del alumno" type="text" />
+                    <label for="inputDNI02">DNI</label>
+                    <input id="inputDNI02" name="inputDNI02" placeholder="DNI" pattern="[0-9]{8}[A-Z]{1}" maxlength="9" autofocus="true" required="true" type="text" />
+                    <input type="submit">
+                </fieldset>
+            </form>
+    </section>
+</body>
+</html>

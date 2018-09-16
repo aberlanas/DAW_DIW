@@ -1,0 +1,108 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>05 - Formulario - DropDown items</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+        <header>
+                <h1>
+                    05 - Formulario Elementos DropDown
+                </h1>
+            </header>
+        
+            <section>
+                <p>
+                    <h2> Campo select </h2>
+        
+                </p>
+            
+        
+                <fieldset style="margin: 20px">
+                    <legend> Select </legend>
+                    <form>
+                        <label for="selTipo"> Tipo de Tropa : </label>
+                        <select id="selTipo" name="selTipo">
+                                <option>Grunt</option>
+                                <option>Spearman</option>
+                                <option>Wolf Raider</option>
+                        </select>
+                    </form>
+                </fieldset>
+
+
+                <fieldset style="margin: 20px">
+                        <legend> Select + Groups </legend>
+                        <form>
+                            <label for="selTipoGroup"> Tipo de Tropa  : </label>
+                            <select id="selTipoGroup" name="selTipoGroup">
+                                <optgroup label="Orcs">
+                                    <option>Grunt</option>
+                                    <option>Spearman</option>
+                                    <option>Wolf Raider</option>
+                                </optgroup>
+                                <optgroup label="Humans">
+                                    <option>Footman</option>
+                                    <option>Archer</option>
+                                    <option>Knight</option>
+                                </optgroup>
+                            </select>
+                        </form>
+                    </fieldset>
+
+                    <fieldset style="margin: 20px">
+                            <legend> Select + Groups + Multiple </legend>
+                            <form>
+                                <label for="selTipoGroup"> Tipo de Tropa  : </label>
+                                <select id="selTipoGroup" name="selTipoGroup" multiple>
+                                    <optgroup label="Orcs">
+                                        <option>Grunt</option>
+                                        <option>Spearman</option>
+                                        <option>Wolf Raider</option>
+                                    </optgroup>
+                                    <optgroup label="Humans">
+                                        <option>Footman</option>
+                                        <option>Archer</option>
+                                        <option>Knight</option>
+                                    </optgroup>
+                                </select>
+                            </form>
+                        </fieldset>
+        
+            </section>
+
+
+            <section>
+                    <p>
+                        <h2> Campo Datalist </h2>
+            
+                    </p>
+                
+            
+                    <fieldset style="margin: 20px">
+                        <legend> DataList </legend>
+                        <form>
+                            <label for="selDataList">¿Cual es tu tipo de Tropa favorito? : </label>
+                            <input type="text" id="selDataList" name="selDataList" list="tiposTropa">
+                            <datalist id="tiposTropa">
+                                    <option>Grunt</option>
+                                    <option>Spearman</option>
+                                    <option>Wolf Raider</option>
+                                    <option>Footman</option>
+                                    <option>Archer</option>
+                                    <option>Knight</option>
+                                </datalist>
+                        </form>
+                    </fieldset>
+
+            </section>
+
+            
+
+</body>
+</html>

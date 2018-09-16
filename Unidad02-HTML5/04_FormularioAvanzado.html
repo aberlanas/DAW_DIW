@@ -1,0 +1,176 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>04 - Formulario Avanzado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            04 - Formulario avanzado
+        </h1>
+    </header>
+
+    <section>
+        <p>
+            <h2> Campos obligatorios </h2>
+
+        </p>
+        <p>
+            Los campos obligatorios deben ser seguidos por : abbr title="required" + *
+        </p>
+
+        <fieldset style="margin: 20px">
+            <legend> Campos obligatorios </legend>
+            <form>
+                <label for="nombreUsuario">Nombre Usuario : </label>
+                <abbr title="required">*</abbr>
+                <input type="text" name="nombreUsuario" required>
+            </form>
+        </fieldset>
+
+
+        <fieldset style="margin: 20px">
+            <legend> Campos obligatorios 2 parte </legend>
+            <form>
+                <label for="nombreUsuario02">Nombre Usuario : <abbr title="required">*</abbr></label>
+                <input type="text" name="nombreUsuario" required>
+            </form>
+
+        </fieldset>
+
+    </section>
+
+    <section>
+        <p>
+            <h2> Campo E-mail </h2>
+
+        </p>
+        <p>
+            Introducción de E-MAIL
+        </p>
+
+        <fieldset style="margin: 20px">
+            <legend> Email </legend>
+            <form>
+                <label for="emailUsuario">E-mail Usuario</label>
+                <abbr title="required">*</abbr>
+                <input type="email" name="emailUsuario" id="emailUsuario" required multiple>
+            </form>
+        </fieldset>
+
+    </section>
+
+
+    <section>
+        <p>
+            <h2> Campo Password </h2>
+
+        </p>
+        <p>
+            Introducción de Password
+            <h3>HTTPS!</h3>
+        </p>
+
+        <fieldset style="margin: 20px">
+            <legend> Password </legend>
+            <form>
+                <label for="passwordUsuario">Password Usuario</label>
+                <abbr title="required">*</abbr>
+                <input type="password" name="passwordlUsuario" id="passwordUsuario" required multiple>
+            </form>
+        </fieldset>
+
+    </section>
+
+
+    <section>
+        <p>
+            <h2> Campo Search </h2>
+
+        </p>
+        <p>
+            Campo de Búsqueda
+            <h3>Navegadores!</h3>
+        </p>
+
+        <fieldset style="margin: 20px">
+            <legend> Search </legend>
+            <form>
+                <label for="searchUsuario">Busca Usuario</label>
+                <input type="search" name="searchUsuario" id="searchUsuario">
+            </form>
+        </fieldset>
+
+    </section>
+
+    <section>
+        <p>
+            <h2> Campo Tel </h2>
+
+        </p>
+        <p>
+            Campo de Teléfono
+            <h3>All Around the World</h3>
+        </p>
+
+        <fieldset style="margin: 20px">
+            <legend> Tel </legend>
+            <form>
+                <label for="telUsuario">Teléfono</label>
+                <input type="tel" name="telUsuario" id="telUsuario">
+            </form>
+        </fieldset>
+
+    </section>
+
+    <section>
+        <p>
+            <h2> Campo URL </h2>
+
+        </p>
+        <p>
+            Campo de URL
+            <h3>Restricciones URL Válida</h3>
+        </p>
+
+        <fieldset style="margin: 20px">
+            <legend> URL </legend>
+            <form>
+                <label for="urlUsuario">Teléfono</label>
+                <input type="url" name="urlUsuario" id="urlUsuario">
+            </form>
+        </fieldset>
+
+    </section>
+
+    <section>
+            <p>
+                <h2> Campo Textarea </h2>
+    
+            </p>
+            <p>
+                Campo de textarea
+                <h3>Restricciones Filas y Columnas</h3>
+            </p>
+    
+            <fieldset style="margin: 20px">
+                <legend> textarea </legend>
+                <form>
+                    <label for="textAreaUsuario">Descripción</label>
+                    <textarea name="textAreaUsuario" id="textAreaUsuario" rows="5" cols="10" wrap="hard" ></textarea>
+                </form>
+            </fieldset>
+    
+        </section>
+
+
+</body>
+
+</html>
