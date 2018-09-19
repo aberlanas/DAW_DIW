@@ -1,0 +1,99 @@
+a:link{
+    color: rgb(200,20,30);
+
+}
+
+a:hover{
+    font-family: fantasy;
+}
+
+a:visited{
+    color: grey;
+
+}
+
+a:active{
+    font-size: 25px;
+}
+
+
+
+/* First letter */
+/*
+p:first-letter{
+    font-size: 50px;
+}
+*/
+
+/* First Line */
+/*
+p:first-line{
+    font-style: italic;
+}
+*/
+
+
+/* TABLAS y FIRST CHILD*/
+/*
+tbody tr:first-child{
+    background-color: lawngreen;
+}
+
+
+tr td{
+    border-bottom: 1px solid gray;
+}
+
+
+tbody tr:last-child{
+    background-color:darkred;
+    color:white;
+}
+*/
+
+/* NAV y NTH-child */
+
+/*
+nav{
+    display: table;
+}
+*/
+
+/*
+nav ul {
+    display: table-row;
+}
+*/
+
+/*
+nav ul li{
+    margin: 2em;
+    padding: 1em;
+    display: table-cell;
+}
+*/
+
+/*
+nav ul li:nth-child(odd) {
+    background-color: darkorange;
+}
+*/
+
+/*
+nav ul li:nth-child(even) {
+    background-color: #228833;
+}
+*/
+
+/*
+nav ul li:active{
+    cursor: crosshair;
+}
+*/
+
+/*
+nav ul li:not(:active){
+    background-color: white;
+}
+*/
+

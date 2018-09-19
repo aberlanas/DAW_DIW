@@ -1,0 +1,22 @@
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.importante{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*color: hsla(89, 43%, 51%, 0.6);*/
+    color : gray;
+}
+
+#concreto{
+    font-style: italic;
+    font-size: 17px;
+}
+
