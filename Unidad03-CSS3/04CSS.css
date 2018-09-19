@@ -1,0 +1,13 @@
+img[alt]{
+
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+img[src$=png]{
+    border-radius:10px;
+}
+
+img[src*=Grunt]{
+    border : 10px solid salmon;
+}

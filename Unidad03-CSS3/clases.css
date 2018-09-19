@@ -1,0 +1,15 @@
+/* Esto es sobre la cabecera */
+h1 {
+    font-family: fantasy;
+    color : purple;
+    font-size: 20px;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.cursiva{
+    font-style: italic;
+}
