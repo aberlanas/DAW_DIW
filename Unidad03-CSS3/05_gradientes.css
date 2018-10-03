@@ -1,0 +1,96 @@
+/* Titulo */
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px; 
+    border: solid 2px grey;
+}
+
+/*  A todos los divs se les pone un borde
+    para facilitar la lectura de la pagina 
+*/
+div{
+    border: solid 1px black;
+}
+
+/* Gradientes en si mismos */
+
+.gradienteLineal{
+    background: linear-gradient(90deg,#ccc 0%,#121212 50%, #ffffff 100%);
+}
+
+.gradienteRadial{
+    font-family: 'Courier New', Courier, monospace;
+    background: radial-gradient(red, yellow, rgb(30, 144, 255));
+}
+
+.gradienteRadialStops{
+    font-family: 'Courier New', Courier, monospace;
+    background: radial-gradient( red 5%,yellow 25%, blue 70%);
+}
+
+.botoncitos{
+    margin: 20px;   
+    padding: 20px;
+}
+
+/*****
+
+EJERCICIO 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+.botonGradienteSimple{
+    background-color: #da2929;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 1px;
+    box-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #000000;
+    border: 1px none #000000;
+    text-decoration: none;
+}
+
+.botonGradienteMondrian{
+    background : linear-gradient(50deg,blue 40%,red 20% ,yellow 50%);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 1px;
+    box-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: fantasy;
+    font-size: 40px;
+    border: 3px solid #000000;
+    text-decoration: none;
+}
+
+
+.botonGradienteEscher{
+    background : repeating-linear-gradient(120deg,#454545 40%,#979797 20%, #000000 50%);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 1px;
+    box-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-size: 40px;
+    border: 3px solid #000000;
+    text-decoration: none;
+}
