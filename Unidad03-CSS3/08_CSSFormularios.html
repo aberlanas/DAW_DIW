@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Unidad 03 : Formularios + CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="08_Formulariops.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Inicia sesión</legend>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" autofocus="true" placeholder="sucorreo@correo.org" type="email"/>
+            </div>
+            <div>
+                <label for="password">Contraseña</label>
+                <input id="password" name="password" placeholder="*******" pattern="[0-9A-Za-z]{8,}" minlength=8 type="password" required="true"/>
+            </div>
+            <div>
+                <label for="description">Descripción</label>
+                <textarea id="description" name="description" placeholder="Cuentame algo" pattern="[a-zA-Z0-9]{4,255}"></textarea>
+            </div>
+            <div>
+                <input type="submit" class="submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+legend{
+    font-size: 2em;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+fieldset{
+    width: 80%;
+    padding: 3%;
+    border: 1px solid #aaa;
+    background-color: #c2c2c2;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 3px;
+}
+
+label{
+    width: 40px;
+    float: left;
+}
+
+input[type=submit]{
+    margin-bottom: 10px;
+    display: block;
+    width: 50%;
+}
+
+input, textarea{
+    height: 20px;
+    width: 50%;
+    float: right;
+    border: 1px solid#bfbfbf;
+    padding: 0.2em;
+    background: linear-gradient(top,#ffffff 0%,#ededed 8%,#ffffff 100%);
+    border-radius: 3px;
+}
+
+form div{
+    clear: both;
+}
+
+input:required{
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+input:focus, textarea:focus{
+    border: 2px solid cadetblue;
+    background-color: lightblue;
+}
+
+input:focus:valid, textarea:focus:valid{
+    color: green;
+    background-color: lightgreen;
+}
+
+input:focus:invalid, textarea:focus:invalid{
+    color:darkred;
+    transform: rotate(-10deg);
+    transform-origin: 10% 10%;
+}

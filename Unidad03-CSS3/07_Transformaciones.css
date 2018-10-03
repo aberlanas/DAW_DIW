@@ -1,0 +1,44 @@
+/* 
+
+Transformaciones
+
+
+*/
+
+div{
+    border: 1px solid black;
+    margin: 20px; 
+    padding: 20px;
+}
+
+
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px; 
+    border: solid 2px grey;
+}
+
+
+.scale:hover{
+    /* Menores de 1 -> mas pequeño*/ 
+    transform: scale(1.5);
+}
+
+.translate:hover{
+    transform: translate(12px, 20%);
+}
+
+.rotate:hover{
+    transform:rotate(42deg);
+}
+
+.skew:hover{
+    transform: skew(5deg,10deg);
+}
+
+.rotate-origin:hover{
+    transform: rotate(-10deg);
+    transform-origin: 10% 10%;
+}

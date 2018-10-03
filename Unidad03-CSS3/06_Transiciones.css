@@ -3,3 +3,110 @@
 Transiciones
 
 */
+
+.titulo{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px; 
+    border: solid 2px grey;
+}
+
+a{
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+div{
+    margin: 20px;
+    padding: 20px;
+    border: solid 1px black;
+}
+
+.grow{
+    font-size: 12pt;
+}
+
+.grow:hover{
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    font-size: 26pt;
+    text-shadow: 3px 3px 4px gray, -3px -3px 4px gray;
+}
+
+/*
+Es lo mismo que :
+*/
+/*
+.grow:hover{
+    transition: all 1s ease 0s;
+    font-size: 26pt;
+    text-shadow: 3px 3px 4px gray, -3px -3px 4px gray;
+}
+*/
+
+
+
+/**TRANSICIONES**/
+
+
+.ease:hover{
+    transition-property:all;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    margin: 5px;
+    background-color: aqua;
+    box-shadow: 3px 3px 3px lawngreen;
+}
+
+.linear:hover{
+    transition-property:all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+    height: 200px;
+    width: 400px;
+    z-index:10;
+    background-color:cadetblue;
+    box-shadow: 3px 3px 3px slategray;
+}
+
+
+
+
+.slide-in {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+
+
+  }
+
+.slide-infinite {
+
+    animation-duration: 3s;
+    animation-name:slidein;
+    animation-iteration-count: infinite;
+}
+
+
+.slide-infinite-alternate {
+    animation-duration: 3s;
+    animation-name:slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
