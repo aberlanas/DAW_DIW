@@ -23,7 +23,7 @@ div{
 
 .scale:hover{
     /* Menores de 1 -> mas pequeño*/ 
-    transform: scale(1.5);
+    transform: scale(0.5);
 }
 
 .translate:hover{
