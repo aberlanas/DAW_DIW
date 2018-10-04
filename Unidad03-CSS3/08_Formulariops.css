@@ -59,8 +59,10 @@ input:focus:valid, textarea:focus:valid{
     background-color: lightgreen;
 }
 
-input:focus:invalid, textarea:focus:invalid{
+@media (min-width: 700px) {
+    input:focus:invalid, textarea:focus:invalid{
     color:darkred;
     transform: rotate(-10deg);
     transform-origin: 10% 10%;
+}
 }

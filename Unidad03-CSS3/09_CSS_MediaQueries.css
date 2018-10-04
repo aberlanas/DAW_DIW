@@ -1,0 +1,20 @@
+/*
+@media not all and (max-width:500px){}
+*/
+@media (max-width: 500px){
+
+nav{
+    display: table;
+}
+nav ul {
+    display: table-row;
+}
+
+nav ul li {
+    margin: 2em;
+    padding: 2em;
+    display: table-cell;
+}
+
+
+}
