@@ -1,0 +1,31 @@
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+td:nth-child(1){
+    text-align: right;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+td:nth-child(2){
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    margin: 5px;
+    padding: 5px;
+    background: #CCC
+}
+
+tr:nth-child(odd) {
+    background: #FFF
+}
