@@ -59,10 +59,13 @@ input:focus:valid, textarea:focus:valid{
     background-color: lightgreen;
 }
 
-@media (min-width: 700px) {
-    input:focus:invalid, textarea:focus:invalid{
-    color:darkred;
-    transform: rotate(-10deg);
-    transform-origin: 10% 10%;
-}
-}
+input:focus:invalid, textarea:focus:invalid{
+        color:darkred;
+        transform: rotate(-10deg);
+        transform-origin: 10% 10%;
+    }
+
+    label{
+        font-family: fantasy;
+    }
+
