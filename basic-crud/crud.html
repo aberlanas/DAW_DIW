@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crud Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1> Algunos Ejemplos </h1>
+
+
+    <div>
+        <h1>Send JSON to Node</h1>
+         <button onClick="sendJSON()">Send</button>
+         <p id ="result">
+         </p>
+    </div>
+ <script>
+  var myData = [
+     {
+         "name": "Bill",
+         "age": 20
+     },
+     {
+         "name": "Lisa",
+         "age": 40
+     },
+     {
+         "name": "Ant",
+         "age": 80
+     }
+     ]
+ 
+ function sendJSON(){
+ 
+ var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
+ xmlhttp.onreadystatechange = function() {
+     if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("result").innerHTML =
+        this.responseText;
+     }
+  };
+ xmlhttp.open("POST", "http://localhost:3000");
+ xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+ xmlhttp.send(JSON.stringify(myData));
+ 
+ }
+ 
+ </script>
+
+</body>
+</html>
