@@ -4,9 +4,9 @@ Temario Disenyo
 
 ## Enlaces 
 
-https://developer.mozilla.org/es/docs/Learn/HTML/Forms
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets
+* https://developer.mozilla.org/es/docs/Learn/HTML/Forms
+* https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/How_to_structure_an_HTML_form
+* https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/The_native_form_widgets
 
 ## Utilidades
 
@@ -16,4 +16,5 @@ ffmpeg -i grunt.mkv -f webm -c:v libvpx -b:v 1M -acodec libvorbis example.webm -
 ```
 
 RestClient
-https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/
+
+* https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/
