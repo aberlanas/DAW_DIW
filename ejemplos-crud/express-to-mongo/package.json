@@ -1,0 +1,22 @@
+{
+  "name": "express-to-mongo",
+  "version": "1.0.0",
+  "description": "Simple CRUD to Mongo ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "CRUD"
+  ],
+  "author": "Angel Berlanas Vicente",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.6"
+  }
+}
