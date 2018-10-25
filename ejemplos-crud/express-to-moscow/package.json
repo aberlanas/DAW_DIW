@@ -13,6 +13,7 @@
   "author": "DAW",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.3.6"
   }
 }
