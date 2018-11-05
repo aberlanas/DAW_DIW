@@ -1,0 +1,70 @@
+# Ejercicios Eventos JS
+
+* Ejercicio 1
+
+Haz un programa que tenga un campo de texto y mediante eventos y el
+uso del objeto event, te muestre cada vez que presionas una tecla un alert
+diciendo que tecla has pulsado.
+
+* Ejercicio 2
+
+Exactamente el mismo ejercicio que el 1o pero ahora en lugar de en un
+alert se actualice un <p> poniendo la tecla que has pulsado en el campo
+de texto
+
+* Ejercicio 3
+
+Realizar un programa con dos botones “Comenzar Saludos” y “Parar
+Saludos”. Al hacer click en “Comenzar Saludos”, lance un setInterval que
+cada 3 segundos muestre un alert con “Hola”. El botón “Parar Saludos”
+parará esa secuencia.
+
+* Ejercicio 4
+
+Haz un programa que cuando se presione una tecla, calcule cuantos DNIs
+de 5 cifras (del 00001 al 99999) tienen esa letra y te mostrará los DNIs y
+sus letras en un elemento XHTML(Ejemplo, un <p>).
+
+* Ejercicio 5
+
+Haz un script sea un contador de segundos. El programa mostrará
+inicialmente en un elemento <p> el valor 0 siendo este los segundos
+transcurridos. Cuando se apriete un botón “empezar” el contador ira
+aumentando segundo a segundo. También dispondrá de un botón parar,
+que parará momentáneamente la cuenta y un botón reiniciar que la
+devolverá a cero. Cuando le damos click al botón parar el botón empezar
+cambiará su texto por continuar.
+
+* Ejercicio 6
+
+Crear una tabla de 10x10 y haced que todas las celdas sean de color gris.
+Cuando se pase el ratón por encima de cualquier celda, esta ha de
+cambiar de color (a un color aleatorio) y dos celdas aleatorias, que no
+estén en negro, también cambiaran a ese color. Pasados 3 segundos,
+estas últimas volverán a cambiar una vez más de color a otro aleatorio
+(cada celda un color distinto). Cuando el ratón sale de una celda esta
+cambia a negro y ya no puede cambiar de color ni tampoco ocurre nada
+cuando se pasa por encima el ratón. Cuando queden menos de dos
+celdas de un color distinto al negro todas las celdas se pondrán de color
+rojo y ya no pasará nada.
+
+* Ejercicio 7
+
+Crea un tablero con 12 rectángulos de color rojo distribuidos de manera
+uniforme. Al apretar comenzar un rectángulo de manera aleatoria ha de
+ponerse de color azul, se pondrá en marcha una cuenta atrás de 10
+segundos y para pararla tendrás que situar el ratón encima del rectángulo
+azul. En ese momento ese rectángulo volverá a ponerse en rojo, otro se
+convertirá en azul y la cuenta atrás volverá a empezar . No se puede pasar
+por encima de ningún rectángulo rojo o se perderá una vida. Por cada tres
+rectángulos azules tocados la cuenta atrás ha de reducirse en un segundo
+hasta que se quede en 3 segundos. En el juego habrá un botón quesumará vidas. Cada vez que se pierda una vida el contador volverá al
+inicio. Cuando se acaba el juego todos los rectángulos se ponen en negro.
+
+* Ejercicio 8
+
+Partiendo del ejercicio anterior, hacer que cuando se haya ganado 3 veces
+en 3 segundos vuelva el contador a 10 pero ahora se pongan 2
+rectángulos en azul. El contador no se reiniciará hasta que no ponga los
+dos rectángulos en rojo. Incorpora un contador que indique el número de
+rectángulos azules “cazados”.
