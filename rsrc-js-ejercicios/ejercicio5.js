@@ -35,7 +35,6 @@ function cronoReiniciar(){
     semaforo=false;
     window.clearInterval(intervalId);
     intervalId = null;
-    console.log(intervalId);
     document.getElementById("bContinuar").value="Empezar";
     document.getElementById("bContinuar").disabled=false;
     document.getElementById("crono").innerHTML="0";
