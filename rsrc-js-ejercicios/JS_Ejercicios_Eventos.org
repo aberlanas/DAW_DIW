@@ -1,6 +1,10 @@
 #+TITLE: Ejercicios JS : Eventos
 #+OPTIONS: 
 #+latex_header: \hypersetup{colorlinks=true,linkcolor=blue}
+#+latex_header: \usepackage{fontspec}
+#+latex_header: \fontspec{EB Garamond}
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper]
 
 # Ejercicios Eventos JS
 
@@ -25,6 +29,16 @@ Exactamente el mismo ejercicio que el 1o Pero ahora en lugar de en un
 alert se actualice un <p> poniendo la tecla que has pulsado en el campo
 de texto
 
+#+NAME: ejercicio2.js
+#+BEGIN_SRC javascript
+function mi_alert(evento){
+    var keynum=evento.which;
+    var pLog= document.getElementById("pLog");
+    pLog.innerHTML=String.fromCharCode(keynum);
+}
+
+#+END_SRC
+
 * Ejercicio 3
 
 Realizar un programa con dos botones “Comenzar Saludos” y “Parar
@@ -32,15 +46,63 @@ Saludos”. Al hacer click en “Comenzar Saludos”, lance un setInterval que
 cada 3 segundos muestre un alert con “Hola”. El botón “Parar Saludos”
 parará esa secuencia.
 
+#+NAME: Ejercicio3
+#+BEGIN_SRC javascript
+var semaforo=false;
+
+function comenzarSaludos(){
+    if (!semaforo){	
+	semaforo=true;
+	setInterval(function(){
+	    if(semaforo){
+		alert("Hello");
+	    }
+	}, 3000);
+    }
+    else{
+	console.log("Semaforo ya en marcha");
+    }
+}
+
+function pararSaludos(){
+    semaforo=false;
+}
+
+#+END_SRC
+
 * Ejercicio 4
 
 Haz un programa que cuando se presione una tecla, calcule cuantos DNIs
 de 5 cifras (del 00001 al 99999) tienen esa letra y te mostrará los DNIs y
 sus letras en un elemento XHTML(Ejemplo, un <p>).
 
-* Ejercicio 6
+#+NAME: Ejercicio 4
+#+BEGIN_SRC javascript
 
-Crear una tabla de 10x10 y haced que todas las celdas sean de color gris.
+
+
+var DNIString="TRWAGMYFPDXBNJZSQVHLCKE";
+
+function dniPorLetra(evento){
+    var keynum = evento.which;
+    var letra = String.fromCharCode(keynum).toUpperCase();
+    var indice = DNIString.indexOf(letra);
+    var pTexto = document.getElementById("pTexto");
+    var pTextoContent="";
+    var x=indice;
+    while (x<=99){
+	console.log(x);
+	pTextoContent+=x+"<br>";
+	x=x+23;
+    }
+    pTexto.innerHTML=pTextoContent;
+}
+
+#+End_SRC
+
+* Ejercicio 5
+
+Crear una tabla de 10x10 y haced que todas las celdas sean de color gris
 Cuando se pase el ratón por encima de cualquier celda, esta ha de
 cambiar de color (a un color aleatorio) y dos celdas aleatorias, que no
 estén en negro, también cambiaran a ese color. Pasados 3 segundos,
@@ -50,6 +112,75 @@ cambia a negro y ya no puede cambiar de color ni tampoco ocurre nada
 cuando se pasa por encima el ratón. Cuando queden menos de dos
 celdas de un color distinto al negro todas las celdas se pondrán de color
 rojo y ya no pasará nada.
+
+#+NAME ejercicio6
+#+BEGIN_SRC javascript
+
+var tabla= new Array(100);
+
+function celdaTocada(celda){
+    console.log(celda.id);
+    tabla[celda.id]=0;
+    celdaColorines();
+    celdaColorines();
+    coloreaTabla();
+}
+
+function colorinGenerador(){
+    return Math.floor(Math.random()*16777215).toString(16);
+}
+
+/*
+function vigilaColor(celda){
+    await sleep(3000);
+    tabla[celda]=colorinGenerador();
+    coloreaTabla();
+}
+*/
+
+function celdaColorines(){
+    var libre = false;
+    var celdaRand = 0;
+    var coloringo = "000000";
+    while (!libre){
+        celdaRand = Math.floor(Math.random()*100);
+        if (tabla[celdaRand]==0){
+            celdaRand = Math.floor(Math.random()*100);
+        }else{
+            tabla[celdaRand]=colorinGenerador();
+            libre = true;
+        }
+    }
+}
+function coloreaTabla(){
+    console.log("coloreando");
+    var x;
+    for (x=0;x<100;x++){
+        var celda = document.getElementById(String(x));
+        if (tabla[x] == 1){
+            celda.style.background="#888888";
+        }else if (tabla[x] == 0){
+            celda.style.background="#000000";
+        }else{
+            celda.style.background="#"+tabla[x];
+        }
+        
+    }
+}
+
+
+function comienzo(){
+    var x;
+    for (x=0;x<100;x++){
+        tabla[x]=1;
+    }
+    // Coloreamos la tabla entera
+    coloreaTabla();
+
+}
+
+
+#+END_SRC
 
 * Ejercicio 7
 
