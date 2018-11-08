@@ -1,0 +1,62 @@
+
+
+* Paginas Estáticas
+
+Para servir páginas estáticas (aquellas que no tienen que ser procesadas 
+por NodeJS en ningún caso lo mejor es utilizar un directorio e indicarle 
+a express que los ficheros que están en esa carpeta no deben ser procesados
+y deben ser servidos a los clientes **as is**.
+
+Necesitaremos una nueva libreria (*path*), para incluirla, al principio del fichero
+*server.js* añadiremos la línea:
+
+#+BEGIN_SRC javascript
+const path = require('path');
+#+END_SRC
+
+y luego en la definición de las rutas añadiremos esto:
+
+#+BEGIN_SRC javascript
+app.use(express.static(path.join(__dirname, 'public')));
+#+END_SRC
+
+Donde *public* es el nombre de la carpeta que situaremos en raiz de nuestra
+aplicación servidora.
+
+#+BEGIN_SRC shell
+cd PATH_A_NUESTRO_SERVIDOR
+mkdir public
+#+END_SRC
+
+Una vez allí, situamos en esta carpeta los archivos que vamos a servir para los
+clientes cuando accedan a la ruta.
+
+En este ejemplo, copiaremos el formulario de creación de investigadores y estableceremos
+que el formulario enviará los datos mediante *POST* a nuestro servidor en localhost:3000.
+En la ruta que acepta **investigadores**:
+
+
+#+NAME : crear.html
+#+BEGIN_SRC html
+    <form action="http://localhost:3000/investigadores/" method="POST">
+#+END_SRC
+
+Estas rutas las tenemos definidas en :
+
+#+BEGIN_SRC shell
+app/routes/investigador.routes.js
+#+END_SRC
+
+Con rutas como esta:
+
+#+BEGIN_SRC javascript
+// Create a new investigadores
+    app.post('/investigadores', investigadores.create);
+#+END_SRC
+
+
+
+
+
+
+
