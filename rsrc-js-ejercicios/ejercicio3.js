@@ -1,21 +1,21 @@
 // Pequenya funcion para alerts
 
-var semaforo=false;
+var noHayNadieSalundando=true;
 
 function comenzarSaludos(){
-    if (!semaforo){	
-	semaforo=true;
-	setInterval(function(){
-	    if(semaforo){
-		alert("Hello");
-	    }
-	}, 3000);
-    }
+    if (noHayNadieSalundando){	
+        noHayNadieSalundando=false;
+        setInterval(function(){
+            if(!noHayNadieSalundando){
+                alert("Hello");
+                }
+            }, 3000);
+        }
     else{
-	console.log("Semaforo ya en marcha");
+        console.log("hayAlguienSaludando ya en marcha");
     }
 }
 
 function pararSaludos(){
-    semaforo=false;
+    noHayNadieSalundando=true;
 }

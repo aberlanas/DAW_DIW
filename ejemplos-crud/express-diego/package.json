@@ -1,0 +1,18 @@
+{
+  "name": "express-diego",
+  "version": "1.0.0",
+  "description": "Simple NodeJS server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Simple",
+    "Server"
+  ],
+  "author": "Diego Garcia Tarin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
