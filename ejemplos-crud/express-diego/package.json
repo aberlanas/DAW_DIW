@@ -10,7 +10,7 @@
     "Simple",
     "Server"
   ],
-  "author": "Diego Garcia Tarin",
+  "author": "DAW Para MiniServidores",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4"

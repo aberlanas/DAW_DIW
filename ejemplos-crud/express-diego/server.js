@@ -7,5 +7,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Escuchemos en un puerto
 app.listen(3000,() => {
-    console.log(" * Server de Diego UP and Running en http://localhost:3000");
+    console.log(" * Miniserver UP and Running en http://localhost:3000");
 });
