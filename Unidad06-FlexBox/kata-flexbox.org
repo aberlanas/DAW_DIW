@@ -26,6 +26,11 @@ Ahora si, con mediaquerys:
 
 * Kata 05
 
+Vamos ahora a hacer un pequeño selector que nos permita seleccionar 
+entre los diferentes alumnos, el que seleccionemos debe ponerse el primero.
+
+* Kata 06
+
 
 
 

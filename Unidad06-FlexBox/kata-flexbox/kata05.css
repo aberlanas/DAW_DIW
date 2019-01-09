@@ -1,0 +1,58 @@
+.alumno{
+    border:solid 1px purple;
+    flex-basis: auto;
+    margin:auto;
+    width:100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px; 
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.wrapper > * {
+    flex: 1 100%;
+    padding: 10px;
+  }
+
+.header{
+    background: #BBBBBB;
+}
+
+.footer{
+    background: #CCCCCC;
+}
+
+.aside{
+    background: #DDDDDD;
+    
+}
+/* Medium screens */
+@media all and (min-width: 600px) {
+.aside { flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+.main { flex: 3 0px; }
+.aside-1 { order: 1; }
+.main    { order: 2; }
+.aside-2 { order: 3; }
+.footer  { order: 4; }
+}
