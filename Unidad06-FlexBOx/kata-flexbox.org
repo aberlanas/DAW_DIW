@@ -1,0 +1,33 @@
+
+* URL
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+* Kata 01
+
+Ponerle un borde a los alumnos de 1px , solido de color purpura. 
+
+* Kata 02   
+
+Establecer un alto de 100px y ancho de 100px a cada alumno, situando el texto en el centro (vertical y )
+
+* Kata 03
+
+Alinearlos respecto al eje X, de tal manera que cuando cambiemos el tamaño del 
+navegador todo fluya (sin mediaquerys).
+
+* Kata 04
+
+Ahora si, con mediaquerys:
+
+- A partir de 800px: flex-end;
+- Hasta 800px de ancho, como hasta ahora
+- Hasta 500px de ancho, a una sola columna
+
+* Kata 05
+
+
+
+
+
+
