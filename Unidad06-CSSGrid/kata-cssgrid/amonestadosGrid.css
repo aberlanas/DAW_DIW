@@ -1,0 +1,51 @@
+body{
+    background: #999999;
+}
+
+.container {
+    display: grid;
+}     
+
+.alumno {
+    /* Valores 
+    basicos
+    */
+    width:100px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;  
+    border: 1px solid black;
+}
+
+/*
+
+.menu{
+    grid-area:menu;
+    background: purple;
+}
+
+.head{
+    grid-area:head;
+    background: green;
+}
+
+.foot{
+    grid-area: footer;
+}
+
+grid-template-areas: "menu head head"
+                         "main main main"
+                         "footer footer footer";
+                         
+                         
+                   
+    grid-template-columns: [first] 100px [second] 100px [mid] auto [fourth] 100px [fifth] 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: [fila1]25% [fila2]100px [fila3]auto;
+    grid-template-columns: repeat(4,100px 120px);
+    grid-template-rows: repeat(4,1fr);
+   
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4,1fr 1fr 1fr);
+*/
