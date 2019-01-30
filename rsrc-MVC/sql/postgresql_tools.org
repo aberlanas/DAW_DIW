@@ -1,0 +1,18 @@
+* Instalación
+
+apt install postgresql
+
+* Permitiendo psql desde la CLI
+
+sudo vim /etc/postgresql/10/main/pg_hba.conf
+
+confiamos en el usuario /postgres/ estableciendolo a /trust/.
+
+sudo systemctl restart postgresql
+
+* Ejecutando psql
+
+** Script de SQL
+
+psql -U postgres < fichero.sql
+
