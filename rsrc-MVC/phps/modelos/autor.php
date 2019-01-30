@@ -21,6 +21,14 @@ class Autor{
         $this->$nombre = $newNombre;
     }
     
+    public function getId(){
+        return $this->$id;
+    }
+    
+    public function setId($newId){
+        $this->$id = $newId;
+    }
+    
     public function guardar(){
         
     }
