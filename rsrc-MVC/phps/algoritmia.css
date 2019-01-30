@@ -1,0 +1,18 @@
+body{
+        display: grid;
+        grid-template-columns: 100px 1f 100px;
+        
+}
+.autores{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+.autor{
+    background: #C2C2C2;
+    width: 100px
+        
+}

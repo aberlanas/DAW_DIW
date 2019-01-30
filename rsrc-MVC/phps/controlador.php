@@ -1,28 +1,29 @@
 <?php
 
-
-
 # Guardamos la conexion a la BD por si las flys
 require_once 'config/db-config.php';
-$dsn="pgsql:host=$host;port=5432;dbname=$db;user=$username;password=$password";
-   
+$dsn="host=$host port=5432 dbname=$db user=$username password=$password";
 
+# Clase de autores
 require_once 'modelos/autor.php';
-
 $arrayAutores = array();
 
 function getAutores($dsn){
-        $conn = new PDO($dsn); 
-        $result = pg_query($conn, "SELECT id,nombre FROM Autores");
+        $auxArray = array();
+        $conn = pg_connect($dsn);
+        $query = "SELECT id,nombre FROM Autores";
+        $result = pg_query($conn, $query);
         while ($row = pg_fetch_row($result)) {
-            echo "Nuevo autor";
             $auxAutor = new Autor();
-            $auxAutor.setId($row[0]);
-            $auxAutor.setNombre($row[1]);
-            arrayAutores.append($auxAutor);
+            $auxAutor->setId($row[0]);
+            $auxAutor->setNombre($row[1]);
+            array_push($auxArray,$auxAutor);
             }
+        return $auxArray;
     }
 
-echo getAutores($dsn);
+$arrayAutores = getAutores($dsn);
+
+
 
 ?>
