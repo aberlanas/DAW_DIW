@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Cafetera de DAW</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/qunit/qunit-1.18.0.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css"
+    />
+  </head>
+  <body style="margin: 0 1em;">
+    <div id="main">
+      <h1>Cafetera de DAW <em>Calculadora de Cambio</em></h1>
+      <h2>
+        Calcula el cambio en (<em>monedas</em>) a devolver cuando compramos
+        algo.
+      </h2>
+    </div>
+
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <!--Cargamos el entorno de pruebas qunit -->
+    <script src="https://code.jquery.com/qunit/qunit-1.18.0.js"></script>
+    <script>
+      // Ejemplo de que todo va
+      test("Esto siempre funcionara", function(assert) {
+        var result = 1 + 1;
+        assert.equal(result, 2);
+      });
+      // Un fallo estará en rojito
+      test("Un fallo", function(assert) {
+        var result = [1, 2, 3].indexOf(1);
+        assert.equal(result, -1);
+      });
+
+      var tiposDeMoneda = [200, 100, 50, 20, 10, 5, 2, 1];
+      function dameCambio(precio, pagado) {
+        var diferencia = pagado - precio;
+        var cambio = [];
+
+        tiposDeMoneda.forEach(function(moneda) {
+          // keep adding the current coin until it's more than the difference
+          while (diferencia >= moneda) {
+            cambio.push(moneda);
+            diferencia = diferencia - moneda;
+          }
+        });
+
+        return cambio;
+      }
+
+      test("dameCambio(12, 400) should return [200, 100, 50, 20, 10, 5, 2, 1]", function(assert) {
+        var result = dameCambio(12, 400);
+        var expected = [200, 100, 50, 20, 10, 5, 2, 1];
+        assert.deepEqual(result, expected);
+      });
+    </script>
+  </body>
+</html>
