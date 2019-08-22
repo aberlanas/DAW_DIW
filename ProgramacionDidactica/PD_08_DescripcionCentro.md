@@ -9,7 +9,7 @@ instalaciones del centro nos permitirán realizar actividades en salas con
 escenario, acceder a la biblioteca, etc.
 
 Para este ciclo, se espera tener un alumnado con edades comprendidas
-entre los 16 y 18 años, donde la mayoría proviene de la ESO, aunque
+entre los 18 y 20 años, donde la mayoría proviene del Grado Medio, aunque
 habrá alumnado que entre a partir de la prueba de acceso, Bachillerato o el
 mundo laboral. También tendremos en cuenta al alumnado que por sus propios
 motivos no hayan conseguido superar el módulo el curso anterior, y este año

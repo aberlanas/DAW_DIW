@@ -41,11 +41,11 @@ diferentes cualificaciones profesionales en diferentes Familias Profesionales y
 en diferentes niveles de cualificación, teniendo en cuenta criterios de la Unión
 Europea.
 
-La cualificación profesional del Ciclo Formativo de Grado Medio : *Sistemas Microinformáticos y redes*, establecido por el Real
-Decreto de Título 1691/2007 y por la Orden 29 de Julio de 2009 de la Conselleria de
+La cualificación profesional del Ciclo Formativo de Grado Superior : *DESARROLLO DE APLICACIONES WEB*, establecido por el Real
+Decreto de Título 686/2010 y por la Orden 60 del 25 Septiembre de 2012 de la Conselleria de
 Educación Formación y Empleo de la Generalitat Valenciana se estructura en:
 
 1. Unidades de competencias que comprenden tanto competencias específicas como aquellas otras determinantes para un adecuado desempeño profesional.
-2. Módulos formativos que constituyen bloques coherentes de formación asociados a cada una de las unidades de competencia. Estas unidades configuran la cualificación y dan forma a la unidad mínima de formación profesional para obtener el título de “Técnico en Sistemas Microinformáticos y Redes” (SMX).
+2. Módulos formativos que constituyen bloques coherentes de formación asociados a cada una de las unidades de competencia. Estas unidades configuran la cualificación y dan forma a la unidad mínima de formación profesional para obtener el título de "TÉCNICO/A SUPERIOR EN DESARROLLO DE APLICACIONES WEB." (DAW).
 
 

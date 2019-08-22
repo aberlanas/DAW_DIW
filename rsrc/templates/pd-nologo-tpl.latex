@@ -11,7 +11,7 @@ $endif$
 \usepackage{fancyhdr}
 \fancyhead{} % clear all header fields
 \pagestyle{fancy}
-\fancyhead[R]{SMX - MME}
+\fancyhead[R]{DAW - DIW}
 \fancyhead[L]{Programación Didáctica}
 %%\fancyfoot[L]{Angel Berlanas Vicente}
 

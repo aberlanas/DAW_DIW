@@ -1,11 +1,11 @@
 ---
-title: Programación Didáctica Montaje y Mantenimiento
+title: Programación Didáctica Diseño de Interfaces Web
 author: Angel Berlanas Vicente
 header-includes: |
 lang: es-ES
-keywords: [SMX, MME, Programacion Didáctica]
+keywords: [DAW, DIW, Programacion Didáctica]
 abstract: |
-          Programación didáctica para el primer curso del Grado Medio de Sistemas Microinformáticos y Redes. 
+          Programación didáctica para el segundo curso del Grado Superior de Desarrollo de Aplicaciones Web. 
           Impartida en el IES La Sénia.
           Curso 2019-2020.
 ---

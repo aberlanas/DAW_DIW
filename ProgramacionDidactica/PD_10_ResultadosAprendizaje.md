@@ -13,137 +13,105 @@ Los resultados de aprendizaje ligados a este módulo son los siguientes:
 
 ## Resultado 01
 
-Selecciona los componentes de integración de un equipo microinformático estándar, describiendo sus funciones y comparando prestaciones de distintos fabricantes.
+Planifica la creación de una interfaz web valorando y aplicando especificaciones de diseño.
 
 ### Criterios de evaluación
 
 | Identificador | Criterio  |
 | -: |-----------|
-| 01.a          | Se han descrito los bloques que componen un equipo microinformático y sus funciones.|                   
-| 01.b          | Se ha reconocido la arquitectura de buses.|
-| 01.c          | Se han descrito las características de los tipos de microprocesadores (frecuencia, tensiones, potencia,zócalos, entre otros). |
-| 01.d          | Se ha descrito la función de los disipadores y ventiladores.|
-| 01.e          | Se han descrito las características y utilidades más importantes de la configuración de la placa base. |
-| 01.f          | Se han evaluado tipos de chasis para la placa base y el resto de componentes.|
-| 01.g          | Se han identificado y manipulado los componentes básicos (módulos de memoria, discos fijos y sus controladoras, soportes de memorias auxiliares, entre otros).|
-| 01.h          | Se ha analizado la función del adaptador gráfico y el monitor.|
-| 01.i          | Se han identificado y manipulado distintos adaptadores (gráficos, LAN, modems, entre otros).|
-| 01.j          | Se han identificado los elementos que acompañan a un componente de integración (documentación controladores, cables y utilidades, entre otros).|
+| 01.a| Se ha reconocido la importancia de la comunicación visual y sus principios básicos.|
+| 01.b| Se han analizado y seleccionado los colores y tipografías adecuados para su visualización en pantalla.|
+| 01.c| Se han analizado alternativas para la presentación de la información en documentos Web.|
+| 01.d| Se ha valorado la importancia de definir y aplicar la guía de estilo en el desarrollo de una aplicación Web.|
+| 01.e| Se han utilizado y valorado distintas aplicaciones para el diseño de documentos Web.|
+| 01.f| Se han utilizado marcos, tablas y capas para presentar la información de manera ordenada.|
+| 01.g| Se han creado y utilizado plantillas de diseño.|
 
 ## Resultado 02
 
-Ensambla un equipo microinformático, interpretando planos e instrucciones del fabricante aplicando
-técnicas de montaje.
+Crea interfaces Web homogéneos definiendo y aplicando estilos.
 
 ### Criterios de evaluación
 
 | Identificador | Criterio  |
 | -: |-----------|
-| 02.a | Se han seleccionado las herramientas y útiles necesarios para el ensamblado de equipos microinformáticos.|
-| 02.b | Se ha interpretado la documentación técnica de todos los componentes a ensamblar.|
-| 02.c | Se ha determinado el sistema de apertura / cierre del chasis y los distintos sistemas de fijación para ensamblar-desensamblar los elementos del equipo.|
-| 02.d | Se han ensamblado diferentes conjuntos de placa base, microprocesador y elementos de refrigeración en diferentes modelos de chasis, según las especificaciones dadas.|
-| 02.e | Se han ensamblado los módulos de memoria RAM, los discos fijos, las unidades de lectura / grabación en soportes de memoria auxiliar y otros componentes.|
-| 02.f | Se han configurado parámetros básicos del conjunto accediendo a la configuración de la placa base.|
-| 02.g | Se han ejecutado utilidades de chequeo y diagnóstico para verificar las prestaciones del conjunto ensamblado.|
-| 02.h | Se ha realizado un informe de montaje.|
+| 02.a| Se han reconocido las posibilidades de modificar las etiquetas HTML.|
+| 02.b| Se han definido estilos de forma directa.  |
+| 02.c| Se han definido y asociado estilos globales en hojas externas.|
+| 02.d| Se han definido hojas de estilos alternativas.|
+| 02.e| Se han redefinido estilos.|
+| 02.f| Se han identificado las distintas propiedades de cada elemento.|
+| 02.g| Se han creado clases de estilos.|
+| 02.h| Se han utilizado herramientas de validación de hojas de estilos.|
+| 02.i| Se ha utilizado y actualizado la guía de estilo.|
+
 
 ## Resultado 03 
 
-Mide parámetros eléctricos, identificando el tipo de señal y relacionándola con sus unidades características.
+Prepara archivos multimedia para la Web, analizando sus características y manejando herramientas especificas.
+
 
 ### Criterios de evaluación
 
 | Identificador | Criterio  |
 | -: |-----------|
-| 03.a | Se ha identificado el tipo de señal a medir con el aparato correspondiente.|
-| 03.b | Se ha seleccionado la magnitud, el rango de medida y se ha conectado el aparato según la magnitud a medir.|
-| 03.c | Se ha relacionado la medida obtenida con los valores típicos.|
-| 03.d | Se han identificado los bloques de una fuente de alimentación (F.A.) para un ordenador personal.|
-| 03.e | Se han enumerado las tensiones proporcionadas por una F.A. típica.|
-| 03.f | Se han medido las tensiones en F.A. típicas de ordenadores personales.|
-| 03.g | Se han identificado los bloques de un sistema de alimentación ininterrumpida.|
-| 03.h | Se han medido las señales en los puntos significativos de un SAI.|
+| 03.a| Se han reconocido las implicaciones de las licencias y los derechos de autor en el uso de material multimedia.|
+| 03.b| Se han identificado los formatos de imagen, audio y vídeo a utilizar.|
+| 03.c| Se han analizado las herramientas disponibles para generar contenido multimedia.|
+| 03.d| Se han empleado herramientas para el tratamiento digital de la imagen.|
+| 03.e| Se han utilizado herramientas para manipular audio y vídeo.|
+| 03.f| Se han realizado animaciones a partir de imágenes fijas.|
+| 03.g| Se han importado y exportado imágenes, audio y vídeo en diversos formatos según su finalidad.|
+| 03.h| Se ha aplicado la guía de estilo.|
 
 ## Resultado 04 
 
-Mantiene equipos informáticos interpretando las
-recomendaciones de los fabricantes y relacionando las
-disfunciones con sus causas.
+Integra contenido multimedia en documentos Web valorando su aportación y seleccionando adecuadamente los elementos interactivos.
 
 ### Criterios de evaluación
 
 | Identificador | Criterio  |
 | -: |-----------|
-| 04.a | Se han reconocido las señales acústicas y/o visuales que avisan de problemas en el hardware de un equipo.|
-| 04.b | Se han identificado y solventado las averías producidas por sobrecalentamiento del microprocesador.|
-| 04.c | Se han identificado y solventado averías típicas de un equipo microinformático (mala conexión de componentes, incompatibilidades, problemas en discos fijos,suciedad, entre otras).|
-| 04.d | Se han sustituido componentes deteriorados. |
-| 04.e | Se ha verificado la compatibilidad de los componentes sustituidos. |
-| 04.f | Se han realizado actualizaciones y ampliaciones de componentes. |
-| 04.g | Se han elaborado informes de avería (reparación o ampliación). |
+| 04.a|  Se han reconocido y analizado las tecnologías relacionadas con la inclusión de contenido multimedia e interactivo.|
+| 04.b|  Se han identificado las necesidades específicas de configuración de los navegadores Web para soportar contenido multimedia e interactivo.|
+| 04.c|  Se han utilizado herramientas gráficas para el desarrollo de contenido multimedia interactivo.|
+| 04.d|  Se ha analizado el código generado por las herramientas de desarrollo de contenido interactivo.|
+| 04.e|  Se han agregado elementos multimedia a documentos Web.|
+| 04.f|  Se ha añadido interactividad a elementos de un documento Web.|
+| 04.g|  Se ha verificado el funcionamiento de los elementos multimedia e interactivos en distintos navegadores.|
+
+
 
 ## Resultado 05
 
-Instala software en un equipo informático utilizando una imagen almacenada en un soporte de memoria y justificando el procedimiento a seguir.
+Desarrolla interfaces Web accesibles, analizando las pautas establecidas y aplicando
+técnicas de verificación.
 
 ### Criterios de evaluación
 
 | Identificador | Criterio  |
 | -: |-----------|
-| 05.a | Se ha reconocido la diferencia entre una instalación estándar y una preinstalación de software.| 
-| 05.b | Se han identificado y probado las distintas secuencias de arranque configurables en la placa base.| 
-| 05.c | Se han inicializado equipos desde distintos soportes de memoria auxiliar.| 
-| 05.d | Se han realizado imágenes de una preinstalación de software.| 
-| 05.e | Se han restaurado imágenes sobre el disco fijo desde distintos soportes.| 
-| 05.f | Se han descrito las utilidades para la creación de imágenes de partición/disco.| 
+| 05.a| Se ha reconocido la necesidad de diseñar webs accesibles.|
+| 05.b| Se ha analizado la accesibilidad de diferentes documentos Web.|
+| 05.c| Se han identificado las principales pautas de accesibilidad al contenido.|
+| 05.d| Se han analizado los posibles errores según los puntos de verificación de prioridad.|
+| 05.e| Se ha alcanzado el nivel de conformidad deseado.|
+| 05.f| Se han verificado los niveles alcanzados mediante el uso de test externos.|
+| 05.g| Se ha verificado la visualización del interfaz con diferentes navegadores y tecnologías.|
+
 
 ## Resultado 06 
 
-Reconoce nuevas tendencias en el ensamblaje de equipos microinformáticos describiendo sus ventajas y adaptándolas a las características de uso de los equipos.
+Desarrolla interfaces Web amigables analizando y aplicando las pautas de usabilidad establecidas.
 
 ### Criterios de evaluación
 
 | Identificador | Criterio  |
 | -: |-----------|
-| 06.a| Se han reconocido las nuevas posibilidades para dar forma al conjunto chasis-placa base.|
-| 06.b| Se han descrito las prestaciones y características de algunas de las plataformas semiensambladas (_barebones_) más representativas del momento.|
-| 06.c| Se han descrito las características de los ordenadores de entretenimiento multimedia (HTPC), los chasis y componentes específicos empleados en su ensamblado.|
-| 06.d | Se han descrito las características diferenciales que demandan los equipos informáticos empleados en otros campos de aplicación específicos.|
-| 06.e | Se ha evaluado la presencia de la informática móvil como mercado emergente, con una alta demanda en equipos y dispositivos con características específicas: móviles, PDA, navegadores, entre otros.|
-| 06.f| Se ha evaluado la presencia del «modding» como corriente alternativa al ensamblado de equipos microinformáticos.|
-
-## Resultado 07
-
-Mantiene periféricos, interpretando las recomendaciones de los fabricantes de equipos y relacionando disfunciones con sus causas.
-
-### Criterios de evaluación
-
-| Identificador | Criterio  |
-| -: |-----------|
-| 07.a| Se han identificado y solucionado problemas mecánicos en periféricos de impresión estándar.|
-| 07.b| Se han sustituido consumibles en periféricos de impresión estándar.|
-| 07.c| Se han identificado y solucionado problemas mecánicos en periféricos de entrada.|
-| 07.d| Se han asociado las características y prestaciones de los periféricos de captura de imágenes digitales, fijas y en movimiento con sus posibles aplicaciones.|
-| 07.e| Se han asociado las características y prestaciones de otros periféricos multimedia con sus posibles aplicaciones.|
-| 07.f| Se han reconocido los usos y ámbitos de aplicación de equipos de fotocopiado, impresión digital profesional y filmado.|
-| 07.g| Se han aplicado técnicas de mantenimiento preventivo a los periféricos.|
-
-## Resultado 08
-
-Cumple las normas de prevención de riesgos laborales y de protección ambiental, identificando los riesgos asociados, las medidas y equipos para prevenirlos.
-
-### Criterios de evaluación
-
-| Identificador | Criterio  |
-| -: |-----------|
-| 08.a| Se han identificado los riesgos y el nivel de peligrosidad que suponen la manipulación de los materiales, herramientas, útiles, máquinas y medios de transporte.|
-| 08.b| Se han operado las máquinas respetando las normas de seguridad.|
-| 08.c| Se han identificado las causas más frecuentes de accidentes en la manipulación de materiales, herramientas, máquinas de corte y conformado, entre otras.|
-| 08.d| Se han descrito los elementos de seguridad (protecciones, alarmas, pasos de emergencia, entre otros) de las máquinas y los equipos de protección individual (calzado, protección ocular, |indumentaria, entre otros) que se deben emplear en las distintas operaciones de montaje y mantenimiento.|
-| 08.e| Se ha relacionado la manipulación de materiales, herramientas y máquinas con las medidas de seguridad y protección personal requeridos.|
-| 08.f| Se han identificado las posibles fuentes de contaminación del entorno ambiental.|
-| 08.g| Se han clasificado los residuos generados para su retirada selectiva.|
-| 08.h| Se ha valorado el orden y la limpieza de instalaciones y equipos como primer factor de prevención de riesgos.|
-
+| 06.a| Se ha analizado la usabilidad de diferentes documentos Web.|
+| 06.b| Se ha valorado la importancia del uso de estándares en la creación de documentos Web.|
+| 06.c| Se ha modificado el interfaz Web para adecuarlo al objetivo que persigue y a los usuarios a los que va dirigido.|
+| 06.d| Se ha verificado la facilidad de navegación de un documento Web mediante distintos periféricos.|
+| 06.e| Se han analizado diferentes técnicas para verificar la usabilidad de un documento Web.|
+| 06.f| Se ha verificado la usabilidad del interfaz Web creado en diferentes navegadores y tecnologías.|
 
