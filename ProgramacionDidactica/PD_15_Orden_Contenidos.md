@@ -23,12 +23,11 @@ conductas sociales, tales como:
 
 * Trabajo en grupo.
 * Tolerancia y respeto.
-* Tomar conciencia de la limitación de los recursos y su uso racional (*Green IT*).
 
 Otros, tal y como se ha visto anteriormente en las competencias
 personales y sociales, sí que están directamente relacionadas con el módulo:
 
-La Orden 29 de Julio del 2009, por la que se establece el currículo formativo,
+La Orden 60 del 25 Septiembre de 2012 , por la que se establece el currículo formativo,
 establece los contenidos que en este módulo se puede agrupar en varios
 bloques temáticos. A la hora de desarrollar esta programación didáctica se han
 numerado para poder establecer una relación entre las unidades didácticas que
@@ -36,136 +35,123 @@ se presentan y estos contenidos.
 
 ## Contenidos del currículo
 
-*C1 : Identificación de los bloques funcionales de un sistema microinformático*
+***C1** Planificación de interfaces gráficas*
 
-* Principales funciones de cada bloque.
-* Localización de los bloques funcionales en un ordenador de sobremesa, portátil, PDA, móvil, entre otros.
-* Microprocesadores, buses, y periféricos internos.
-* Tipos de memoria. Características y funciones de cada tipo.
-* Localización de los distintos tipos de memoria de un ordenador de sobremesa, portátil, PDA, móvil, entre otros.
-* Tarjetas controladoras y específicas.
-* Software base y de aplicación.
- 
----
-
-*C2 : Funcionalidad de los componentes de las placas base*
-
-* Características de los microprocesadores.
-* Control de temperaturas en un sistema microinformático.
-* El chipset de la placa base.
-* Dispositivos integrados en placa.
-* La memoria en una placa base.
-* El programa de configuración de la placa base.
-* Bus Externo.
-* Conectores E/S.
-* Formatos de placa base.
-* La BIOS.
+* Elementos del diseño: percepción visual.
+* Textura (puntos, línea, forma, volumen y profundidad).
+* Color, tipografía, iconos.
+* Interacción persona-ordenador.
+* Interpretación de guías de estilo. Elementos.
+* Detección de patrones.
+* Características: usable, visual, educativa y actualizada.
+* Generación de documentos y sitios web.
+* Componentes de una interfaz web.
+* Zonas de navegación, contenido, iteración.
+* Aplicaciones para desarrollo web.
+* Lenguajes de marcas.
+* Mapa de navegación. Prototipos.
+* Maquetación web. Elementos de ordenación.
+* Tablas.
+* Capas.
+* Marcos.
+* Plantilla de diseño.
 
 ---
 
-*C3 : Análisis del mercado de componentes de equipos microinformáticos*
+***C2** Uso de estilos*
 
-* El chasis.
-* La memoria RAM.
-* Discos fijos y controladoras de disco.
-* Soportes de memoria auxiliar y unidades de lectura/grabación.
-* El adaptador gráfico y el monitor de un equipo microinformático.
-* Conectividad LAN y WAN de un sistema microinformático.
-* Componentes OEM y componentes «retail».
-* Controladores de dispositivos.
-* Otros componentes: IEEE 1394, WiFi 802.11a/b/g/n, SATA,etc.
-
----
-
-*C4 : Ensamblado de equipos microinformáticos*
-
-* Secuencia de montaje de un ordenador.
-* Herramientas y útiles.
-* Precauciones y advertencias de seguridad.
-* Instalación de la placa base en el chasis
-* Ensamblado del procesador.
-* Refrigerado del procesador.
-* Fijación de los módulos de memoria RAM.
-* Fijación y conexión de las unidades de disco Fijo.
-* Fijación y conexión de las unidades de lectura/grabación en soportes de memoria auxiliar.
-* Fijación y conexión del resto de adaptadores y componentes.
-* Utilidades de chequeo y diagnóstico.
+* Estilos en línea basados en etiquetas y en clases.
+* Notación. Sintaxis.
+* Fuentes y texto. Colores y fondos. Listas, tablas.
+* Modelo de cajas. Márgenes, relleno y bordes.
+* Crear y vincular hojas de estilo.
+* Crear y vincular hojas de estilo en cascada externa.
+* Hojas de estilo auditivas.
+* Hojas de estilo para imprimir.
+* Herramientas y test de verificación.
 
 ---
 
-*C5 : Medición de parámetros eléctricos*
+***C3** Trabajo con herramientas software para la creación de interfaces gráficas*
 
-* Tipos de señales.
-* Valores tipo.
-* Bloques de una fuente de alimentación.
-* Sistemas de alimentación interrumpida.
+* Tipos de herramientas, herramientas visuales.
+* Instalación y configuración del entorno.
 
 ---
 
-*C6 : Mantenimiento de equipos microinformáticos*
+***C4** Implantación de contenido multimedia* 
 
-* Técnicas de mantenimiento preventivo.
-* Detección de averías en un equipo microinformático.
-* Señales de aviso, luminosas y acústicas.
-* Fallos comunes.
-* Ampliaciones de hardware.
-* Incompatibilidades.
-
----
-
-*C7 : Instalación de Software*
-
-* Opciones de arranque de un equipo.
-* Arranque de un equipo desde soportes auxiliares.
-* Utilidades para la creación de imágenes de partición/disco.
-* Comprobación y restauración de imágenes.
-* Aplicaciones de nuevas tendencias en equipos informáticos.
-
----
-
-*C8 : Protección y seguridad de los datos*
-
-* Sistemas de protección de datos RAID.
-* Sistemas de almacenamiento SCSI, SATA, SATA2, SAS, etc.
-* Software de copias de seguridad y restauración.
-* Software de recuperación de datos.
+* Tipos de Imágenes en la web.
+* Logos, iconos, banners e imágenes.
+* Derechos de la propiedad intelectual. Licencias. Ley de la propiedad intelectual.
+* Derechos de autor.
+* Registro de contenido.
+* Entidades. Gestión colectiva.
+* Imágenes: mapa de bits, imagen vectorial. Software para crear y procesar imágenes. Formatos de imágenes.
+* Optimización de imágenes para la web.
+* Audio: formatos. Conversiones de formatos (exportar e importar).
+* Vídeo: codificación de vídeo, conversiones de formatos (exportar e importar).
+* Animaciones.
+* Fotogramas y capas.
+* Animación de imágenes y texto.
+* Integración de audio y vídeo en una animación.
+* Efectos.
+* Realización de adaptaciones en el diseño de gestores de contenido.
 
 ---
 
-*C9 : Tendencias en el mercado informático*
+***C5** Integración de contenido interactivo*
 
-* Empleo de barebones para el montaje de equipos.
-* El ordenador multimedia de salón: HTPC.
-* Equipos con demandas específicas: Estaciones edición de vídeo y CAD-CAM.
-* Informática móvil.
-* Móviles.
-* Sistemas de posicionamiento y navegación.
-* PDA.
-* Blackberry.
-* Modding.
+* Elementos interactivos básicos y avanzados.
+* Comportamientos interactivos. Comportamiento de los elementos.
+* Modificación de los comportamientos.
+* Cambio de las propiedades de un elemento.
+* Ejecución de secuencias de comandos.
+* Herramientas de creación de contenido interactivo.
+* Creación de controles y efectos visuales.
 
 ---
 
-*C10 : Operación con periféricos*
+***C6** Diseño de webs accesibles*
 
-* Técnicas de mantenimiento preventivo.
-* Impresoras.
-* Periféricos de entrada.
-* Periféricos Multimedia.
-* Videoproyectores. Fijación y Conexión.
-* Sistemas de Audio.
-* Perifericos para la adquisición de imágenes fijas y en movimiento.
-* Perifericos para la impresión profesional.
+* Concepto de accesibilidad web.
+* El Consorcio World Wide Web (W3C).
+* Pautas de Accesibilidad al Contenido en la Web (WCAG).
+* Principios generales de diseño accesible.
+* Técnicas para satisfacer los requisitos definidos en las WCAG.
+* Técnicas fundamentales.
+* Técnicas HTML.
+* Técnicas CSS.
+* Prioridades. Puntos de verificación. Niveles de adecuación.
+* Métodos para realizar revisiones preliminares y evaluaciones de adecuación o conformidad de documentos web.
+* Herramientas de análisis de accesibilidad web.
+* Software y herramientas on-line.
+* Testeo de la accesibilidad web desde diferentes navegadores.
+* Testeo de la accesibilidad web desde dispositivos móviles.
 
 ---
 
-*C11 : Cumplimiento de las normas de prevención de riesgos laborales y protección ambiental*
+***C7** Implementación de la usabilidad en la web. Diseño amigable*
 
-* Identificación de riesgos.
-* Determinación de las medidas de prevención de riesgos laborales.
-* Prevención de riesgos laborales en los procesos de montaje y mantenimiento.
-* Equipos de protección individual.
-* Cumplimiento de la normativa de prevención de riesgos laborales.
-* Cumplimiento de la normativa de protección ambiental.
+* Concepto de usabilidad.
+* Análisis de la usabilidad. Técnicas.
+* Principios recomendados para conseguir webs amigables.
+* Identificación del objetivo de la web.
+* Tipos de usuario.
+* Identificación de las necesidades de diferentes perfiles de usuarios.
+* Adaptación del interfaz a dichos perfiles.
+* Barreras identificadas por los usuarios.
+* Información fácilmente accesible.
+* Velocidad de conexión.
+* Uso del lenguaje y vocabulario adecuado.
+* Consistencia interna.
+* Importancia del uso de estándares externos.
+* Navegación fácilmente recordada frente a navegación redescubierta.
+* Facilidad de navegación en la web.
+* Facilidad de navegación en la web mediante el teclado.
+* Facilidad de navegación en la web mediante el ratón.
+* Control de las diferentes opciones que se deben visualizar u ocultar en cada momento.
+* Verificación de la usabilidad en diferentes navegadores y tecnologías.
+* Herramientas y test de verificación.
 
 ---

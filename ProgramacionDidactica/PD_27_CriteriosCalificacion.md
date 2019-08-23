@@ -5,14 +5,14 @@
 La calificación es el resultado de la evaluación de los resultados de
 aprendizaje desarrollados durante el curso.
 En este módulo utilizamos en cada unidad los conocimientos vistos en
-las unidades anteriores. Por eso cada evaluación posterior tiene un mayor peso
-sobre la nota final que las anteriores:
+las unidades anteriores. Por eso la evaluación posterior tiene un mayor peso
+sobre la nota final que la anterior:
 
 | Evaluación | Peso | 
 |------------|------|
-| 1 Evaluación| 25% |
-| 2 Evaluación| 30% |
-| 3 Evaluación| 45% |
+| 1 Evaluación| 40% |
+| 2 Evaluación| 60% |
+
 
 
 Para la evaluación de la participación activa en clase, se tendrá en cuenta:
@@ -56,7 +56,7 @@ exámenes y la participación activa en clase.
 La nota de final de curso se calculará con los porcentajes que se han
 establecido anteriormente:
 
-FINAL = *(Nota 1 Eva. * 0,25)* + *(Nota 2 Eva. * 0,3)* + *(Nota 3 Eva. *0,45)*
+FINAL = *(Nota 1 Eva. * 0,4)* + *(Nota 2 Eva. * 0,6)*
 
 Si la nota obtenida es igual o superior a 5 puntos, se habrá superado la materia.
 
