@@ -10,6 +10,6 @@ proporcionará el centro. La dotación de equipos y espacios propuesta es:
 * Todos ellos conectados mediante un switch de 48 puertos gestionable al que se conecta también el servidor del aula, donde el profesor dispondrá de un servidor web, o carpeta compartida donde proporcionar a los alumnos manuales, recursos, imágenes ISO, máquinas virtuales, ...
 * Un Moodle de la asignatura, donde se publicarán los enunciados de los trabajos, los recursos teóricos, actividades de auto-evaluación, y todas las actividades y recursos de ampliación que se utilizarán durante el curso.
 * El repositorio de GitHub de los materiales de la asignatura.
-* Materiales y herramientas de Montaje para la realización de las prácticas.
+
 
 

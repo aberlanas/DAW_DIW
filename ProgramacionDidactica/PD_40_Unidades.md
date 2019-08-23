@@ -13,3 +13,12 @@ La coordinación con el departamento y el equipo educativo también
 resulta beneficiosa, ya que podemos trabajar conceptos desde varios módulos,
 fomentando de esta manera su aprendizaje.
 
+## Listado de Unidades
+
+* Unidad 01 : Introducción y Principios de Diseño.
+* Unidad 02 : CSS.
+* Unidad 03 : Contenido Multimedia.
+* Unidad 04 : Formularios e Interactividad.
+* Unidad 05 : Accesibilidad.
+* Unidad 06 : Usabilidad.
+* Unidad 07 : Proyectos Integradores.
