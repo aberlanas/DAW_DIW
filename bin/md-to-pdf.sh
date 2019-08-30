@@ -10,7 +10,7 @@ GREEN="\033[0;32m"
 NC='\033[0m' # No Color
 
 TEMPLATE_TEX="../rsrc/templates/temas-tpl.latex"
-TEMPLATE_TEX_TAREAS="../rsrc/templates/tareas-tpl.latex"
+TEMPLATE_TEX_TAREAS="../../rsrc/templates/tareas-tpl.latex"
 #TEMPLATE_TEX_TAREAS="../rsrc/templates/tareas-nologo-tpl.latex"
 TEMPLATE_TEX_ANEXOS="../rsrc/templates/anexos-tpl.latex"
 TEMPLATE_TEX_PD="../rsrc/templates/pd-nologo-tpl.latex"
@@ -25,7 +25,7 @@ PD_PATH="ProgramacionDidactica"
 #
 # UD : Nombres de las Unidades
 
-UD01_NAME="Unidad01_IntroduccionFundamentos"
+UD01_NAME="Unidad01_Introduccion"
 UD02_NAME="Unidad02-HTML5"
 UD03_NAME="Unidad03-CSS3"
 
@@ -70,7 +70,7 @@ make_practicas(){
         NUM=$(echo $ejer | cut -d "_" -f2 | cut -d "." -f1)
 	    NOMBRE=$(echo $ejer | cut -d "_" -f3 | cut -d "." -f1)
         pandoc --template ${TEMPLATE_TEX_TAREAS} ${PANDOC_OPTIONS} -o ${PDF_PATH}/${UDPRACTICAS}_Tarea_"${NUMP}"_"${NOMBRE}".pdf $ejer
-        say_file ${PDF_PATH}/${UDPRACTICAS}_Tarea_${NUMP}_${NOMBRE}.pdf
+        say_file ${PDF_PATH}/Practicas/${UDPRACTICAS}_Tarea_${NUMP}_${NOMBRE}.pdf
         let NUMP=NUMP+1
     done
 
@@ -126,8 +126,9 @@ make_UD01(){
     cd ${UD01_NAME}
     
     #make_teoria ${UD01_NAME}
+    cd Practicas
     make_practicas ${UD01_NAME}
-    
+    cd ..
     cd ..
 
     move_pdfs ${UD01_NAME}
