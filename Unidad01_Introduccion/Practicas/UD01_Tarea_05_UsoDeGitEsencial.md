@@ -64,6 +64,40 @@ echo "Esto en otro diferente" > diferente.txt
 echo "Y esto ultimo en otro" > ultimo.txt
 ```
 
+Si ahora ejecutamos los comandos de status...
+
+![Git Status](./rsrc/gitstatus_01.png)
+\
+
+Podemos añadir 1 fichero solo al commit...
+
+![Git Status](./rsrc/gitstatus_02.png)
+\
+
+
+o varios...
+
+
+![Git Status](./rsrc/gitstatus_03.png)
+\
+
+
+Una vez añadidos...si realizamos un `git push`
+y los modificamos posteriormente podemos ver mediante el uso del comando:
+
+`git diff`
+
+podremos ver cuales han sido los cambios que se han realizado en los ficheros, esto es especialmente útil...^_^.
+
+## Ejercicio 01
+
+Realiza cambios en los ficheros creados, y muestra las diferencias utilizando `git diff`.
+
+Redirige la salida a un fichero y subélo a tu repositorio cómo:
+
+`UD01/Tareas_GitEsencial_Ejercicio01.diff`
+
+## Ejercicio 02
 
 
 
