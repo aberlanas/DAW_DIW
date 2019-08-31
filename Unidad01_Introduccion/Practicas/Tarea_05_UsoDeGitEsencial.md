@@ -10,6 +10,7 @@ keywords: [DAW,DIW]
 
 Vamos a practicar un poco los comandos más habituales que se utilizan en Git.
 
+https://medium.com/@m.monroyc22/mi-gu%C3%ADa-git-313f22568a11
 
 ## Prerequisitos
 
@@ -89,7 +90,7 @@ y los modificamos posteriormente podemos ver mediante el uso del comando:
 
 podremos ver cuales han sido los cambios que se han realizado en los ficheros, esto es especialmente útil...^_^.
 
-## Ejercicio 01
+### Ejercicio 01
 
 Realiza cambios en los ficheros creados, y muestra las diferencias utilizando `git diff`.
 
@@ -97,7 +98,51 @@ Redirige la salida a un fichero y subélo a tu repositorio cómo:
 
 `UD01/Tareas_GitEsencial_Ejercicio01.diff`
 
-## Ejercicio 02
 
+## Ramas
+
+Aquí teneis una explicación más exahustiva de lo que es una rama en GIT:
+
+https://git-scm.com/book/es/v2/Ramificaciones-en-Git-%C2%BFQu%C3%A9-es-una-rama%3F
+
+
+
+De forma resumida los comandos son:
+
+Crear una Rama:
+
+`git branch "NombreRama"`
+
+Cambiar de rama:
+
+`git checkout -b "NombreRama"`
+
+Ver las diferencias:
+
+`git diff "NombreRama" master`
+
+Realizar un *merge*
+
+*`git checkout master`
+* (Desde master): `git merge "NombreRama"`
+
+
+### Ejercicio 02
+
+Creación de ramas.
+
+Realiza una rama nueva que se llame:
+
+`Feature-CambioNombres`
+
+Cambia a esa rama, cambia la extension de todos los ficheros que acaben en .txt a .dat en tmp/, sube los cambios a la rama, realiza un diff, cambia a la rama master y haz un merge.
+
+Muestra el log de lo que ha ocurrido.
+
+Redirige el log a un fichero y súbelo al repositorio:
+
+`git log --all --decorate --oneline --graph > UD01/Tareas_GitEsencial_Ejercicio02.log`
+
+Avisa al profesor para que lo vea.
 
 
