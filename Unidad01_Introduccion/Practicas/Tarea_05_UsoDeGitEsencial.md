@@ -96,7 +96,7 @@ Realiza cambios en los ficheros creados, y muestra las diferencias utilizando `g
 
 Redirige la salida a un fichero y subélo a tu repositorio cómo:
 
-`UD01/Tareas_GitEsencial_Ejercicio01.diff`
+`UD01/Tareas_UsoDeGitEsencial_Ejercicio01.diff`
 
 
 ## Ramas
@@ -104,7 +104,6 @@ Redirige la salida a un fichero y subélo a tu repositorio cómo:
 Aquí teneis una explicación más exahustiva de lo que es una rama en GIT:
 
 https://git-scm.com/book/es/v2/Ramificaciones-en-Git-%C2%BFQu%C3%A9-es-una-rama%3F
-
 
 
 De forma resumida los comandos son:
@@ -141,8 +140,24 @@ Muestra el log de lo que ha ocurrido.
 
 Redirige el log a un fichero y súbelo al repositorio:
 
-`git log --all --decorate --oneline --graph > UD01/Tareas_GitEsencial_Ejercicio02.log`
+`git log --all --decorate --oneline --graph > UD01/Tareas_UsoDeGitEsencial_Ejercicio02.log`
 
 Avisa al profesor para que lo vea.
 
+
+## git push
+
+Una diferencia respecto a otros controles de versiones  que no son distribuidos es que git cuenta con la posibilidad de no enviar los cambios a un repositorio "exterior". Es decir tenemos dos repositorios:
+
+**local** y **remote**
+
+Cuando ejecutamos `git push` se *empujan* los cambios del repositorio local al repositorio remoto que tengamos configurado.
+
+Esto es importante hacerlo antes de irnos a casa, o antes de cambiar de puesto de trabajo.
+
+![Git Commit Meme](./rsrc/gitCommitMeme.png)
+
+### Tarea 03
+
+Subir todos los cambios a vuestro repositorio de GitHub y avisad al profesor.
 
