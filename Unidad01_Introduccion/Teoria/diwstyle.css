@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+body { 
+  font-family: 'Yanone Kaffeesatz';
+  background-color: #BABABA;
+  }
+
+
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+}
+
+.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
