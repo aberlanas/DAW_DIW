@@ -70,7 +70,7 @@ make_practicas(){
         NUM=$(echo $ejer | cut -d "_" -f2 | cut -d "." -f1)
 	    NOMBRE=$(echo $ejer | cut -d "_" -f3 | cut -d "." -f1)
         pandoc --template ${TEMPLATE_TEX_TAREAS} ${PANDOC_OPTIONS} -o ${PDF_PATH}/${UDPRACTICAS}_Tarea_"${NUMP}"_"${NOMBRE}".pdf $ejer
-        say_file ${PDF_PATH}/Practicas/${UDPRACTICAS}_Tarea_${NUMP}_${NOMBRE}.pdf
+        say_file ${PDF_PATH}/${UDPRACTICAS}_Tarea_${NUMP}_${NOMBRE}.pdf
         let NUMP=NUMP+1
     done
 
