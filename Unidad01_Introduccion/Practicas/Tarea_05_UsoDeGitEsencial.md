@@ -122,7 +122,7 @@ Ver las diferencias:
 
 Realizar un *merge*
 
-*`git checkout master`
+* `git checkout master`
 * (Desde master): `git merge "NombreRama"`
 
 
@@ -140,7 +140,11 @@ Muestra el log de lo que ha ocurrido.
 
 Redirige el log a un fichero y súbelo al repositorio:
 
-`git log --all --decorate --oneline --graph > UD01/Tareas_UsoDeGitEsencial_Ejercicio02.log`
+```bash
+git log --all --decorate --oneline --graph > \
+UD01/Tareas_UsoDeGitEsencial_Ejercicio02.log`
+
+```
 
 Avisa al profesor para que lo vea.
 

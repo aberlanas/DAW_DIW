@@ -108,6 +108,8 @@ move_pdfs(){
 make_pd(){
     cd ${PD_PATH}
     pandoc --template ${TEMPLATE_TEX_PD} ${PANDOC_OPTIONS} -o ${PDF_PATH}/ProgramacionDidactica.pdf PD_*.md
+    pandoc -o ${PDF_PATH}/ProgramacionDidactica.odt PD_*.md
+
     say_file ${PDF_PATH}/ProgramacionDidactica.pdf
     mkdir -p ${PDF_PATH}/PD/
     mv ${PDF_PATH}/ProgramacionDidactica.pdf ${PDF_PATH}/PD/
