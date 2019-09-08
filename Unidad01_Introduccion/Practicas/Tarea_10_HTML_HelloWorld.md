@@ -54,3 +54,10 @@ EXPLICA AQUI COMO FUNCIONA LA URL. PONIENDO UN EJEMPLO DE IMAGEN (AL MENOS).
 Súbelo a tu repositorio con el nombre:
 
 `UD01/Tarea_HTML_Lorem_v4.html`
+
+## Ejercicio 05
+
+Sirvelo desde tu ordenador del aula y avisa al profesor para que lo compruebe (puedes usar simpleServer.py).
+
+Comprueba tu IP.
+
