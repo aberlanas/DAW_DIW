@@ -160,8 +160,16 @@ Cuando ejecutamos `git push` se *empujan* los cambios del repositorio local al r
 Esto es importante hacerlo antes de irnos a casa, o antes de cambiar de puesto de trabajo.
 
 ![Git Commit Meme](./rsrc/gitCommitMeme.png)
+\
 
-### Tarea 03
+
+### Ejercicio 03
 
 Subir todos los cambios a vuestro repositorio de GitHub y avisad al profesor.
+
+
+### Ejercicio 04 
+
+Instalar una herramienta de control de versiones en vuestro ordenador de casa (ya sea GitHub desktop o lo que necesiteis) y adjuntar una captura de pantalla de que lo habeis realizado y sincronizado con vuestros repositorios del módulo. 
+
 
