@@ -16,7 +16,14 @@ https://medium.com/@m.monroyc22/mi-gu%C3%ADa-git-313f22568a11
 
 Partimos de que tenemos un repositorio creado para el módulo y de que comenzaremos con todo actualizado en nuestras máquinas respectivas.
 
+>**NOTA**
+>Una vez tenemos creado el repositorio en GitHub, debemos descargarlo a nuestra máquina con un 
+>`git-clone URL` 
+>lo que nos generará en el directorio donde estamos la carpeta que corresponde a nuestro repositorio.
+>Una vez clonado, debemos entrar en la carpeta y ejecutar los comandos que vienen en la práctica.
+
 Es decir: 
+
 
 `git status` 
 

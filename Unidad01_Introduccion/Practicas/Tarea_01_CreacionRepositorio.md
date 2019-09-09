@@ -20,7 +20,9 @@ Siguiendo el vídeo crearos un repositorio para el módulo y entregar la **URL**
 
 Ejemplo de nombre de repositorio:
 
-DAW-NombreModulo
+`DAW-DIW`
+
+por : `DAW-NombreModulo`
 
 ## Ejercicio 02
 
