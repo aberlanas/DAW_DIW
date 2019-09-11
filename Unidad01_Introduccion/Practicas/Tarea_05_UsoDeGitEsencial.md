@@ -18,7 +18,7 @@ Partimos de que tenemos un repositorio creado para el módulo y de que comenzare
 
 >**NOTA**
 >Una vez tenemos creado el repositorio en GitHub, debemos descargarlo a nuestra máquina con un 
->`git-clone URL` 
+>`git-clone URL`
 >lo que nos generará en el directorio donde estamos la carpeta que corresponde a nuestro repositorio.
 >Una vez clonado, debemos entrar en la carpeta y ejecutar los comandos que vienen en la práctica.
 
