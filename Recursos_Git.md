@@ -10,10 +10,22 @@
 ## Comandos básicos básicos
 
 | Cuando     | Comando    | Función |
+|------------|------------|---------|
 | Al empezar | `git pull` | Actualiza el repositorio LOCAL con los cambios que hayan ocurrido en el servidor |
 | Durante el trabajo  | `git commit -m "MENSAJE" ` | Confirma los cambios que vamos realizando, estableciendo pequeños "puntos de guardado" |
 | Al finalizar la jornada | `git push` | Confirmamos todos los cambios y los subimos al servidor. |
 
 ## Configuración de Git
+
+Si ejecutamos el comando `git config --list ` vemos que parámetros se están teniendo en cuenta.
+En caso de Lio Monumental, si podemos prescindir de lo que habíamos hecho localmente:
+
+```bash
+rm -r ~/.gitconfig
+rm -rf RUTA_LOCAL_AL_REPOSITORIO
+git clone URL.git
+```
+
+Y a funcionar.
 
 
