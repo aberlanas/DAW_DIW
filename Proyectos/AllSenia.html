@@ -5,6 +5,16 @@
     <meta content="Documentacion">
     <meta charset="utf-8">
     <title>La Senia - IT - Infraestructura - 2019 </title>
+    <style>
+        article {
+            margin: 10px;
+        }
+
+        .todo {
+            color: red;
+            font-family: monospace;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,9 +25,9 @@
     <main>
         <article>
             <h2>
-                Descripción de la red.  
+                Descripción de la red.
             </h2>
-            
+
             <p>La red del centro es 172.29.0.0/23</p>
             <p>No todas las direcciones IP estan asignadas en DHCP</p>
             <ul>
@@ -41,69 +51,147 @@
 
             <h3>Básica</h3>
             <picture>
-                <img src="imgs/DiagramaRedLaSenia_BASICO.png" alt="Diagrama Básico"/>
+                <img src="imgs/DiagramaRedLaSenia_BASICO.png" alt="Diagrama Básico" />
                 <figcaption>Red Básica</figcaption>
-            </picture> 
+            </picture>
 
             <h2>Cableado estructurado</h2>
             <picture>
-                    <img src="imgs/DiagramaRedAulasSwitches.png" alt="Diagrama Cableado Estructurado"/>
-                    <figcaption>Red - Cableado</figcaption>
+                <img src="imgs/DiagramaRedAulasSwitches.png" alt="Diagrama Cableado Estructurado" />
+                <figcaption>Red - Cableado</figcaption>
             </picture>
-            
+
             <h2>Red Wifi</h2>
-            <p>Se utilizan 4 puntos de acceso Unifi para la gestión de la WiFi, se hace relay del DHCP del Teldat, 
+            <p>Se utilizan 4 puntos de acceso Unifi para la gestión de la WiFi, se hace relay del DHCP del Teldat,
                 luego las direcciones IP que asignan son: 172.29.1.*.
             </p>
         </article>
 
         <article>
             <h2>Aulas de Ciclos</h2>
-            <p>Una única red: 
+            <p>Una única red:
                 192.168.4.0/24
             </p>
             <h3>Servidor Aula 4</h3>
             <p>IP: 192.168.4.254</p>
-            <p>Servicios<p> 
-                <ul>
-                    <li>
-                        DHCP y Enrutamiento PCs aulas 3 y 4
-                    </li>
-                    <li>
-                        Gestor de los Unifi  de la WiFi
-                    </li>
-                    <li>Repositorio de cosas para los ciclos</li>
-                    <li>Nagios</li>
-                    <li>OCS Inventory</li>
-                    
-                </ul>
-                <p>Se encuentra en las dos redes con las IPs 172.29.0.254 y 192.168.4.254</p>
-                <h4>Sistema Operativo</h4>
-                <p>Ubuntu 16.04 - Para ACTUALIZAR</p>
+            <p>Servicios<p>
+                    <ul>
+                        <li>
+                            DHCP y Enrutamiento PCs aulas 3 y 4
+                        </li>
+                        <li>
+                            Gestor de los Unifi de la WiFi
+                        </li>
+                        <li>Repositorio de cosas para los ciclos</li>
+                        <li>Nagios</li>
+                        <li>OCS Inventory</li>
 
-            <h3>Equipos Aula 3</h3>
-            <p>Dotación de consellería, inventariados</p>
-            <h4>Software</h4>
-                <p>SO: KDE Neon - 18.04 (bionic)</p>
-                <p>Usuarios smx y daw - pass (smx3 y daw3)</p>
-                <p>SSH instalado pero controlado para el usuario <em>tic</em></p>
-                <p>/home esta aparte</p>
-                <h4>Tareas pendientes</h4>
-                <ul>
-                    <li>Coincidir IP con nombre</li>
-                </ul>
+                    </ul>
+                    <p>Se encuentra en las dos redes con las IPs 172.29.0.254 y 192.168.4.254</p>
+                    <h4>Sistema Operativo</h4>
+                    <p>Ubuntu 16.04</p>
+                    <div class="todo">
+                        <p>TODO : Para actualizar</p>
+                    </div>
 
-            <h3>Equipos Aula 4</h3>
-                <p>Dotación de consellería, inventariados</p>
-                <h4>Software</h4>
+                    <h3>Equipos Aula 3</h3>
+                    <p>Dotación de consellería, inventariados</p>
+                    <h4>Software</h4>
                     <p>SO: KDE Neon - 18.04 (bionic)</p>
                     <p>Usuarios smx y daw - pass (smx3 y daw3)</p>
                     <p>SSH instalado pero controlado para el usuario <em>tic</em></p>
                     <p>/home esta aparte</p>
+                    <div class="todo">
+                        <h4>TODO</h4>
+                        <ul>
+                            <li>Coincidir IP con nombre</li>
+                            <li>Revisar Software para AOF y Redes</li>
+                        </ul>
+                    </div>
+
+                    <h3>Equipos Aula 4</h3>
+                    <p>Dotación de consellería, inventariados</p>
+                    <h4>Software</h4>
+                    <p>SO: KDE Neon - 18.04 (bionic)</p>
+                    <p>Usuarios smx y daw - pass (smx4 y daw4)</p>
+                    <p>SSH instalado pero controlado para el usuario <em>tic</em></p>
+                    <p>/home esta aparte</p>
+                    <div class="todo">
+                        <h4>TODO</h4>
+                        <ul>
+                            <li>Coincidir IP con nombre</li>
+                            <li>Falta 1 equipo</li>
+                            <li>Rosetas del medio por arreglar</li>
+                            <li>Revisar Rango DHCP del server para SOX y SER</li>
+                        </ul>
+                    </div>
         </article>
+
+        <article>
+            <h2>Aulas de Informática - ESO</h2>
+            <p>Dos redes independientes, cada servidor de aula está en un rango, se ven por la tarjeta de red de fuera.</p>
+            <p>Todos los ordenadores del aula están conectados a un switch que conecta al servidor con los clientes.</p>
+         
+            <h3>Equipos Aula 1</h3>
+
+            <picture>
+                <img src="imgs/DiagramaRedAula1.png" alt="Aula 1">
+                <figcaption>Aula 1</figcaption>
+            </picture>
+
+   
+            <p>Dotación de consellería, inventariados</p>
+            <h4>Software</h4>
+            <p>SO: LliureX 19 - Ubuntu 18.04 (bionic)</p>
+            <p>Usuarios alumno, profe, tic</p>
+            <h4>Servidor aula 1</h4>
+            <ul>
+                <li>IP - aula : 192.168.1.254</li>
+                <li>IP - red centro : 172.29.0.251</li>
+                <li>Da servicios de RED AL AULA, posibles bucles</li>
+            </ul>
+            <div class="todo">
+                <h4>TODO</h4>
+                <ul>
+                    <li>Coincidir IP con nombre</li>
+                    <li>Usuarios LDAP</li>
+                    <li>Reinstalar el servidor LliureX 19</li>
+                </ul>
+            </div>
+
+            <h3>Equipos Aula 2</h3>
+
+            <picture>
+                    <img src="imgs/DiagramaRedAula2.png" alt="Aula 2">
+                    <figcaption>Aula 2</figcaption>
+                </picture>
+
+                <p>Dotación de consellería, inventariados</p>
+            <h4>Software</h4>
+            <p>SO: LliureX 19 - Ubuntu 18.04 (bionic)</p>
+            <p>Usuarios alumno, profe, tic</p>
+            <h4>Servidor aula 2</h4>
+            <ul>
+                <li>IP - aula : 192.168.2.254</li>
+                <li>IP - red centro : 172.29.0.252</li>
+                <li>Da servicios de RED AL AULA, posibles bucles</li>
+            </ul>
+            <div class="todo">
+                <h4>TODO</h4>
+                <ul>
+                    <li>Coincidir IP con nombre</li>
+                    <li>Usuarios LDAP</li>
+                    <li>Instalar los clientes LliureX 19</li>
+                </ul>
+            </div>
+
+        </article>
+
 
     </main>
     <footer>
         Todos los derechos reservados...
     </footer>
-    </body> </html>
+</body>
+
+</html>
