@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="Documentacion">
+    <meta charset="utf-8">
+    <title>La Senia - IT - Infraestructura - 2019 </title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Infraestructura IES La Senia</h1>
+    </header>
+    <main>
+        <article>
+            <h2>
+                Descripción de la red.  
+            </h2>
+            
+            <p>La red del centro es 172.29.0.0/23</p>
+            <p>No todas las direcciones IP estan asignadas en DHCP</p>
+            <ul>
+                <li>172.29.0.[1-254] - IPs estáticas</li>
+                <li>172.29.1.[1-254] - IPs dinámicas</li>
+            </ul>
+
+            <p>Puerta de enlace: 172.29.0.1</p>
+            <p>DNS : 8.8.8.8 y 8.8.4.4 -> Qué están proxificados y que resuelven a :</p>
+            <p>Puertos no proxificados en Macrolan: </p>
+
+            <ul>
+                <li>123</li>
+                <li>443</li>
+                <li>80</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Topología</h2>
+
+            <h3>Básica</h3>
+            <picture>
+                <img src="imgs/DiagramaRedLaSenia_BASICO.png" alt="Diagrama Básico"/>
+                <figcaption>Red Básica</figcaption>
+            </picture> 
+
+            <h2>Cableado estructurado</h2>
+            <picture>
+                    <img src="imgs/DiagramaRedAulasSwitches.png" alt="Diagrama Cableado Estructurado"/>
+                    <figcaption>Red - Cableado</figcaption>
+            </picture>
+            
+            <h2>Red Wifi</h2>
+            <p>Se utilizan 4 puntos de acceso Unifi para la gestión de la WiFi, se hace relay del DHCP del Teldat, 
+                luego las direcciones IP que asignan son: 172.29.1.*.
+            </p>
+        </article>
+
+        <article>
+            <h2>Aulas de Ciclos</h2>
+            <p>Una única red: 
+                192.168.4.0/24
+            </p>
+            <h3>Servidor Aula 4</h3>
+            <p>IP: 192.168.4.254</p>
+            <p>Servicios<p> 
+                <ul>
+                    <li>
+                        DHCP y Enrutamiento PCs aulas 3 y 4
+                    </li>
+                    <li>
+                        Gestor de los Unifi  de la WiFi
+                    </li>
+                    <li>Repositorio de cosas para los ciclos</li>
+                    <li>Nagios</li>
+                    <li>OCS Inventory</li>
+                    
+                </ul>
+                <p>Se encuentra en las dos redes con las IPs 172.29.0.254 y 192.168.4.254</p>
+                <h4>Sistema Operativo</h4>
+                <p>Ubuntu 16.04 - Para ACTUALIZAR</p>
+
+            <h3>Equipos Aula 3</h3>
+            <p>Dotación de consellería, inventariados</p>
+            <h4>Software</h4>
+                <p>SO: KDE Neon - 18.04 (bionic)</p>
+                <p>Usuarios smx y daw - pass (smx3 y daw3)</p>
+                <p>SSH instalado pero controlado para el usuario <em>tic</em></p>
+                <p>/home esta aparte</p>
+        </article>
+
+    </main>
+    <footer>
+        Todos los derechos reservados...
+    </footer>
+    </body> </html>
