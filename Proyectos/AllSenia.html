@@ -129,9 +129,10 @@
 
         <article>
             <h2>Aulas de Informática - ESO</h2>
-            <p>Dos redes independientes, cada servidor de aula está en un rango, se ven por la tarjeta de red de fuera.</p>
+            <p>Dos redes independientes, cada servidor de aula está en un rango, se ven por la tarjeta de red de fuera.
+            </p>
             <p>Todos los ordenadores del aula están conectados a un switch que conecta al servidor con los clientes.</p>
-         
+
             <h3>Equipos Aula 1</h3>
 
             <picture>
@@ -139,7 +140,7 @@
                 <figcaption>Aula 1</figcaption>
             </picture>
 
-   
+
             <p>Dotación de consellería, inventariados</p>
             <h4>Software</h4>
             <p>SO: LliureX 19 - Ubuntu 18.04 (bionic)</p>
@@ -162,11 +163,11 @@
             <h3>Equipos Aula 2</h3>
 
             <picture>
-                    <img src="imgs/DiagramaRedAula2.png" alt="Aula 2">
-                    <figcaption>Aula 2</figcaption>
-                </picture>
+                <img src="imgs/DiagramaRedAula2.png" alt="Aula 2">
+                <figcaption>Aula 2</figcaption>
+            </picture>
 
-                <p>Dotación de consellería, inventariados</p>
+            <p>Dotación de consellería, inventariados</p>
             <h4>Software</h4>
             <p>SO: LliureX 19 - Ubuntu 18.04 (bionic)</p>
             <p>Usuarios alumno, profe, tic</p>
@@ -187,6 +188,140 @@
 
         </article>
 
+        <article>
+            <h2>Aula MECA</h2>
+            <p>Cuenta con un SWITCH MikroTik que hace de Router, se comporta como un aula LliureX, pero sin el servidor
+            </p>
+
+            <picture>
+                <img src="imgs/DiagramaMecaTecno.png" alt="Aulas MECA y TECNO">
+                <figcaption>Aulas MECA y TECNO</figcaption>
+            </picture>
+
+            <h3>Equipos MECA</h3>
+            <p>Dotación de ciclos de Consellería</p>
+            <p>Las horas de mantenimiento las tienen administración.</p>
+            <p>Puntualmente tiene incidencias, pero no muchas (que nos lleguen).</p>
+
+            <h4>Software</h4>
+            <ul>
+                <li>SO: Windows 10</li>
+                <li>LibreOffice</li>
+                <li>Suite del SOL (ContaSOL, factuSOL, ...)</li>
+                <li>Un programa de mecanografia viejísimo</li>
+            </ul>
+
+            <div class="todo">
+                <h4>TODO</h4>
+                <ul>
+                    <li>Instalar un control de AULA en esos ordenadores</li>>
+                    <li>Sacarle más provecho al MikroTik</li>
+                </ul>
+            </div>
+
+
+            <h2>AULA TECNO</h2>
+            
+            <p>No es un aula, son equipos que han ido aprovechando de restos para no tener que subir a las aulas de Informática</p>
+            <p>Se encuentran en la red de aulas y su conexión con el SWITCH de la Planta 0 está en en el armario de MECA</p>
+            <p>El ordenador del Gimnasio también tiene su conexión con la red de aulas en el Patch panel de MECA</p>
+            <p>El motivo de todo esto es la Infraestructura del centro mismo a nivel arquitectónico.</p>
+            <p>Cuentan con un AP situado en la pared más cercana al gimnasio. Al cual llegan a través de un pequeño switch.</p>
+            <p>Tienen una instalación DUAL Windows/LinuX.</p>
+
+            <picture>
+                    <img src="imgs/DiagramaTecnoSolo.png" alt="Aula TECNO">
+                    <figcaption>Aula TECNO</figcaption>
+            </picture>
+
+            <div class="todo">
+                    <h4>TODO</h4>
+                    <ul>
+                        <li>Instalar el Armario de comunicaciones</li>
+                        <li>Patchear la pared</li>
+                        <li>Actualizar los equipos</li>
+                        <li>Crear una imagen de la instalación para restaurar</li>
+                        <li>Revisar cables y equipos.</li>
+                        <li>Inventariar de forma correcta los equipos.</li>
+                        <li>Eliminar el switch del AP y realizar una instalación mejor del AP.</li>
+                    </ul>
+            </div>
+
+            <article>
+                <h2>Aula Múltiple</h2>
+
+                <p>Todo por instalar</p>
+
+                <div class="todo">
+                        <h4>TODO</h4>
+                        <ul>
+                            <li>Instalar los equipos, utilizaremos los que queden libres de igualar el aula  1 de Informática</li>
+                            <li>Inventariarlos</li>
+                            <li>Instalar el Software Necesario para Inglés y Tecnlogía.</li>
+                        </ul>
+                </div>
+
+            </article>
+
+
+            <article>
+                <h2>Televisión</h2>
+
+                <p>Cuenta con una raspberry preparada para estar en marcha y proyectar vídeos de la revista.</p>
+                <p>O de lo que se requiera.</p>
+
+                <div class="todo">
+                        <h4>TODO</h4>
+                        <ul>
+                            <li>Instalar la raspberry  y configurarla.</li>
+                            <li>Comprobar que el programa que genera vídeos a partir de páginas Web sigue funcionando.</li>
+                            <li>Establecer un mecanismo de publicación (montaje NFS).</li>
+                        </ul>
+                </div>
+
+            </article>
+
+            
+            <article>
+                <h2>Servidor Impresión</h2>
+
+                <p>Oliplus tiene un servidor que da servicio a las diferentes impresoras con los usuarios que les damos.</p>
+                <p>Usan un LDAP y podrían usar el del modelo de centro si lo pusieramos.</p>
+                <p>El servidor está en la sala de comunicaciones (Detras biblioteca).</p>
+                <ul>
+                    <li>IP OWNCLOUD : 172.29.0.245</li>
+                    <li>IP ControlImpresion : 172.29.0.240</li>
+                    <li>241-244 estan reservadas para ellos (MV)</li>
+                </ul>
+            </article>
+
+
+            <article>
+                <h2>Sala Profes e Impresión</h2>
+
+                <p>Tienen la carpeta de Intranet compartida desde el servidor de AULA 4 por NFS en solo lectura.</p>
+                <p>4 Ordenadores de la red de aulas con las IPs:</p>
+                <ul>
+                    <li>172.29.0.16</li>
+                    <li>172.29.0.17</li>
+                    <li>172.29.0.18</li>
+                    <li>172.29.0.19</li>
+                    <li>172.29.0.20</li>
+                    <li>172.29.0.21</li>
+                </ul>
+
+
+                <div class="todo">
+                        <h4>TODO</h4>
+                        <ul>
+                            <li></li>
+                        </ul>
+                </div>
+
+            </article>
+
+
+        </article>
 
     </main>
     <footer>
