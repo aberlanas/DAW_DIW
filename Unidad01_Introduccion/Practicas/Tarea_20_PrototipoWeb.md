@@ -17,6 +17,8 @@ Algunas propuestas que cuentan con el apoyo del profesor son:
 * Música de Bandas Sonoras.
 * Juegos de Steam de Estrategia.
 
+^_^
+
 En esta tarea comenzaremos por la creación de un prototipo: no es necesario que la web sea **totalmente** funcional, únicamente mostrará algunas secciones para que el cliente pueda ver su diseño (aunque por ahora...).
 
 ## Requisitos del cliente
