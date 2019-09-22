@@ -18,59 +18,170 @@ Cascade Style Sheets
 
 --
 
+```html 
+<style>
 
+  a {
+    border: 1px solid red; 
+  }
 
----
-
-# Guerra de Editores
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dIjKJjzRX_E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-## Procrastinación
-
----
-
-# Manejo de ficheros 
-
-Saber qué estoy haciendo.
-
---
-
-* Plugins y Versiones
-
---
-
-* Lenguajes y Tecnologías
-
---
-
-* FrameWorks
-
---
-
-![Right-aligned image](imgs/thePoint.gif)
+</style>
+```
 
 ---
 
-# Uso de la terminal
+# Uso de `import`
+
+```html 
+
+@import url("miestilo.css");
+
+```
 
 --
 
-## ¡Es nuestra amiga!
+## Enlaces de Interés
+
+* [Mozilla](https://developer.mozilla.org/en-US/docs/Web/Web_Components/HTML_Imports)
+* [W3C](https://w3c.github.io/webcomponents/spec/imports/)
 
 ---
 
-# Control de Versiones 
+# Sintaxis de `import`
 
-.center[![OctoCat](imgs/octocat.gif)]
+```html 
+@import url ; 
+@import url lista-de-media-queries;
+```
 
-## GitHub
+--
+
+## url 
+
+Representa la ubicación del recurso a importar. La url puede ser absoluta o relativa.
+
+## lista-de-media-queries
+
+Es una lista separada por comas de consultas de medios (media query)
 
 ---
 
-# Manos a la obra
+# Ejemplos
 
-![En Construccion](imgs/enConstruccion.gif)
+```html 
+@import 'mustBe.css';
+@import "common.css" screen, projection;
+@import url("imprimirFondoBlanco.css") print;
+@import url("smartTV.css") projection, tv;
+@import url('landscape.css') screen and (orientation:landscape);
 
+```
+
+---
+
+# Media Features
+
+Se trata de información acerca del dispositivo que está siendo usado para mostrar la
+página Web.
+
+Con esa información evaluamos una "expresión"
+
+Veamos algunos ejemplos: 
+
+--
+
+```css
+@media (feature:value){reglas}
+```
+
+--
+
+```css
+@media (feature){reglas}
+```
+
+---
+
+# Ejemplos
+
+```css
+@media (width:600px){reglas}
+```
+
+--
+
+```css
+@media (min-width:600px){reglas}
+```
+
+--
+
+```css
+@media (max-width:1000px){reglas}
+```
+
+--
+
+```css
+@media (min-width:600px){
+  h1 {
+    background: url("miFondo.png");
+  }
+}
+```
+
+--
+
+Lo mismo para `height`
+
+---
+
+# Pixel Ratio 
+
+
+```css
+@media (resolution:1.5dppx){
+  body{
+    background:url("foticoPalAifon.png");
+  }
+}
+```
+
+---
+
+# Pixel Ratio
+
+```css
+body{
+  background:url("fondo-low-res.png");
+}
+
+@media(min-resolution: 1.5dppx){
+  /* Aqui la foto chachi*/
+  body{
+    background:url("fondo-high-res.png");
+    background-size: 100% 100%;
+  }
+}
+
+```
+
+---
+
+# Device Width and height
+
+Esto hace referencia al ViewPort (no al tamaño real de la pantalla).
+
+Si necesitamos acceder a eso tenemos:
+
+```css
+@media (device-width:1000px){reglas}
+@media (device-heigth:1000px){reglas}
+```
+
+---
+
+# Orientación 
 
 
 
