@@ -26,7 +26,7 @@ PD_PATH="ProgramacionDidactica"
 # UD : Nombres de las Unidades
 
 UD01_NAME="Unidad01_Introduccion"
-UD02_NAME="Unidad02-HTML5"
+UD02_NAME="Unidad02_CSS"
 UD03_NAME="Unidad03-CSS3"
 
 #
@@ -139,13 +139,13 @@ make_UD01(){
 make_UD02(){
 
     cd ${UD02_NAME}
-    make_teoria ${UD02_NAME}
+    #make_teoria ${UD02_NAME}
+    cd Practicas
     make_practicas ${UD02_NAME}
     cd ..
-  
-    # Guias del tema
-    make_guia_ubuntu_bionic
-    make_guia_xubuntu_bionic
+    cd ..
+
+
 
     move_pdfs ${UD02_NAME}
 }
