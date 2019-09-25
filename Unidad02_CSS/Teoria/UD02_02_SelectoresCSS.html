@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DIW : Presentación </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="diwstyle.css">
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# UD02 - CSS - Variables y Selectores
+
+---
+
+# Variables
+
+Veamos como funcionan las variables en CSS.
+
+--
+
+La idea es mantener siempre las reglas *KISS*
+
+--
+
+```css 
+
+:root{
+  --main-bg-color:darkgrey;
+}
+
+/*STUFF HERE*/
+
+a{
+  color : var(--main-bg-color);
+}
+```
+
+---
+
+# Selectores
+
+--- 
+
+## Selectores
+
+Se trata del corazón de CSS. Una de las partes más *complejas* de los CSS.
+
+--
+
+```html
+<ul>
+  <li><a href="google.co.uk" lang="en-GB" rel="Search Engine"> Google UK</a></li>
+  <li><a href="google.es" lang="es-ES" rel="Buscador"> Google ES</a></li>
+  <li><a href="google.fr" lang="fr-FR" rel="Un Francés"> Google FR</a></li>
+</ul>
+```
+--
+
+```css 
+  a[rel]{
+    border: 1px solid red; 
+  }
+```
+---
+
+# Usos de los Selectores
+
+**Matching exacto**
+
+```css
+a[rel='Un Francés']{
+  color:blue;
+}
+```
+
+--
+
+**Matching contains**
+
+--
+
+```css
+a[rel~='Buscador']{
+  color:blue;
+}
+```
+
+--
+
+**Language Attribute Selector*
+
+--
+
+```css
+a[lang|='es-ES']{
+  background-color:yellow;
+}
+```
+
+Ha de estar al lado de unas comillas.
+---
+
+# ¿Y CSS 3?
+
+--
+
+## Beginning Substring Attribute Value Selector
+
+--
+
+```css
+E[attr^='value']{...}
+```
+
+--
+
+```html
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<!--
+  STUFF HERE
+-->
+</head>
+<body>
+<ul>
+  <li><a href="google.co.uk" lang="en-GB" rel="Search Engine"> Google UK</a></li>
+  <li><a href="google.es" lang="es-ES" rel="Buscador"> Google ES</a></li>
+  <li><a href="google.fr" lang="fr-FR" rel="Un Francés"> Google FR</a></li>
+</ul>
+</body>
+```
+
+--
+
+```css
+a[href^="goo"]{
+  font-family: 'Open Sans', sans-serif;
+}
+```
+---
+
+# ¡Practicamos!
+
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
