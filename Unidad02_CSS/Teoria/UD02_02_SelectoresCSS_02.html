@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DIW : Presentación </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="diwstyle.css">
+</head>
+
+<body>
+    <textarea id="source">
+
+class: center, middle
+
+# UD02 - CSS - Selectores e Hijos
+
+---
+
+# Selectores (Continuación)
+
+
+--
+
+## Ending Substring Attribute Value Selector
+
+--
+
+```css
+E[attr$='value']{...}
+```
+
+--
+
+```css
+a[href$="co.uk"]{
+  font-family: Verdana, sans-serif;
+}
+```
+
+
+---
+
+## Contains Substring Attribute Value Selector
+
+--
+
+```css
+E[attr*='value']{...}
+```
+
+--
+
+```css
+a[href*="google"]{
+  font-family: Impact, sans-serif;
+}
+```
+---
+
+# Hijos y posición
+
+
+```html
+<body>
+
+  <h1>Titular de la Noticia</h1>
+  <h2>Primer encabezado</h2>
+  <p>TEXTO</p>
+  <h2>Segundo encabezado</h2>
+  <p>MAS TEXTO</p>
+  <div>Fotito
+    <h2>Tercer encabezado</h2>
+  </div>
+</body>
+```
+
+--
+
+```css
+/*Viejo Selector : +*/
+h1 + h2 {
+  border: 1px solid blue;
+}
+```
+
+--
+
+```css
+/*Nuevo Selector : ~*/
+h1 ~ h2 {
+  border: 1px solid green;
+}
+```
+---
+
+# Pseudo-Elementos 
+
+## Primera línea del texto de un elemento
+
+```css
+E::first-line{...}
+```
+--
+```css
+E::first-letter{...}
+```
+--
+```css
+E::before{...}
+```
+--
+```css
+E::after{...}
+```
+--
+```css
+E::selection{...}
+```
+---
+
+# + Pseudo-Elementos
+
+```css
+elemento:nth-child(numero){...}
+```
+--
+```css
+elemento:nth-last-child(numero){...}
+```
+--
+```css
+elemento:empty{...}
+```
+--
+```css
+elemento:first-child(numero){...}
+```
+--
+```css
+elemento:last-child(numero){...}
+```
+--
+```css
+elemento:nth-of-type(numero){...}
+```
+--
+```css
+elemento:nth-last-of-type(numero){...}
+```
+
+---
+
+# NOT 
+
+```css
+:not(p){...}
+```
+--
+
+# ¡Practicamos!
+
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+        var slideshow = remark.create();
+    </script>
+</body>
+
+</html>
