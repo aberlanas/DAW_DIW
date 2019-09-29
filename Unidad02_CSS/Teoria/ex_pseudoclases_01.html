@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejemplos Pseudo Selectores</title>
+		<style>
+
+			#my_id:target{
+				font-weight:bold;
+			}
+
+			div{
+				display:table-cell;
+				width:100px;
+				height:100px;
+				border: 1px solid green;
+				text-align:center;
+			}
+
+			div:empty{
+				background: lime;
+			}
+		</style>
+	</head>
+	<body>
+		<h2> Esto es un ejemplo de Target </h2>
+			<p> Primer párrafo </p>
+			<p id="my_id"> Segundo párrafo </p>
+			<p> Tercer párrafo </p>
+			<a href="#my_id"> Enlace al segundo párrafo </a>
+
+		<br>
+
+		<h2> Esto es un ejemplo de Empty </h2>
+		<div> Primer div </div>
+		<div></div>
+		<div> Tercer div </div>
+
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejemplos Pseudo Selectores en la UI</title>
+		<style>
+			input[type='text']{
+				font-family:"sans-serif";
+
+			}
+
+			input[type='text']:required{
+				font-style:italic;
+
+			}
+			legend{
+				font-family:"sans-serif";
+			}
+			input[type='text']:valid{
+				background-color:lime;
+			}
+			input[type='text']:invalid{
+				background-color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<h2> Ejemplo de Formulario </h2>
+
+		<form>
+			<fieldset>
+				<legend> Formulario de Inscripción </legend>
+				<input type="text" name="nick" required placeholder="Tu Nickname" pattern="[a-zA-Z]+">
+				<input type="text" name="nombre" placeholder="Tu Nombre">
+			</fieldset>
+		</form>
+
+	</body>
+</html>
