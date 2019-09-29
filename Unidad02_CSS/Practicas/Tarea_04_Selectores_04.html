@@ -23,7 +23,7 @@
             <legend>Creación de Personaje</legend>
             <div>
                 <label for="nombre">Nombre del Personaje</label>
-                <input id="nombre" type="text" name="nombre" placeholder="Nombre del Personaje">
+                <input id="nombre" type="text" name="nombre" placeholder="Nombre del Personaje" pattern="[a-zA-Z]+">
             </div>
             <div>
                 <label for="profesion">Profesión</label>
@@ -34,6 +34,21 @@
                 <option value="conductor">Conductor</option>
               </select>
             </div>
+            <div>
+                <label for="puntosCordura">Puntos de Cordura</label>
+                <input id="puntosCordura" type="number" min="1" max="100" value="50" > 
+            </div>
+            <div>
+                <label for="dificultad">Dificultad extra</label>
+                <input id="dificultad" type="checkbox" value="dificultadExtra">
+            </div>
+            <div>
+                <input type="submit" value="Crear Personaje" name="submit">
+            </div>
+            <div>
+                <p>Algunos campos son obligatorios, como por ejemplo <a href="#nombre"> el nombre</a>, por favor, revísalos.</p>
+            </div>
+
         </fieldset>
     </form>
 </body>
