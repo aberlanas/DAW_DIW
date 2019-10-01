@@ -12,182 +12,90 @@
 
 class: center, middle
 
-# UD02 - CSS - DISPLAYS
+# UD02 - CSS - POSITION y DISPLAYS
+
+---
+
+# Position
+
+--
+
+## static
+
+Element displays on the page in the order it appeared in the document. Top, right, bottom, left, and z-index properties have no effect when used with static. Not stackable due to z-index restriction.
+
+--
+
+## relative 
+
+Similar to static but able to be offset by top, right, bottom, left, and z-index properties.
+
+--
+
+## absolute 
+
+Element positioned relative to its first non-static ancestor element. Similar to relative in that it may be offset by top, right, bottom, left, and z-index properties.
+
+--
+
+## fixed
+
+Similar to absolute, but positioned relative to the browser window. Scrolling will not move this element.
+
+--
+
+## sticky
+
+Element is positioned relative until a specified offset position is met by scrolling, then the element is positioned ‘fixed’ in that position on the scrolling element.
 
 ---
 
 # Displays
 
-
 --
 
-## Diferentes tipos de display
-
---
-
-```css
-E + F {.....} /*Adyacente*/
-E ~ F {.....} /*General*/
-```
-
---
-
-Ejemplo
-
-```css
-h2 + p { color: red}
-h2 ~ p { font-family: Impact }
-```
-
---
-
-```html
-<h2> Algunos ejemplos </h2>
-<p> Primer párrafo</p>
-<p> Segundo párrafo</p>
-
-```
---
-
-![General Sibling](imgs/generalSibling_01.png)
-
----
-
-# Otras Pseudo-Clases
+Sobreescribe la caja de dibujado que se utiliza en el motor de renderizado.
 
 --
 
 ```css
-E:target{...}
+E { display:none}
 ```
-
 --
+
 ```css
-E:empty{...}
+E { visibility:hidden}
 ```
 
 --
 
 ```css
-E:root{...}
+E { display:inline}
+```
+--
+
+```css
+E { display:block}
+```
+--
+
+```css
+E { display:inline-block}
 ```
 
 ---
 
-# Estados de elementos de la UI
+# Float
 
-## Checked
+While float defaults to none, setting this property to left or right ‘floats’ an element to the left or right of a container respectively, wrapping the rest of the content around it.
 
-```css
-E:checked{...}
-```
---
-```css
-input[type='checkbox']:checked{font-family:"Impact"}
-```
----
-# Estados de elementos de la UI
-## Disabled
+Consider an inline element such as an <img> nested within a <p>. Setting the float value to ‘left’ will put the image on the left side & the text to the right, wrapping to the full line below where the image ends.
 
-```css
-E:disabled{...}
-```
---
-```css
-input[type='text']:disabled{background:grey}
-```
----
-# Estados de elementos de la UI
-
-## Enabled
-```css
-E:enabled{...}
-```
---
-```css
-input[type='text']:enabled{background:yellowgreen}
-```
----
-# Estados de elementos de la UI
-
-## Required
-```css
-E:required{...}
-```
-
---
-
-```css
-input[type="text"]:required{font-style:italic}
-```
-
---
-
-![General UI](imgs/general_ui_01.png)
----
-# Estados de elementos de la UI
-
-## Optional
-```css
-E:optional{....}
-```
---
-```css
-input[type="checkbox"]:optional{color:green}
-```
----
-# Estados de elementos de la UI
-
-## Valid
-```css
-E:valid{....}
-```
---
-```css
-input[type="text"]:valid{background-color:green}
-```
----
-# Estados de elementos de la UI
-
-## Invalid
-```css
-E:invalid{....}
-```
---
-```css
-input[type="text"]:invalid{color:red}
-```
-
---
-
-![General UI 02](imgs/general_ui_02.png)
+Setting a clear property on another element (such as a <p> near a floated <img>) will disallow floating on one or both sides.
 
 ---
-# Estados de elementos de la UI
 
-## In Range
-```css
-E:in-range{....}
-```
---
-```css
-input[type="text"]:in-range{background-color:green}
-```
---
-## Out of Range
-```css
-E:out-of-range{....}
-```
---
-```css
-input[type="text"]:out-of-range{background-color:red}
-```
----
-
-# ¡Practicamos!
-
-![meme](imgs/meme.jpg)
-
+# Practicamos
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
