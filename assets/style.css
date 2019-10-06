@@ -1,12 +1,8 @@
-/*
-  Oh Hello!
-  These are some base styles so that our tutorial looks good.
-  Let's go through the important bits real quick
-*/
-
+/*Colores*/
 :root {
     --yellow: #ffc600;
     --black: #272727;
+    --grey: #A1A1A1;
 }
 
 html {
