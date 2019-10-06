@@ -14,7 +14,12 @@ En tu repositorio, crea una carpeta que se llame: `UD02` y dentro de ella la car
 
 Rellena el CSS para que el resultado final sea el de la imágen.
 
-Cuando el ancho sea menor de 700px, entonces debe tener el aspecto de la imágen.
+Utiliza el `display:grid` para resolverlo.
+
+Un comportamiento que tal vez no se aprecie en la imágen es que cuando nos situemos por encima de los números, ha de aparecer un borde de 10px negro alrededor tanto del número como del nombre del Dios Primigenio.
+
+![Explicacion](imgs/Tarea06_Explain_01.png)
+\
 
 Se valorará el uso de *Selectores* y *Variables*.
 
@@ -25,10 +30,6 @@ Se valorará el uso de *Selectores* y *Variables*.
 
 ### Después
 
-![Despues](imgs/Tarea06_ENDM.png)
-\
-
-### Después (>700px)
-
 ![Despues](imgs/Tarea06_END.png)
 \
+
