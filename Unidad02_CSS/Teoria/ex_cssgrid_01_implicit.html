@@ -14,20 +14,42 @@
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+    <div class="item">13</div>
+    <div class="item">14</div>
+    <div class="item">15</div>
+    <div class="item">16</div>
+    <div class="item item17">17</div>
+    <div class="item item18">18</div>
+    <div class="item">19</div>
+    <div class="item">20</div>
+    <div class="item item21">21</div>
+    <div class="item">22</div>
+
+ 
+
   </div>
 
   <style>
     .container {
       display: grid;
       grid-gap:20px;
-      /* Explicit */	      
-      grid-template-columns: 200px 400px;
-      grid-template-rows: 50px 100px;
-      /* Implicit  */
-      grid-auto-rows:100px;
-      grid-auto-columns:100px;
-
-    }
+      grid-template-columns: repeat(2, 100px 1fr) ;
+      grid-template-rows: repeat(6, 1fr);
+      grid-auto-rows: 1fr;
+      }
+      .item18{
+        
+        grid-column-end: span 5;
+        
+      }
   </style>
 </body>
 
