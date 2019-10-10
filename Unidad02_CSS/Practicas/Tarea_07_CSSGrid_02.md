@@ -6,7 +6,9 @@ lang: es-ES
 keywords: [DAW,DIW]
 ---
 
-# Tarea: CSS Grid - 1
+# Tarea: CSS Grid - 02
+
+Tintin y los horrores de Lovecraft.
 
 ## Ejercicio 07
 
@@ -14,7 +16,9 @@ En tu repositorio, crea una carpeta que se llame: `UD02` y dentro de ella la car
 
 Rellena el CSS para que el resultado final sea el de la imágen.
 
-Utiliza el `display:grid` para resolverlo.
+## Algunas pistas
+
+Utiliza el `display:grid` para resolverlo.*Pueden hacerte falta más de uno para resolverlo*. **FlexBox** también puede ser utilizado, aunque no lo recomiendo igualmente.
 
 Un comportamiento que tal vez no se aprecie es que cuando hacemos click en un enlace de la zona de navegación, debe aplicar un borde verde a la portada que hace referencia.
 

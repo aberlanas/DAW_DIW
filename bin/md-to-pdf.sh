@@ -7,6 +7,7 @@ mkdir -p PDFS
 
 RED='\033[0;31m'
 GREEN="\033[0;32m"
+YELLOW="\e[43m"
 NC='\033[0m' # No Color
 
 TEMPLATE_TEX="../rsrc/templates/temas-tpl.latex"
@@ -36,9 +37,15 @@ UD03_NAME="Unidad03-CSS3"
 say_ok(){
     echo -e " * [ ${GREEN}OK${NC} ] : $1"
 }
+
 say_error(){
     echo -e " * [ ${RED}Error${NC} ] : $1"
 }
+
+say_working(){
+    echo -e " * [ ${YELLOW}Working${NC} ] : $1"
+}
+
 
 say_file(){
 
@@ -68,9 +75,9 @@ make_practicas(){
     NUMP=1
     for ejer in $(ls -1 Tarea_*.md ); do 
         NUM=$(echo $ejer | cut -d "_" -f2 | cut -d "." -f1)
-	    NOMBRE=$(echo $ejer | cut -d "_" -f3 | cut -d "." -f1)
+	NOMBRE=$(echo $ejer | cut -d "_" -f 3- | cut -d "." -f1)
+	say_working "Tarea $NUMP : $NOMBRE"
         pandoc --template ${TEMPLATE_TEX_TAREAS} ${PANDOC_OPTIONS} -o ${PDF_PATH}/${UDPRACTICAS}_Tarea_"${NUMP}"_"${NOMBRE}".pdf $ejer
-        say_file ${PDF_PATH}/${UDPRACTICAS}_Tarea_${NUMP}_${NOMBRE}.pdf
         let NUMP=NUMP+1
     done
 
@@ -93,12 +100,14 @@ make_anexos(){
     }
 
 move_pdfs(){
-    UDNAME=$1
 
+    UDNAME=$1
     mkdir -p PDFS/${UDNAME}
     mv PDFS/*.pdf PDFS/${UDNAME}/
-
     say_ok "PDFS generados en : PDFS/${UDNAME}/"
+    for f in $(find PDFS/${UDNAME}/ -name "*.pdf"); do 
+	say_ok "$(readlink -f $f)"
+    done
 }
 
 #
