@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    background-image: url("./topography.svg"), linear-gradient(110deg, #f93d66, #6d47d9);
+    background-image: url("./topography.svg"), linear-gradient(110deg, #06be34, #6d47d9);
     background-size: 340px, auto;
     min-height: calc(100vh - 100px);
     margin: 50px;
