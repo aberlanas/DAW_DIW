@@ -1,0 +1,27 @@
+#+TITLE: UD02 - Transiciones CSS
+#+AUTHOR: Angel Berlanas
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+* Transiciones CSS 
+
+** ¿Qué son las transiciones CSS?
+
+La manera más sencilla de animar elementos del DOM es utilizando Transiciones CSS. 
+En esta unidad veremos como funcionan estas transiciones CSS y como utilizarlas en 
+nuestras páginas web.
+
+** Propiedades
+
+A continuación vamos a ver las diferentes propiedades que puede tener una transición 
+CSS, tener en cuenta que muchos de los conceptos que se vean aquí se *re-aprovecharán* en 
+las *Animaciones CSS*.
+
+*** transition-property
+
+
+*** transition-duration
+
+*** transition-timing-function
+
+*** transition-delay
+
