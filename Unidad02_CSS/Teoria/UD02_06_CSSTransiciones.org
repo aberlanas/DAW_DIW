@@ -174,8 +174,28 @@ transform: translateX(50%);
      ejemplo : /rápido-lento-rápido/, deberemos ~programar~ nuestra propia
      animación haciendo uso de las ~curvas-bezier~.
 
+     Esto lo veremos más adelante en esta unidad, pero ahora vamos a realizar
+     unos ejercicios para afianzar lo aprendido.
 
+*** Ejercicio 10
+ 
+    Utilizando el código fuente suministrado, crear o realizar los 
+    cambios corriespondientes en los ficheros :
 
+    + base.css
+    + script.js
+
+    Para que los diferentes Cthulhus transicionen con los diferentes valores
+    vistos hasta ahora al pulsar el botón.
+
+**** SubMisión 01: 
+
+     El código asociado a las clases ~css~: ease, ease-in, ease-out,
+     ease-in-out, tan solo se compone de 1 línea.
+
+**** SubMisión 02:
+     
+     El código JS es tan solo una línea de código, sin ~;~
 
 *** cubic-bezier
 
