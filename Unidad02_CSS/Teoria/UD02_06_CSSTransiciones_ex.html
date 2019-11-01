@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+
+  <title>UD 02 - CSS - Transiciones</title>
+  <meta name="description" content="Ejemplos de Transiciones">
+  <meta name="author" content="Angel Berlanas Vicente">
+
+  <style>
+
+    .transicionable{
+     /* Colocaremos el objeto a la izquierda */
+     float:left;
+
+     transition-property: background-color;
+     transition-duration: 1s;
+    transition-timing-function:linear;
+
+    background-color: blue;
+     }
+
+     .transicionable:hover{
+
+     background-color: #FABADA;
+     
+     }
+    
+    </style>
+
+</head>
+
+<body>
+
+  <div class="transicionable">
+    Angel dice que mola
+    </div>
+  
+</body>
+</html>

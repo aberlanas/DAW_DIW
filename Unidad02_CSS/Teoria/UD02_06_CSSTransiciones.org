@@ -19,9 +19,181 @@ las *Animaciones CSS*.
 *** transition-property
 
 
+Se trata de la propiedad que vamos a transicionar, o que va a cambiar en la
+transición, ya sea el ~background-color~ o ~width~. 
+
+#+NAME: transition-property
+#+BEGIN_SRC css
+
+.transicionable{
+     transition-property: background-color;
+}
+
+.transicionado{
+     background-color: #FABADA;
+}
+
+#+END_SRC 
+
+Cuando a un elemento del DOM que tenga la clase ~transicionable~ se le aplique
+la clase ~transicionado~ el color de fondo del elemento cambiará.
+
+Los siguientes atributos se encargan de modificar /cómo/ se realizará ese cambio
+de las propiedades que /transicionan/.
+
 *** transition-duration
+
+Esta propiedad indica el número de segundos (~s~) que dura la transición. Se
+trata de un parámetro *requerido* si usamos la propiedad combinada (ver más
+adelante).
+
+#+NAME: transition-property
+#+BEGIN_SRC css
+
+.transicionable{
+     transition-property: background-color;
+     transition-duration: 2s;
+}
+
+.transicionado{
+     background-color: #FABADA;
+}
+
+#+END_SRC 
 
 *** transition-timing-function
 
+
+Uno de los conceptos más complicados y que merecen más explicación, no es
+sencillo de explicar, pero intentaremos acercarnos lo más posible.
+
+#+NAME: transition-property
+#+BEGIN_SRC css
+
+.transicionable{
+
+     background-color: blue;
+
+     transition-property: background-color;
+     transition-duration: 2s;
+     transition-timing-function: linear; 
+}
+
+.transicionable:hover{
+     background-color: #FABADA;
+}
+
+#+END_SRC 
+
+En este caso, lo que ocurre es que cambia el color de manera /constante/ a lo
+largo de los dos segundos que dura la transición. Si lo reproducís en vuestro
+navegador, previo paso de crear los ficheros necesarios, vereis como al poner
+encima el cursor del elemento, va cambiando de color de manera constante hasta
+llegar al color ~#FABADA~.
+
+Esto en los cambios de color no se aprecia tanto, pero vamos a ver ahora una
+transición un pelín diferente, un cambio de posición respecto a la posición en
+*X*. 
+
+La modificación de la /velocidad/ de transición nos permite dar efectos con más
+presencia en la naturaleza, lo que hace que la experiencia del usuario sea más
+confortable al ser más /cercana a la realidad/. Un ejemplo de esto es que si
+tenemos que desplazar un elemento desde una posición a otra en una ventana, el
+usuario verá más /natural/ que el movimiento comience lento, acelere y luego
+frene al llegar a su destino, de la misma manera que lo hacemos nosotros y
+podemos observarlo en el mundo real.
+
+Para much@s esta diferencia es muy sutil, pero puede ser la diferencia entre un
+diseño muy bueno y otro excelente.
+
+#+CAPTION: El diseño según Dilbert
+#+NAME: fig: Dilbert_001
+[[file:./imgs/dilbert_disenyo.png]]
+
+
+Para abordar con éxito el ejemplo presentaremos dos conceptos que ayudarán a
+comprenderlo mejor.
+
+ - transition: transform;
+ - transform: translateX(Npx);
+
+*** transform
+ 
+     Es una propiedad ~css~ que nos permite modificar el espacio de coordenadas
+     del modelo de formato visual CSS. Usándola, los elementos pueden ser
+     trasladados, rotados, escalados o sesgados de acuerdo a los valores
+     establecidos
+
+     Se trata de una de las propiedades más usadas en las las transiciones y
+     animaciones, ya que nos permite mover los elementos a diferentes puntos de
+     la ventana desde el CSS.
+
+     ~transform~ presenta muchas posibilidades, pero para este ejemplo nos
+     centraremos en una muy sencilla: ~translateX~.
+
+*** translateX
+
+     Esta transformación /reposiciona/ un elemento horizontalmente en un plano
+     2D. Veremos algunos ejemplos de esto más adelante.
+
+     #+NAME: transform-translateX
+     #+BEGIN_SRC css
+/* <length-percentage> values */
+transform: translateX(200px);
+transform: translateX(50%);
+     #+END_SRC
+
+     Esto desplazará el objeto ~200px~ hacia la derecha y en el caso de la segunda
+     opción lo trasladará la mitad de la pantalla.
+
+     Una vez explicadas estas dos propiedades, continuamos con la explicación de
+     las diferentes formas de /animar/ una transición. Volvamos a
+     *transition-timing-function*.
+
+*** Diferentes valores para transition-timing-function
+
+**** ease-out
+
+     Representa el efecto de ir deteniéndose paulatinamente antes de llegar al
+     destino, como si se acabara el impulso.
+
+**** ease-in
+
+     En este caso la animación /acelerará/ hasta llegar a una velocidad de
+     crucero y acabará la animación a esa velocidad.
+
+**** ease-in-out
+
+     Una combinación de ambas, representa el inicio lento, acelerar, y luego
+     frenar cuando esté cerca del final.
+
+**** cubic-bezier
+
+     Si las combinaciones anteriores no acaban de ajustarse al efecto que
+     necesitamos, o sencillamente se nos pide que sea de otra manera, por
+     ejemplo : /rápido-lento-rápido/, deberemos ~programar~ nuestra propia
+     animación haciendo uso de las ~curvas-bezier~.
+
+
+
+
+*** cubic-bezier
+
+    Las curvas bezier, 
+
+
+
 *** transition-delay
 
+#+NAME: transition-property
+#+BEGIN_SRC css
+
+.transicionable{
+     transition-property: background-color;
+}
+
+.transicionado{
+     background-color: #FABADA;
+}
+
+#+END_SRC 
