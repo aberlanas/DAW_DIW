@@ -177,8 +177,7 @@ transform: translateX(50%);
      Esto lo veremos más adelante en esta unidad, pero ahora vamos a realizar
      unos ejercicios para afianzar lo aprendido.
 
-
-*** Ejercicio 10
+*** Ejercicio 10: Ejemplos transiciones
  
     Utilizando el código fuente suministrado, crear o realizar los 
     cambios corriespondientes en los ficheros :
@@ -212,7 +211,6 @@ transform: translateX(50%);
      utilizar las funciones lambda.
 
 
-
 *** cubic-bezier
 
     Las curvas bezier, es una notación que se utilizan en multitud de programas
@@ -229,7 +227,7 @@ transform: translateX(50%);
     
     Esto nos permite crear animaciones mucho más personalizadas.
     
-*** Ejercicio 11
+*** Ejercicio 11: Usando cubic-bezier
 
     Utilizando el código fuente del ejercicio anterior, sustituye las palabras
     clave de la transición: ~ease,ease-in,ease-out,ease-in-out y linear~ por una
@@ -300,4 +298,45 @@ transform: translateX(50%);
 #+END_SRC 
 
 
-*** Ejercicio 12 : Cuadrados
+\newpage
+*** Ejercicio 12 : Restaurando pergaminos
+
+    En el antiguo Egipto se le rendia culto a /Sedefkar/ un sacerdote que según
+    cuenta la leyenda, era capaz de invocar a peligrosas  criaturas que
+    realizaban pequeñas tareas para mantener el inmenso poder de /Sedefkar/.
+
+    #+CAPTION: Ejercicio 12 - Restaurando el pergamino
+    #+NAME:   fig:restaurandoElPergamino
+    #+attr_latex: :width 200px :placement [!h]
+    [[./imgs/pergamino.jpg]]
+
+    En las últimas semanas se ha encontrado un pergamino que contiene una
+    plantilla que puede usarse para volver a invocar a los /Seres de Sedefkar/.
+
+    Sin embargo el tiempo ha hecho mella en el pergamino y se han perdido
+    fragmentos de los otros dos pergaminos a los que hace referencia ese pergamino, uno escrito en
+    la lengua de los antiguos Dioses (~JS~) y otro pertenciente a la /Casta/
+    /Sacerdotal de Sedefkar/ (~CSS~).
+
+**** Tareas:
+
+    Se pide a los investigadores que recompongan los pergaminos, sabiendo lo
+    debe pasar con los seres invocados.
+
+    * Cuando se pulse el botón, debe aparecer una ~caja~. Esta se encuentra en un
+     estado latente, esperando. 
+    * Si se pulsa sobre la ~caja~, esta /despierta/, moviendose hacia la
+     izquierda hasta situarse sobre otra caja (si la hubiera) y cambia su color.
+    * Si se vuelve a pulsar sobre esa caja, vuelve a la posición anterior y
+     recupera su color anterior, pero ahora, está a punto de mostrar su
+     verdadero poder.
+    * Si volvemos a pulsar sobre la ~caja~, aparece un /Ser de Sedefkar/ y queda
+     a la espera, ahora si pasamos el ratón sobre la caja, esta cambia de
+     tamaño, para indicar el poder latente que queda en el interior.
+
+     
+    #+CAPTION: Ejercicio 12 - Restaurando el pergamino
+    #+NAME:   fig:restaurandoElPergamino
+    #+attr_html: :width 100%
+    #+attr_latex: :placement [!h]
+    [[./imgs/Tarea_12.png]]

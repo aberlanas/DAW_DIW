@@ -6,9 +6,11 @@ body{
 container{
     margin: 1rem;
     display: grid;
-    grid-template-rows: repeat(4, 100px);
-    grid-template-columns: repeat(5, 100px);
-    grid-gap:10px;
+    /* 
+ 
+    ^(;,;)^ : Fragmento perdido
+
+   */
 }
 
 button{
@@ -19,31 +21,45 @@ button{
 box{
     background-color: #1e0;
     border:3px solid #AABBAA;
-    transition-property: background-color background-image transform;
-    transition-duration: 0.5s;
+    /* 
+ 
+    ^(;,;)^ : Fragmento perdido
 
+   */
     border-radius: 10px;
 }
 
 .evoluciona{
     background-color: #e10;
-    transition-property: transform;
-    transform: translateX(110px);
+    /* 
+ 
+    ^(;,;)^ : Fragmento perdido
+
+   */
 }
 
 .desevoluciona{
     background-color: #10e;
-    transition-property: transform;
-    transform: translateX(-110px);
+        /* 
+ 
+    ^(;,;)^ : Fragmento perdido
+
+   */
 }
 
 .ultimate{
     background-color: #441155;
-    background-image: url("imgs/cthulhu.svg");
-    background-repeat: no-repeat;
-    background-size: 100px;
+    /* 
+ 
+    ^(;,;)^ : Fragmento perdido
+
+   */
 }
 
 .ultimate:hover{
-    transform: scale(1.2);
+    /* 
+ 
+    ^(;,;)^ : Fragmento perdido
+
+   */
 }
