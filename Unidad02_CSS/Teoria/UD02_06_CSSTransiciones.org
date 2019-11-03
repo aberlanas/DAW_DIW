@@ -192,14 +192,15 @@ transform: translateX(50%);
     #+CAPTION: Ejercicio 10 : Inicio 
     #+NAME:   fig:Tarea10_1
     #+attr_html: :width 100px
-    #+attr_latex: :width 100px :placement [!htpb]
+    #+attr_latex: :width 100px :placement [!h]
 [[./imgs/Tarea_10_1.png]]
 
     #+CAPTION: Ejercicio 10 : Fin
     #+NAME:   fig:Tarea10_2
     #+attr_html: :width 100px
-    #+attr_latex: :width 100px :placement [!htpb]
+    #+attr_latex: :width 100px :placement [!h]
     [[./imgs/Tarea_10_2.png]]
+
 **** SubMisión 01: 
 
      El código asociado a las clases ~css~: ease, ease-in, ease-out,
@@ -214,23 +215,89 @@ transform: translateX(50%);
 
 *** cubic-bezier
 
-    Las curvas bezier, 
+    Las curvas bezier, es una notación que se utilizan en multitud de programas
+    de diseño 3D y 2D como el AutoCAD o Gimp que indican como se deben modificar
+    unas curvas para adaptarse a una determinada función.
 
+    No es /relevante/ que seamos capaces de crear nosotros los números que
+    forman la función /bezier/ de manera manual, para ello contamos las
+    /herramientas de developers/ en los navegadores que nos permiten crear
+    nuestras /curvas bezier/ de forma gráfica.
+
+    [[https://developer.mozilla.org/es/docs/Web/CSS/Herramientas/Cubic_Bezier_Generator]]
 
     
+    Esto nos permite crear animaciones mucho más personalizadas.
     
+*** Ejercicio 11
+
+    Utilizando el código fuente del ejercicio anterior, sustituye las palabras
+    clave de la transición: ~ease,ease-in,ease-out,ease-in-out y linear~ por una
+    llamada a la función ~cubic-bezier~ manteniendo la misma *UX (/User
+    Expierence/ )*.
+
+*** Transicionando 2 o más propriedades
+
+    Podemos /transicionar/ 2 (o más) propiedades ~CSS~ separandolas mediante una
+    coma (~,~), en la propiedad ~transition~ o ~transition-property~.
+
+    #+NAME: transicionado2
+    #+BEGIN_SRC css
+.selector {
+  transition: background-color 1s ease-out,
+              color 1s ease-out;
+
+  /* O tambien */
+  transition-property: background, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+    #+END_SRC
     
+    Podemos vernos tentandos de hacer lo siguiente:
+
+#+NAME: transicionandoAll
+#+BEGIN_SRC css
+/* NUNCA HAGAIS ESTO */
+.selector {
+  transition-property: all
+}
+
+/* ESTO ESTA BIEN */
+.selector {
+  transition-property: background-color, color, transform;
+}
+
+#+END_SRC
+
+    Esto es debido a que tendrá un impacto /muy negativo/ en el rendimiento de
+    las transiciones, al igual que pasa con las excepciones de ~try-catch~ en
+    Java, cuanto más cerca estés del /problema/, más fácilmente el motor genera
+    el código adecuado y es capaz de trabajar con la transición (/o la
+    excepción,.../).
+
+    #+CAPTION: Como hacer las transiciones 
+    #+NAME:   fig:transitionPropertyMeme
+    #+attr_html: :width 100%
+    #+attr_latex: :placement [!h]
+    [[./imgs/transitionPropertyMeme.jpg]]
+   
+
 *** transition-delay
+
+    Por último la propiedad ~transition-delay~ nos permite especificar un tiempo
+    de espera para realizar la transición /después/ de que el cambio haya sido
+    realizado en el código.
+
 
 #+NAME: transition-property
 #+BEGIN_SRC css
 
 .transicionable{
-     transition-property: background-color;
-}
-
-.transicionado{
-     background-color: #FABADA;
+     transition-delay: 1s;
 }
 
 #+END_SRC 
+
+
+*** Ejercicio 12 : Cuadrados
