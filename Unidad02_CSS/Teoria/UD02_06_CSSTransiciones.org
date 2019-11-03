@@ -177,6 +177,7 @@ transform: translateX(50%);
      Esto lo veremos más adelante en esta unidad, pero ahora vamos a realizar
      unos ejercicios para afianzar lo aprendido.
 
+
 *** Ejercicio 10
  
     Utilizando el código fuente suministrado, crear o realizar los 
@@ -188,6 +189,17 @@ transform: translateX(50%);
     Para que los diferentes Cthulhus transicionen con los diferentes valores
     vistos hasta ahora al pulsar el botón.
 
+    #+CAPTION: Ejercicio 10 : Inicio 
+    #+NAME:   fig:Tarea10_1
+    #+attr_html: :width 100px
+    #+attr_latex: :width 100px :placement [!htpb]
+[[./imgs/Tarea_10_1.png]]
+
+    #+CAPTION: Ejercicio 10 : Fin
+    #+NAME:   fig:Tarea10_2
+    #+attr_html: :width 100px
+    #+attr_latex: :width 100px :placement [!htpb]
+    [[./imgs/Tarea_10_2.png]]
 **** SubMisión 01: 
 
      El código asociado a las clases ~css~: ease, ease-in, ease-out,
@@ -195,14 +207,19 @@ transform: translateX(50%);
 
 **** SubMisión 02:
      
-     El código JS es tan solo una línea de código, sin ~;~
+     El código JS es tan solo una línea de código, sin ~;~. Para ello, se puede
+     utilizar las funciones lambda.
+
+
 
 *** cubic-bezier
 
     Las curvas bezier, 
 
 
-
+    
+    
+    
 *** transition-delay
 
 #+NAME: transition-property
