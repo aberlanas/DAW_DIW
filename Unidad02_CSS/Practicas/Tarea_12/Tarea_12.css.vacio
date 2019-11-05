@@ -1,0 +1,65 @@
+body{
+    background-color:grey;
+    padding: 3rem;
+}
+
+container{
+    margin: 1rem;
+    display: grid;
+    /* 
+ 
+    ^(;,;)^ : Fragmento perdido
+
+   */
+}
+
+button{
+    border: 3px solid darkgrey;
+}
+
+
+box{
+    background-color: #1e0;
+    border:3px solid #AABBAA;
+    /* 
+ 
+    ^(;,;)^ : Fragmento perdido
+
+   */
+    border-radius: 10px;
+}
+
+.evoluciona{
+    background-color: #e10;
+    /* 
+ 
+    ^(;,;)^ : Fragmento perdido
+
+   */
+}
+
+.desevoluciona{
+    background-color: #10e;
+        /* 
+ 
+    ^(;,;)^ : Fragmento perdido
+
+   */
+}
+
+.ultimate{
+    background-color: #441155;
+    /* 
+ 
+    ^(;,;)^ : Fragmento perdido
+
+   */
+}
+
+.ultimate:hover{
+    /* 
+ 
+    ^(;,;)^ : Fragmento perdido
+
+   */
+}

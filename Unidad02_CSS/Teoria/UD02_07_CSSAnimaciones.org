@@ -1,0 +1,153 @@
+#+TITLE: UD02 - Animaciones CSS
+#+AUTHOR: Angel Berlanas
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+* Animaciones CSS 
+
+** ¿Qué son las Animaciones CSS?
+
+Las animaciones CSS3 permiten animar la transición entre un estilo CSS y
+otro, son muy similares a las ~transiciones~ que vimos en clases anteriores. 
+
+Las animaciones constan de dos componentes: un estilo que describe la
+animación CSS y un conjunto de fotogramas que indican su estado inicial y final,
+así como posibles puntos intermedios en la misma.
+
+** Propiedades
+
+A continuación vamos a ver las diferentes propiedades que pueden tener las
+*Animaciones CSS*, como vereís se trata de conceptos muy similares a los que
+están descritos en los apartados anteriores.
+
+*** animation-name
+
+Se trata de la propiedad que establece el nombe de la regla (~@keyframes~) que
+describe los fotogramas de la aplicación.
+
+Pueden especificarse más de uno, en ese caso irán separados por ~,~.
+
+*** animation-duration
+
+Especificado en /segundos/ lo que dura la animación *completa*.
+
+*** animation-iteration-count
+
+Indica cuantas veces debe realizarse la animación.
+
+Los valores posibles son:
+
+ + ~infinite~
+ + ~<number>~
+
+Donde ~<number>~ establece un número de iteraciones, se pueden ponder decimales,
+y se aplicará ese porcentaje de la animación.
+
+#+NAME: animation-name
+#+BEGIN_SRC css
+animation-iteration-count: 2.3;
+#+END_SRC
+
+Realizará la animación 2 veces completas y *un tercio* de la misma.
+
+*** animation-timing-function
+
+Se trata del mismo concepto que vimos en las transiciones, /cómo cambia/
+/en el tiempo/ la propia animación, acelerándose o frenándose según se
+especifique.
+
+Este parámetro puede ser establecido en cada uno de los ~@keyframes~ que tenga
+la animación.
+
+Y aquí también podemos usar ~cubic-bezier~ como posibles valores:
+
+| Valores      |
+|--------------|
+| ease-in      |
+| ease-out     |
+| ease-in-out  |
+| linear       |
+| cubic-bezier |
+
+
+*** @keyframes
+
+~@keyframes~ es la parte en la que programamos la animación, indicando mediante
+una serie de palabras /clave/ y los porcentajes de la animación.
+
+#+NAME: animation-name
+#+BEGIN_SRC css
+@keyframes pixar {
+
+   from {
+        top:100px;
+        animation-timing-function:ease-in;
+   }
+   50%{
+       top:125px;
+       animation-timing-function:ease-out;
+   }
+   to {
+        top:150px;
+   }
+}
+
+#+END_SRC
+       
+*** Un ejemplo completo      
+
+\newpage
+#+NAME: animation-name
+#+BEGIN_SRC css
+
+.elemento {
+    width: 142px;
+    height: 142px;
+    background-color: #00AA66;
+    position: relative;
+    margin: 0 auto;
+    animation-name: saltarin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes saltarin {
+    from {
+        top: 150px;
+        animation-timing-function: ease-out;
+    }
+    25% {
+        top: 50px;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: 200px;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        top: 75px;
+        animation-timing-function: ease-in;
+    }
+    to {
+        top: 150px;
+    }
+}
+
+#+END_SRC 
+
+
+*** Ejercicio 13 : ¡Estan vivos!¡Vivooooos!
+
+La investigación de los pergaminos ha concluido con éxito. Los /Seres de
+Sedefkar/ están despertando y ya son capaces de realizar pequeñas tareas.
+
+Utilizando dos /papiros/ que se ha encontrado en la Biblioteca de la Universidad
+de Miskatonic, que están escritos en ~JS~ y ~CSS~. Los investigadores deben
+recomponer los fragmentos perdidos que permitirán indicar a los diferentes /Seres de/
+/Sedefkar/ cuál será su tarea, ya que si no los controlarámos los /Seres de
+Sedefkar/ se unirán bajo la voluntad de Cthulhu y acabarán con la cordura de los
+investigadores.
+
+Sobre los pergaminos anteriores añadiremos dos áreas, que al hacer click sobre
+ellas, nos permitirán indicarle la acción sobre los /Seres de Sedefkar/.
+
+

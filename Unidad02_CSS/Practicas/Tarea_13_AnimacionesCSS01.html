@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+
+  <title>UD 02 : Animaciones CSS</title>
+  <meta name="description" content="Animaciones CSS">
+  <meta name="author" content="Angel Berlanas Vicente">
+
+  <style>
+
+.elemento {
+    width: 142px;
+    height: 142px;
+    background-color: #00AA66;
+    position: relative;
+    margin: 0 auto;
+    animation-name: saltarin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes saltarin {
+    from {
+        top: 150px;
+        animation-timing-function: ease-out;
+    }
+    25% {
+        top: 50px;
+        animation-timing-function: ease-in;
+    }
+    50% {
+        top: 200px;
+        animation-timing-function: ease-out;
+    }
+    75% {
+        top: 75px;
+        animation-timing-function: ease-in;
+    }
+    to {
+        top: 150px;
+    }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    
+    <button>Pulsa para crear una caja de nivel 0</button>
+    </header>
+  <div class="elemento">
+   
+  </divx>
+
+</body>
+</html>
