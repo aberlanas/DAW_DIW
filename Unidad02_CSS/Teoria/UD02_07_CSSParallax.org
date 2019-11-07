@@ -1,0 +1,57 @@
+#+TITLE: UD02 - Paralaje en CSS
+#+AUTHOR: Angel Berlanas
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+* Efectos de Paralaje en CSS 
+
+** ¿En qué consiste?
+
+El efecto de Paralaje es la simulación en un entorno 2D de que estamos
+observando a través de una ventana un mundo en 3 Dimensiones, donde dependiendo
+de la lejania del objeto respecto al observador, este se desplaza a diferente
+velocidad. 
+
+Es el efecto de mirar a través de la ventana de un tren, los objetos que se
+encuentran próximos a nosotros parecen desplazarse a una velocidad mayor,
+mientras que los más lejanos apenas se mueven.
+
+** Maneras de implementarlo
+
+Se tratar de algo bastante complejo respecto a lo visto anteriormente en
+clase, si buscamos en /Internet/ ~efecto de paralaje JS~, veremos multitud de
+librerias ya realizadas que con mayor o menor éxito y posibilidad de
+configuración se adaptan /a nuestras necesidades/.
+
+Con el objetivo de plantear las *bases* de como funciona este tipo de efecto,
+vamos a decantarnos por una implementación del efecto en CSS Puro (/Pure CSS/),
+que nos permitirá no /distraernos/ con el código en ~JS~. Sin duda a medida que
+el desarrollador en ciernes (el alumn@), vaya desarrollando sus habilidades,
+buscará soluciones más complejas y vistosas que le permitirán un mayor
+despliegue de su talento. Por ahora...CSS es nuestro amigo.
+
+\newpage
+** HTML
+#+NAME: Codigo HTML para paralaje
+#+BEGIN_SRC html 
+
+    <body>
+            <div class="navbar"><span>Paralaje en CSS</span></div>  
+            <div class="parallax-wrapper">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       ....
+                       .... 
+                       Donec in justo eu ligula semper consequat sed a risus.</p>
+                </div>
+            </div>
+            <div class="regular-wrapper">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       ....
+                       .... 
+                       Donec in justo eu ligula semper consequat sed a risus.</p>
+                </div>
+            </div>
+    </body>
+
+#+END_SRC
