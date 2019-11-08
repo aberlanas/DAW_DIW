@@ -150,4 +150,15 @@ investigadores.
 Sobre los pergaminos anteriores añadiremos dos áreas, que al hacer click sobre
 ellas, nos permitirán indicarle la acción sobre los /Seres de Sedefkar/.
 
+ + Se estableceran dos /glifos de órdenes/ en la parte superior del tablero, al
+   lado del botón que hacer surgir las cajas. El primero hará girar al /Ser de
+   Sedefkar/ y el segundo hará un recorrido en V y volverá al origen.
+ + Si el /Ser de Sedefkar/ está visible ha de hacer caso, en caso contrario, la
+   orden se pierde.
+ + Si el /Ser de Sedefkar/ ya está ejecutando una orden, debe dejar de
+   ejecutarla y pasar a realizar la nueva orden.
+ + Si se hace click fuera de un /Ser de Sedefkar/ la orden también se pierde.
+ + (*Opcional*) Establecer una tercera orden que hace el /Ser de Sedefkar/ deje
+   de hacer /cosas/.
+
 

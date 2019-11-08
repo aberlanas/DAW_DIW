@@ -1,6 +1,13 @@
 #+TITLE: UD02 - Paralaje en CSS
 #+AUTHOR: Angel Berlanas
+
+#+latex_header: \usepackage{minted}                                              
+#+latex_header: \usepackage{xcolor}
+#+latex_header: \usemintedstyle{monokai}    %% sets default for all source-code blocks  
+#+latex_header: \definecolor{bg}{HTML}{555555}
+#+latex_header: \setminted{bgcolor=bg}
 #+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
 
 * Efectos de Paralaje en CSS 
 
@@ -32,26 +39,25 @@ despliegue de su talento. Por ahora...CSS es nuestro amigo.
 \newpage
 ** HTML
 #+NAME: Codigo HTML para paralaje
+#+attr_latex: :options bgcolor=bg
 #+BEGIN_SRC html 
-
     <body>
             <div class="navbar"><span>Paralaje en CSS</span></div>  
             <div class="parallax-wrapper">
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <p>Lorem ipsum dolor sit amet,... 
                        ....
-                       .... 
-                       Donec in justo eu ligula semper consequat sed a risus.</p>
+                       Donec in justo eu ligula semper.</p>
                 </div>
             </div>
             <div class="regular-wrapper">
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       ....
+                    <p>Lorem ipsum dolor sit amet,...
                        .... 
-                       Donec in justo eu ligula semper consequat sed a risus.</p>
+                       Donec in justo eu ligula semper.</p>
                 </div>
             </div>
     </body>
-
 #+END_SRC
+
+
