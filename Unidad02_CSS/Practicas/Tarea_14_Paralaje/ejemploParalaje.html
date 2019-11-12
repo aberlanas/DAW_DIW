@@ -1,0 +1,71 @@
+<head>
+  <title>Ejemplo CSS</title>
+
+  <style>
+        html {
+        overflow: hidden;
+    }
+    body {
+        margin: 0;
+        font-size: 26px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #ffffff;
+        height: 100vh;
+        perspective: 1px;
+        transform-style: preserve-3d;
+        overflow-x:hidden;
+        overflow-y:auto;
+    }
+    .parallax-wrapper {
+        width: 100vw;
+        height:100vh;
+        padding-top:20vh;
+        box-sizing: border-box;
+        transform-style: preserve-3d;
+    }
+    .parallax-wrapper::before {
+        content:"";
+        width: 100vw;
+        height: 100vh;
+        top:0;
+        left:0;
+        background-image: url("/trianglify.png");
+        position: absolute;
+        z-index: -1;
+        transform:translateZ(-1px) scale(2);
+    }
+    .regular-wrapper {
+        width: 100vw;
+        height:100vh;
+        padding-top:20vh;
+        background-image: url("/trianglify2.png");
+        z-index: 2;
+        position: relative;
+    }
+    .content {
+        margin: 0 auto;
+        padding: 50px;
+        width: 50%;
+        background: #aaa;
+    }
+    </style>
+  </head>
+<body>
+            <div class="navbar"><span>CSS Parallax Scrolling Tutorial</span></div>  
+            <div class="parallax-wrapper">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       ....
+                       .... 
+                       Donec in justo eu ligula semper consequat sed a risus.</p>
+                </div>
+            </div>
+            <div class="regular-wrapper">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       ....
+                       .... 
+                       Donec in justo eu ligula semper consequat sed a risus.</p>
+                </div>
+            </div>
+    </body>

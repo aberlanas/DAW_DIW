@@ -38,9 +38,11 @@ despliegue de su talento. Por ahora...CSS es nuestro amigo.
 
 \newpage
 ** HTML
+
 #+NAME: Codigo HTML para paralaje
 #+attr_latex: :options bgcolor=bg
 #+BEGIN_SRC html 
+
     <body>
             <div class="navbar"><span>Paralaje en CSS</span></div>  
             <div class="parallax-wrapper">
@@ -59,5 +61,107 @@ despliegue de su talento. Por ahora...CSS es nuestro amigo.
             </div>
     </body>
 #+END_SRC
+
+Comenzamos con poner el fondo al 100%.
+
+#+NAME: Codigo HTML para paralaje
+#+attr_latex: :options bgcolor=bg
+#+BEGIN_SRC css
+
+
+    .parallax-wrapper {
+        width: 100vw;
+        height:100vh;
+        padding-top:20vh;
+        box-sizing: border-box;
+    }
+    .regular-wrapper {
+        width: 100vw;
+        height:100vh;
+        padding-top:20vh;
+        background-image: url("/your-bkg.png");
+    }
+    .content {
+        margin: 0 auto;
+        padding: 50px;
+        width: 50%;
+        background: #aaa;
+    }
+
+#+END_SRC
+
+Pasamos a ponerlo absoluto
+
+
+#+NAME: Codigo CSS para paralaje
+#+attr_latex: :options bgcolor=bg
+#+BEGIN_SRC css
+
+    .parallax-wrapper::before {
+        content:"";
+        width: 100vw;
+        height: 100vh;
+        top:0;
+        left:0;
+        background-image: url("/ruta-al-background.png");
+        position: absolute;
+        z-index: -1;
+    }
+
+#+END_SRC
+
+
+Vamos añadiendo a los contenidos el código ~CSS~:
+
+#+NAME: Codigo CSS para paralaje
+#+attr_latex: :options bgcolor=bg
+#+BEGIN_SRC css
+
+    html {
+        overflow: hidden;
+    }
+    body {
+        height: 100vh;
+        perspective: 1px;
+        transform-style: preserve-3d;
+        overflow-x:hidden;
+        overflow-y:auto;
+    }
+    .parallax-wrapper {
+        transform-style: preserve-3d;
+    }
+
+#+END_SRC
+
+
+Transformamos y escalamos antes.
+
+#+NAME: Codigo CSS para paralaje
+#+attr_latex: :options bgcolor=bg
+#+BEGIN_SRC css
+
+    .parallax-wrapper::before {
+        transform:translateZ(-1px) scale(2);
+    }
+
+#+END_SRC
+
+Antes de esto modificamos el efecto.
+
+#+NAME: Codigo CSS para paralaje
+#+attr_latex: :options bgcolor=bg
+#+BEGIN_SRC css
+
+    .parallax-wrapper::before {
+        z-index: -1;
+    }
+    .regular-wrapper {
+        z-index: 2;
+        position: relative;
+    }
+
+#+END_SRC
+
+
 
 
