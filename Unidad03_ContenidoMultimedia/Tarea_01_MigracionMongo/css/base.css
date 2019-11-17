@@ -1,0 +1,146 @@
+/*
+CSS Base for the Miskatonic Herald
+*/
+
+@font-face {
+  font-family: neon;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+/*
+* CSS for body
+*/
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    
+    /*background-color:#323232;*/
+    background-image:url("https://picsum.photos/1600/900");
+    font-family: 'OuroborosRegular';
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    color:#ffffff;
+}
+
+
+/*
+* CSS for items
+*/
+
+items{
+
+    /* 
+     * Fragmentos perdidos 
+     * ^(;,;)^
+     */
+    
+}
+
+item{
+    /* 
+     * Fragmentos perdidos 
+     * ^(;,;)^
+     */
+}
+
+/*
+* CSS for body
+*/
+
+button{
+    
+    /* 
+     * Fragmentos perdidos 
+     * ^(;,;)^
+     */
+}
+
+button:hover {
+    
+    /* 
+     * Fragmentos perdidos 
+     * ^(;,;)^
+     */
+}
+
+button:active {
+    
+    /* 
+     * Fragmentos perdidos 
+     * ^(;,;)^
+     */
+}
+
+
+/*
+* CSS for steps
+* - Includes the opacity for the 
+*   animation that makes this more
+*   dinamyc, but is only a simple
+*   GUI.
+*/
+
+steps{
+   
+    /* 
+     * Fragmentos perdidos 
+     * ^(;,;)^
+     */
+}
+
+/*
+* CSS for all the steps
+* with class (estabaEscondido)
+* that turns the element visible
+* with a transition.
+*/
+steps * {
+    /* 
+     * Fragmentos perdidos 
+     * ^(;,;)^
+     */
+}
+
+.estabaEscondido{
+   
+    /* 
+     * Fragmentos perdidos 
+     * ^(;,;)^
+     */
+}
+
+
+/*Progress*/
+/*
+* CSS for ProgressBars
+*/
+progress{
+
+    /* 
+     * Fragmentos perdidos 
+     * ^(;,;)^
+     */
+}
+
+
+
+finalmsg{
+
+    /* 
+     * Fragmentos perdidos 
+     * ^(;,;)^
+     */
+}
+
+@keyframes neon {
+ 
+    /* 
+     * Fragmentos perdidos 
+     * ^(;,;)^
+     */
+}
+
