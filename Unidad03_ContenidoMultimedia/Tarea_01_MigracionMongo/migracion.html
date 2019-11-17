@@ -8,10 +8,17 @@
   <meta name="description" content="El Heraldo de Miskatonic">
   <meta name="author" content="Angel Berlanas Vicente">
 
+
+  <!--TTF -->
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/ouroboros" type="text/css"/> 
+  
   <style>
     @import url("css/base.css");
   </style>
 
+  <script src="js/migracion.js"></script>
+
+  
 </head>
 
 <body>
@@ -19,15 +26,47 @@
   <content>
     <items>
       <item>
-	<label>Migracion</label>
+	<h1>Migracion del Heraldo de Miskatonic</h1>
       </item>
+      <item>
+	<button>¡Hágase la Migración!</button>
+      </item>
+      <item>
       <steps>
-	<step>Parar la base de datos</step>	
-	<step>Parar la base de datos2</step>
-	<step>Parar la base de datos</step>
+	
+
+	  <steplabel data-step="1" >Crear la nueva BD (PostgreSQL)</steplabel>
+	  <progress data-step="2" max="100" value="0" ><span>0</span>%</progress>
+	  <finalmsg data-step="3" >¡Completado!</finalmsg>
+
+
+	
+	  <steplabel data-step="4" >Crear nueva API</steplabel>
+	  <progress data-step="5" max="100" value="0" ><span>0</span>%</progress>
+	  <finalmsg data-step="6" >¡Completado!</finalmsg>
+	
+
+	
+	  <steplabel data-step="7" >Establecer el Proxy</steplabel>
+	  <progress data-step="8" max="100" value="0"  ><span>0</span>%</progress>
+	  <finalmsg data-step="9" >¡Completado!</finalmsg>
+
+
+	  <steplabel data-step="10" >Migrar los datos (SQL)</steplabel>
+	  <progress data-step="11" max="100" value="0"  ><span>0</span>%</progress>
+	  <finalmsg data-step="12" >¡Completado!</finalmsg>
+
+	  <steplabel data-step="13" >Establecer la nueva BD como Main</steplabel>
+	  <progress data-step="14" max="100" value="0"  ><span>0</span>%</progress>
+	  <finalmsg data-step="15" >¡Completado!</finalmsg>
+
+	  <steplabel data-step="16" >Borrar los datos antiguos</steplabel>
+	  <progress data-step="17" max="100" value="0"  ><span>0</span>%</progress>
+	  <finalmsg data-step="18" >¡Completado!</finalmsg>
+	  
       </steps>
+      </item>
     </items>
   </content>
-  
 </body>
 </html>
