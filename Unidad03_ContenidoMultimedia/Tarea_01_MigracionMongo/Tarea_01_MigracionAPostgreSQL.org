@@ -1,0 +1,49 @@
+
+#+TITLE: UD03 - Migración a PostgreSQL
+#+AUTHOR: Angel Berlanas
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+* Introducción
+
+  Después de ver todos los pasos que se han seguido para conseguir 
+  realizar la migración desde un servicio basado en MongoDB a PostgreSQL, el
+  /director/ del /Heraldo de Miskatonic/, el periódico de la Universidad de
+  Miskatonic, ha decidido migrar su periódico para no quedarse /atras/ de la
+  modernidad.
+
+  El /director/ ha llegado al equipo de desarrolladores y les ha encargado la
+  enorme tarea de realizar la migración, les ha dado 1 semana, ya que considera
+  que si los del /periodicucho/ The Guardian lo han hecho en unos meses, a sus
+  /developers/ no les puede costar más de una semana.
+
+* Plan de acción
+
+  Los desarrolladores no sabían que hacer...hasta que se les ha ocurrido que van
+  a darle al /director/ *exactamente* lo que quiere, una interfaz con un único
+  botón que al pulsarlo el directo /migrará/ los datos y todo funcionará a la
+  perfección.
+
+  La única esperanza es preparar en /una semana/ esta interfaz. Sin embargo hay
+  una serie de reglas que no podemos romper.
+
+* Restricciones
+
+  No sabemos todavía cuantos pasos tendrá la migración, ya que el /director/ va
+  cambiando de parecer a cada rato, lo único en lo que nos podemos basar es que
+  cada uno de esos pasos tendrá un ~data-step~ que nos indicará en qué orden se
+  ejecutará.
+
+  No podemos tocar el código ~html~ que nos suministran, así como debemos
+  respetar los métodos que aparecen escritos en el fichero ~js~ y ~css~.
+
+#+BEGIN_SRC javascript
+
+function startMigration(){
+
+    // Fragmentos perdidos
+    // ^(;,;)^
+}
+
+#+END_SRC
+  
+  ¡Mucha suerte a tod@s!
