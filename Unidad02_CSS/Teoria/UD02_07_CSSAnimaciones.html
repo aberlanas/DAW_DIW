@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>UD02 - Animaciones CSS</title>
+<!-- 2019-11-14 jue 16:16 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Angel Berlanas" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">UD02 - Animaciones CSS</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. Animaciones CSS</a>
+<ul>
+<li><a href="#sec-1-1">1.1. ¿Qué son las Animaciones CSS?</a></li>
+<li><a href="#sec-1-2">1.2. Propiedades</a>
+<ul>
+<li><a href="#sec-1-2-1">1.2.1. animation-name</a></li>
+<li><a href="#sec-1-2-2">1.2.2. animation-duration</a></li>
+<li><a href="#sec-1-2-3">1.2.3. animation-iteration-count</a></li>
+<li><a href="#sec-1-2-4">1.2.4. animation-timing-function</a></li>
+<li><a href="#sec-1-2-5">1.2.5. @keyframes</a></li>
+<li><a href="#sec-1-2-6">1.2.6. Un ejemplo completo</a></li>
+<li><a href="#sec-1-2-7">1.2.7. Ejercicio 13 : ¡Estan vivos!¡Vivooooos!</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Animaciones CSS</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> ¿Qué son las Animaciones CSS?</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Las animaciones CSS3 permiten animar la transición entre un estilo CSS y
+otro, son muy similares a las <code>transiciones</code> que vimos en clases anteriores. 
+</p>
+
+<p>
+Las animaciones constan de dos componentes: un estilo que describe la
+animación CSS y un conjunto de fotogramas que indican su estado inicial y final,
+así como posibles puntos intermedios en la misma.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Propiedades</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+A continuación vamos a ver las diferentes propiedades que pueden tener las
+<b>Animaciones CSS</b>, como vereís se trata de conceptos muy similares a los que
+están descritos en los apartados anteriores.
+</p>
+</div>
+
+<div id="outline-container-sec-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> animation-name</h4>
+<div class="outline-text-4" id="text-1-2-1">
+<p>
+Se trata de la propiedad que establece el nombe de la regla (<code>@keyframes</code>) que
+describe los fotogramas de la aplicación.
+</p>
+
+<p>
+Pueden especificarse más de uno, en ese caso irán separados por ~,~.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> animation-duration</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<p>
+Especificado en <i>segundos</i> lo que dura la animación <b>completa</b>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2-3" class="outline-4">
+<h4 id="sec-1-2-3"><span class="section-number-4">1.2.3</span> animation-iteration-count</h4>
+<div class="outline-text-4" id="text-1-2-3">
+<p>
+Indica cuantas veces debe realizarse la animación.
+</p>
+
+<p>
+Los valores posibles son:
+</p>
+
+<ul class="org-ul">
+<li><code>infinite</code>
+</li>
+<li><code>&lt;number&gt;</code>
+</li>
+<li>\(x^2x\)
+</li>
+</ul>
+
+<p>
+Donde <code>&lt;number&gt;</code> establece un número de iteraciones, se pueden ponder decimales,
+y se aplicará ese porcentaje de la animación.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-css" id="animation-name">animation-iteration-count: 2.3;
+</pre>
+</div>
+
+<p>
+Realizará la animación 2 veces completas y <b>un tercio</b> de la misma.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2-4" class="outline-4">
+<h4 id="sec-1-2-4"><span class="section-number-4">1.2.4</span> animation-timing-function</h4>
+<div class="outline-text-4" id="text-1-2-4">
+<p>
+Se trata del mismo concepto que vimos en las transiciones, <i>cómo cambia</i>
+<i>en el tiempo</i> la propia animación, acelerándose o frenándose según se
+especifique.
+</p>
+
+<p>
+Este parámetro puede ser establecido en cada uno de los <code>@keyframes</code> que tenga
+la animación.
+</p>
+
+<p>
+Y aquí también podemos usar <code>cubic-bezier</code> como posibles valores:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Valores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">ease-in</td>
+</tr>
+
+<tr>
+<td class="left">ease-out</td>
+</tr>
+
+<tr>
+<td class="left">ease-in-out</td>
+</tr>
+
+<tr>
+<td class="left">linear</td>
+</tr>
+
+<tr>
+<td class="left">cubic-bezier</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-2-5" class="outline-4">
+<h4 id="sec-1-2-5"><span class="section-number-4">1.2.5</span> @keyframes</h4>
+<div class="outline-text-4" id="text-1-2-5">
+<p>
+<code>@keyframes</code> es la parte en la que programamos la animación, indicando mediante
+una serie de palabras <i>clave</i> y los porcentajes de la animación.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-css" id="animation-name">@keyframes pixar {
+
+   from {
+	top:100px;
+	animation-timing-function:ease-in;
+   }
+   50%{
+       top:125px;
+       animation-timing-function:ease-out;
+   }
+   to {
+	top:150px;
+   }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2-6" class="outline-4">
+<h4 id="sec-1-2-6"><span class="section-number-4">1.2.6</span> Un ejemplo completo</h4>
+<div class="outline-text-4" id="text-1-2-6">
+<p>
+\newpage
+</p>
+<div class="org-src-container">
+
+<pre class="src src-css" id="animation-name">.elemento {
+    width: 142px;
+    height: 142px;
+    background-color: #00AA66;
+    position: relative;
+    margin: 0 auto;
+    animation-name: saltarin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes saltarin {
+    from {
+	top: 150px;
+	animation-timing-function: ease-out;
+    }
+    25% {
+	top: 50px;
+	animation-timing-function: ease-in;
+    }
+    50% {
+	top: 200px;
+	animation-timing-function: ease-out;
+    }
+    75% {
+	top: 75px;
+	animation-timing-function: ease-in;
+    }
+    to {
+	top: 150px;
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-1-2-7" class="outline-4">
+<h4 id="sec-1-2-7"><span class="section-number-4">1.2.7</span> Ejercicio 13 : ¡Estan vivos!¡Vivooooos!</h4>
+<div class="outline-text-4" id="text-1-2-7">
+<p>
+La investigación de los pergaminos ha concluido con éxito. Los <i>Seres de
+Sedefkar</i> están despertando y ya son capaces de realizar pequeñas tareas.
+</p>
+
+<p>
+Utilizando dos <i>papiros</i> que se ha encontrado en la Biblioteca de la Universidad
+de Miskatonic, que están escritos en <code>JS</code> y <code>CSS</code>. Los investigadores deben
+recomponer los fragmentos perdidos que permitirán indicar a los diferentes <i>Seres de</i>
+<i>Sedefkar</i> cuál será su tarea, ya que si no los controlarámos los <i>Seres de
+Sedefkar</i> se unirán bajo la voluntad de Cthulhu y acabarán con la cordura de los
+investigadores.
+</p>
+
+<p>
+Sobre los pergaminos anteriores añadiremos dos áreas, que al hacer click sobre
+ellas, nos permitirán indicarle la acción sobre los <i>Seres de Sedefkar</i>.
+</p>
+
+<ul class="org-ul">
+<li>Se estableceran dos <i>glifos de órdenes</i> en la parte superior del tablero, al
+lado del botón que hacer surgir las cajas. El primero hará girar al <i>Ser de
+Sedefkar</i> y el segundo hará un recorrido en V y volverá al origen.
+</li>
+<li>Si el <i>Ser de Sedefkar</i> está visible ha de hacer caso, en caso contrario, la
+orden se pierde.
+</li>
+<li>Si el <i>Ser de Sedefkar</i> ya está ejecutando una orden, debe dejar de
+ejecutarla y pasar a realizar la nueva orden.
+</li>
+<li>Si se hace click fuera de un <i>Ser de Sedefkar</i> la orden también se pierde.
+</li>
+<li>(<b>Opcional</b>) Establecer una tercera orden que hace el <i>Ser de Sedefkar</i> deje
+de hacer <i>cosas</i>.
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Angel Berlanas</p>
+<p class="date">Created: 2019-11-14 jue 16:16</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.2.2 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
