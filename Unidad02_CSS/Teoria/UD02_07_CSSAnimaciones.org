@@ -38,6 +38,7 @@ Los valores posibles son:
 
  + ~infinite~
  + ~<number>~
+ + $x^2x$
 
 Donde ~<number>~ establece un número de iteraciones, se pueden ponder decimales,
 y se aplicará ese porcentaje de la animación.
@@ -93,7 +94,7 @@ una serie de palabras /clave/ y los porcentajes de la animación.
 
 #+END_SRC
        
-*** Un ejemplo completo      
+*** Un ejemplo completo
 
 \newpage
 #+NAME: animation-name
