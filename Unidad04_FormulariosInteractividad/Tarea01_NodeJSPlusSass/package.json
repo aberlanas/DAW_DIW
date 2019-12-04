@@ -1,0 +1,19 @@
+{
+  "name": "express-vanilla",
+  "version": "1.0.0",
+  "description": "Un Servidor NodeJS Simple",
+  "main": "server.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "scss": "node-sass -watch scss -o \"public\/css\/\""
+  },
+  "keywords": [
+    "Simple",
+    "Server"
+  ],
+  "author": "DAW Para MiniServidores",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
