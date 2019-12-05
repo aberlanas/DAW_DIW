@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAI;EACA,MAAM,EAAC,IAAS;EAChB,OAAO,EAAC,IAAS",
+"sources": ["../../scss/busqueda.scss"],
+"names": [],
+"file": "busqueda.css"
+}
