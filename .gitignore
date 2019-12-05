@@ -1,7 +1,10 @@
 node_modules
 PDFS
+.sass-cache
 _minted*
 *.solucion
 *.tex
 *.tex~
 *.org~
+#*#
+.#*

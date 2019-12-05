@@ -24,7 +24,7 @@
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
 15 verbose pkgid express-vanilla@1.0.0
 16 verbose cwd /home/aberlanas/GitHub/DAW_DIW/Unidad04_FormulariosInteractividad/Tarea01_NodeJSPlusSass
-17 error Linux 5.0.0-36-generic
+17 error Linux 5.0.0-37-generic
 18 error argv "/usr/bin/node" "/usr/bin/npm" "run-script" "scss"
 19 error node v8.10.0
 20 error npm  v3.5.2
