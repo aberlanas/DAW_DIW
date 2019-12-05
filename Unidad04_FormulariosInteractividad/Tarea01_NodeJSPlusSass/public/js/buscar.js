@@ -22,11 +22,15 @@ function buscar(){
 	const resultado=respuesta.features.filter(filtroLetra);
 	console.log(resultado);
 
+	let listado=document.createElement("ul");
 	resultado.forEach(fuente=>{
 	    console.log(fuente.properties.calle);
+	    let calleli=document.createElement("li");
+	    calleli.innerHTML=fuente.properties.calle+" -- ["+fuente.geometry.coordinates+"]";
+	    listado.appendChild(calleli);	    
 	});
-
-	
+	document.querySelector(".resultados").innerHTML="";
+	document.querySelector(".resultados").appendChild(listado);
     });
 
 }
@@ -34,7 +38,6 @@ function buscar(){
 function init(){
 
     document.querySelector(`input[type="button"]`).addEventListener("click",buscar);
-
     document.querySelector(`input[type="text"]`).addEventListener("input",toUpp);
 }
 

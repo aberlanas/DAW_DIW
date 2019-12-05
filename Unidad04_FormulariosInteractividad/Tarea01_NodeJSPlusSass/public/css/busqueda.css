@@ -1,5 +1,15 @@
 body {
-  margin: 20px;
-  padding: 30px; }
+  font: 100% Helvetica, sans-serif;
+  background-color: #444; }
+
+.resultados ul li {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+  color: #DDD; }
+
+.resultados ul li {
+  list-style: none;
+  width: 50vw; }
 
 /*# sourceMappingURL=busqueda.css.map */

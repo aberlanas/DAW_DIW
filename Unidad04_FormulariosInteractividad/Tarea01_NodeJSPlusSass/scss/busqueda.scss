@@ -1,6 +1,32 @@
+$font-stack: Helvetica,sans-serif;
+$primary-color: #444;
+$font-color:#DDD;
+
 body{
-    margin:10px+10px;
-    padding:10px+20px;
+
+    font: 100% $font-stack;
+    background-color: $primary-color;
+    
 }
+
+
+%fuente-basica{
+    border: 1px solid grey;
+    padding:10px;
+    border-radius:10px;
+    color:$font-color;
+}
+
+.resultados{
+    ul{
+	li{
+	    list-style:none;
+	    width:50vw;
+	    @extend %fuente-basica;
+	}
+    }
+}
+
+
 
 
