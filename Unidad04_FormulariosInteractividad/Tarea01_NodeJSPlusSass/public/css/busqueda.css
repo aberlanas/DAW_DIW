@@ -1,13 +1,13 @@
 body {
   font: 100% Helvetica, sans-serif;
-  background-color: pink; }
+  background-color: #8D8; }
 
 .resultados coordenadas ul li {
   border: 1px solid grey;
   padding: 10px;
   margin: 15vw;
   border-radius: 10px;
-  color: #DDD;
+  color: #8D8;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
 
 .resultados h1 {
