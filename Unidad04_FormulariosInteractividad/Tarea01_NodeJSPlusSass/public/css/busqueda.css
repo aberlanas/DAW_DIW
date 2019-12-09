@@ -1,14 +1,18 @@
 body {
   font: 100% Helvetica, sans-serif;
-  background-color: #444; }
+  background-color: pink; }
 
-.resultados ul li {
+.resultados coordenadas ul li {
   border: 1px solid grey;
   padding: 10px;
+  margin: 15vw;
   border-radius: 10px;
-  color: #DDD; }
+  color: #DDD;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
 
-.resultados ul li {
+.resultados h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+.resultados coordenadas ul li {
   list-style: none;
   width: 50vw; }
 

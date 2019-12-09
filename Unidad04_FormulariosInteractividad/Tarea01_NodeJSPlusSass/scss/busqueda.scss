@@ -1,32 +1,34 @@
-$font-stack: Helvetica,sans-serif;
-$primary-color: #444;
-$font-color:#DDD;
+$font-stack: Helvetica,
+sans-serif;
+$primary-color: pink;
+$font-color   :#DDD;
 
-body{
+body {
 
-    font: 100% $font-stack;
+    font            : 100% $font-stack;
     background-color: $primary-color;
-    
 }
 
-
-%fuente-basica{
-    border: 1px solid grey;
-    padding:10px;
-    border-radius:10px;
-    color:$font-color;
+%fuente-basica {
+    border       : 1px solid grey;
+    padding      : 10px;
+    margin       : 5vw+10vw;
+    border-radius: 10px;
+    color        : $font-color;
+    font-family  : Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.resultados{
-    ul{
-	li{
-	    list-style:none;
-	    width:50vw;
-	    @extend %fuente-basica;
-	}
+.resultados {
+
+    h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    coordenadas ul {
+        li {
+            list-style: none;
+            width     : 50vw;
+            @extend %fuente-basica;
+        }
     }
 }
-
-
-
-

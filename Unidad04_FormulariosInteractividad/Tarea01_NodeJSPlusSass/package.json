@@ -4,8 +4,8 @@
   "description": "Un Servidor NodeJS Simple",
   "main": "server.js",
   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "scss": "node-sass -watch scss -o \"public\/css\/\""
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch scss -o \"public/css/\""
   },
   "keywords": [
     "Simple",
@@ -14,6 +14,8 @@
   "author": "DAW Para MiniServidores",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.7.13",
+    "node-geocoder": "^3.25.0"
   }
 }
