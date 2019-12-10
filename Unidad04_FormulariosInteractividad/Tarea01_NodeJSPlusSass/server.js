@@ -3,9 +3,6 @@ const path = require('path');
 const app = express();
 
 
-
-
-
 // Paginas publicas (estaticas)
 app.use(express.static(path.join(__dirname, 'public')));
 
