@@ -1,0 +1,14 @@
+
+
+
+* Instalación de MongoDB
+
+  ~sudo apt install mongodb~
+
+  Esto instala varias aplicaciones, entre las que destacar:
+
+  * mongo-tools: /utilidades para mongo/
+  * mongo-server: /el propio servidor de mongo/
+  * mongo-client: /un cliente sencillo de CLI/
+
+* 
