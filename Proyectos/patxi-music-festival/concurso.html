@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> *** BATXI CONCURSO NAVIDEÑO *** </title>
+    <style>
+        canciones {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+        }
+    </style>
+    <script>
+        let path = "/home/aberlanas/Música/IndianaJones_TheLastCrusade_OST/"
+        let lista = {
+            canciones: [
+                "01_IndysVeryFirstAdventure.mp3",
+                "01_IndysVeryFirstAdventure.mp3.mp3",
+                "02_TheBoatScene.mp3",
+                "04_XMarksTheSpot.mp3",
+                "05_AhRats.mp3",
+                "06_EscapeFromVenice.mp3",
+                "07_JourneyToAustria.mp3",
+                "08_FatherAndSon.mp3",
+                "10_TheAustrianWay.mp3",
+                "11_Alarm.mp3",
+                "12_ScherzoForMotorcycleAndOrchestra.mp3",
+                "14_NoTicket.mp3",
+                "16_KeepingUpWithTheJoneses.mp3",
+                "17_BrotherOfTheCruciformSword.mp3",
+                "19_OnTheTank.mp3",
+                "20_BellyOfTheSteelBeast.mp3",
+                "21_TheCanyonOfTheCrescendMoon.mp3",
+                "22_ThePenitentManWillPass.mp3",
+                "23_TheKeeperOfTheGrail.mp3",
+                "25_FinaleEndCredits.mp3",
+            ]
+        }
+
+        function replenishBoard() {
+
+
+            let numero = 1;
+            lista.canciones.forEach(cancion => {
+
+                let item = document.createElement("div");
+
+                item.innerHTML = numero;
+                item.dataset.cancion = cancion;
+                document.querySelector("canciones").appendChild(item);
+                numero++;
+            });
+
+        }
+
+
+        function init() {
+            console.info(lista);
+            replenishBoard();
+        }
+
+        window.onload = init;
+    </script>
+</head>
+
+<body>
+    <h1> Sin parar </h1>
+    <canciones>
+    </canciones>
+</body>
+
+</html>
