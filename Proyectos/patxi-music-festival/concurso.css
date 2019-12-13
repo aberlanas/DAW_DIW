@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+}
+
+canciones {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    gap: 5px;
+
+}
+
+cancion {
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:font-size 1s;
+}
+
+cancion .escondido{
+    font-size:0px;
+}
+
+zona{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 100px;
+    gap:20px;
+}
+
+ruleta{
+    background: red;
+}
+
+presentador{
+    background-image:url("imgs/patxi.jpeg");
+    background-size:100px;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+
+
+marcador{
+    background: greenyellow;
+}

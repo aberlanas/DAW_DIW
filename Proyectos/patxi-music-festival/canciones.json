@@ -1,0 +1,550 @@
+﻿{
+    "Sheet1": [
+        {
+            "numero": "1",
+            "cancion": "BANK ACCOUNT",
+            "interprete": "21 SAVAGE",
+            "alumno": "Sandra Ruiz",
+            "orden": "80"
+        },
+        {
+            "numero": "2",
+            "cancion": "Uptown Funk",
+            "interprete": "Bruno Mars",
+            "alumno": "Alejandro Leal",
+            "orden": "80"
+        },
+        {
+            "numero": "3",
+            "cancion": "Fuente de Energía",
+            "interprete": "Estopa y El canto del loco",
+            "alumno": "Alejandro Garcia",
+            "orden": "79"
+        },
+        {
+            "numero": "4",
+            "cancion": "Aprendí",
+            "interprete": "Ocer y Rade",
+            "alumno": "Alejandro Garcia",
+            "orden": "78"
+        },
+        {
+            "numero": "5",
+            "cancion": "Tormenta",
+            "interprete": "SUBZE",
+            "alumno": "Raul Guillen",
+            "orden": "77"
+        },
+        {
+            "numero": "6",
+            "cancion": "Un año más",
+            "interprete": "Mecano",
+            "alumno": "Ivan Ruiperez",
+            "orden": "76"
+        },
+        {
+            "numero": "7",
+            "cancion": "Ain't No Mountain High Enough",
+            "interprete": "Marvin Gaye & Tammi Terrell - ",
+            "alumno": "Ivan Ruiperez",
+            "orden": "75"
+        },
+        {
+            "numero": "8",
+            "cancion": "Por Fin Te Encontré",
+            "interprete": "Cali Y El Dandee ft. Juan Magan, Sebastian Yatra ",
+            "alumno": "Dani Silva",
+            "orden": "74"
+        },
+        {
+            "numero": "9",
+            "cancion": "Himno de España",
+            "interprete": "Manuel de Espinosa de los Monteros",
+            "alumno": "Maria Peris",
+            "orden": "73"
+        },
+        {
+            "numero": "10",
+            "cancion": "Piensan",
+            "interprete": "Myke Towers",
+            "alumno": "Elena Vidal García",
+            "orden": "72"
+        },
+        {
+            "numero": "11",
+            "cancion": "alone",
+            "interprete": "MARSHMELLO",
+            "alumno": "Angel Chisvert",
+            "orden": "71"
+        },
+        {
+            "numero": "12",
+            "cancion": "Avengers soundtrack",
+            "interprete": "Avengers soundtrack",
+            "alumno": "Pablo Gil",
+            "orden": "71"
+        },
+        {
+            "numero": "13",
+            "cancion": "Cuidaré (Catalán)",
+            "interprete": "Sergio Dalma",
+            "alumno": "Ivan Ruiperez",
+            "orden": "69"
+        },
+        {
+            "numero": "14",
+            "cancion": "Worldwide",
+            "interprete": "Big Time Rush",
+            "alumno": "Ruben Jimenez",
+            "orden": "68"
+        },
+        {
+            "numero": "15",
+            "cancion": " My Heart Will Go On",
+            "interprete": "Celine Dion -",
+            "alumno": "Ivan Ruiperez",
+            "orden": "68"
+        },
+        {
+            "numero": "16",
+            "cancion": "LAST CALL",
+            "interprete": "XAVIBO",
+            "alumno": "Sandra Ruiz",
+            "orden": "65"
+        },
+        {
+            "numero": "17",
+            "cancion": "10000 hours",
+            "interprete": "Justin Biber",
+            "alumno": "Pablo Gil",
+            "orden": "65"
+        },
+        {
+            "numero": "18",
+            "cancion": "Minecraft Volume Alpha",
+            "interprete": "C418 - Sweden - ",
+            "alumno": "Ivan Ruiperez",
+            "orden": "65"
+        },
+        {
+            "numero": "19",
+            "cancion": "No llores (remix)",
+            "interprete": "DUKI x Leby",
+            "alumno": "Adrian Garcia",
+            "orden": "63"
+        },
+        {
+            "numero": "20",
+            "cancion": "Shut Up and Dance",
+            "interprete": "WALK THE MOON",
+            "alumno": "Toni Exposito",
+            "orden": "62"
+        },
+        {
+            "numero": "21",
+            "cancion": "Bajo Presión",
+            "interprete": "DANTE",
+            "alumno": "Raul Guillen",
+            "orden": "62"
+        },
+        {
+            "numero": "22",
+            "cancion": "Demons",
+            "interprete": "Imagine Dragons",
+            "alumno": "David Balsalobre",
+            "orden": "61"
+        },
+        {
+            "numero": "23",
+            "cancion": "Mi héroe",
+            "interprete": "Antonio orozco",
+            "alumno": "Alejandro Garcia",
+            "orden": "61"
+        },
+        {
+            "numero": "24",
+            "cancion": "Desatame",
+            "interprete": "SOGE",
+            "alumno": "Raul Guillen",
+            "orden": "61"
+        },
+        {
+            "numero": "25",
+            "cancion": "Someone You Loved",
+            "interprete": "Lewis Capaldi",
+            "alumno": "David Balsalobre",
+            "orden": "61"
+        },
+        {
+            "numero": "26",
+            "cancion": "WITH THE NAME OF LOVE",
+            "interprete": " MARTIN GARRIX",
+            "alumno": "Angel Chisvert",
+            "orden": "59"
+        },
+        {
+            "numero": "27",
+            "cancion": "Aserejé",
+            "interprete": "Las Ketchup",
+            "alumno": "Toni Exposito",
+            "orden": "56"
+        },
+        {
+            "numero": "28",
+            "cancion": " LOVE",
+            "interprete": "Gianluca Vacchi, Sebastián Yatra",
+            "alumno": "Dani Silva",
+            "orden": "55"
+        },
+        {
+            "numero": "29",
+            "cancion": "Old Town Road",
+            "interprete": "Lil Nas X",
+            "alumno": "Maria Peris",
+            "orden": "54"
+        },
+        {
+            "numero": "30",
+            "cancion": "DELIRIUM",
+            "interprete": "NATOS Y WAOR",
+            "alumno": "Sandra Ruiz",
+            "orden": "54"
+        },
+        {
+            "numero": "31",
+            "cancion": "Blinding Lights",
+            "interprete": "The weekend",
+            "alumno": "Pablo Gil",
+            "orden": "53"
+        },
+        {
+            "numero": "32",
+            "cancion": "Maria Rosa que bona estàs",
+            "interprete": "Curats D'espanto ",
+            "alumno": "Angel Chisvert",
+            "orden": "52"
+        },
+        {
+            "numero": "33",
+            "cancion": "5 Sentidos",
+            "interprete": "Dvicio, Taburete ",
+            "alumno": "Dani Silva",
+            "orden": "52"
+        },
+        {
+            "numero": "34",
+            "cancion": "Te vas",
+            "interprete": "Ozuna",
+            "alumno": "Ruben Jimenez",
+            "orden": "48"
+        },
+        {
+            "numero": "35",
+            "cancion": "Sueño",
+            "interprete": "Beret, Pablo Alborán",
+            "alumno": "David Balsalobre",
+            "orden": "47"
+        },
+        {
+            "numero": "36",
+            "cancion": "Survivor",
+            "interprete": "Destiny’s child ",
+            "alumno": "Selena Prats",
+            "orden": "46"
+        },
+        {
+            "numero": "37",
+            "cancion": "Adicto",
+            "interprete": "Tainy, Anuel AA, Ozuna",
+            "alumno": "Elena Vidal García",
+            "orden": "42"
+        },
+        {
+            "numero": "38",
+            "cancion": "Easy",
+            "interprete": "Jhay Cortez",
+            "alumno": "Elena Vidal García",
+            "orden": "37"
+        },
+        {
+            "numero": "39",
+            "cancion": "Caste on the hill",
+            "interprete": "Ed sheeran",
+            "alumno": "Esther Casas",
+            "orden": "37"
+        },
+        {
+            "numero": "40",
+            "cancion": "C90",
+            "interprete": "JOHN C",
+            "alumno": "Angel Chisvert",
+            "orden": "35"
+        },
+        {
+            "numero": "41",
+            "cancion": "ENTRA",
+            "interprete": "SOGE",
+            "alumno": "Sandra Ruiz",
+            "orden": "33"
+        },
+        {
+            "numero": "42",
+            "cancion": "Viva la vida",
+            "interprete": "Coldplay",
+            "alumno": "Esther Casas",
+            "orden": "32"
+        },
+        {
+            "numero": "43",
+            "cancion": "El último renglon",
+            "interprete": "Estopa",
+            "alumno": "Alejandro Garcia",
+            "orden": "32"
+        },
+        {
+            "numero": "44",
+            "cancion": "Vas a Quedarte",
+            "interprete": "Aitana Ocaña",
+            "alumno": "Alejandro Leal",
+            "orden": "29"
+        },
+        {
+            "numero": "45",
+            "cancion": "Queen of the night",
+            "interprete": "Whitney Houston",
+            "alumno": "Selena Prats",
+            "orden": "29"
+        },
+        {
+            "numero": "46",
+            "cancion": "Up&Up ",
+            "interprete": "Los unidades – (anteriormente coldplay)",
+            "alumno": "Selena Prats",
+            "orden": "29"
+        },
+        {
+            "numero": "47",
+            "cancion": "Can’t get you out of my head",
+            "interprete": "Kylie Minogue ",
+            "alumno": "Selena Prats",
+            "orden": "28"
+        },
+        {
+            "numero": "48",
+            "cancion": "Ay mi madre",
+            "interprete": "El fary",
+            "alumno": "Adrian Garcia",
+            "orden": "27"
+        },
+        {
+            "numero": "49",
+            "cancion": "Bandolera ",
+            "interprete": "Anuel AA",
+            "alumno": "Adrian Garcia",
+            "orden": "27"
+        },
+        {
+            "numero": "50",
+            "cancion": "TUTU",
+            "interprete": "CAMILO",
+            "alumno": "Angel Chisvert",
+            "orden": "27"
+        },
+        {
+            "numero": "51",
+            "cancion": "Come and get your love",
+            "interprete": "Redbone",
+            "alumno": "Toni Exposito",
+            "orden": "26"
+        },
+        {
+            "numero": "52",
+            "cancion": "Shed a Light",
+            "interprete": "David Guetta y Robin schulz",
+            "alumno": "Pablo Gil",
+            "orden": "25"
+        },
+        {
+            "numero": "53",
+            "cancion": "The Nights",
+            "interprete": "Aviici",
+            "alumno": "Esther Casas",
+            "orden": "24"
+        },
+        {
+            "numero": "54",
+            "cancion": "La promesa",
+            "interprete": "Melendi",
+            "alumno": "Dani Silva",
+            "orden": "24"
+        },
+        {
+            "numero": "55",
+            "cancion": "Sweet Child O’ Mine",
+            "interprete": "Guns N’ Roses",
+            "alumno": "David Balsalobre",
+            "orden": "23"
+        },
+        {
+            "numero": "56",
+            "cancion": "Wake Me Up Before You Go-Go",
+            "interprete": "Wham!",
+            "alumno": "Toni Exposito",
+            "orden": "23"
+        },
+        {
+            "numero": "57",
+            "cancion": "Una lady como tu",
+            "interprete": "Manuel Turizo",
+            "alumno": "Ruben Jimenez",
+            "orden": "23"
+        },
+        {
+            "numero": "58",
+            "cancion": "Changes",
+            "interprete": "Faul y Wad lad",
+            "alumno": "Pablo Gil",
+            "orden": "23"
+        },
+        {
+            "numero": "59",
+            "cancion": "Nadie sabe",
+            "interprete": "Juhn, Amenazzy",
+            "alumno": "Adrian Garcia",
+            "orden": "21"
+        },
+        {
+            "numero": "60",
+            "cancion": "Un año",
+            "interprete": "Sebastian yatra",
+            "alumno": "Ruben Jimenez",
+            "orden": "21"
+        },
+        {
+            "numero": "61",
+            "cancion": "Propuesta Indecente",
+            "interprete": "Romeo Santos",
+            "alumno": "Esther Casas",
+            "orden": "21"
+        },
+        {
+            "numero": "62",
+            "cancion": "La mentira",
+            "interprete": "Dani Martín",
+            "alumno": "Alejandro Garcia",
+            "orden": "21"
+        },
+        {
+            "numero": "63",
+            "cancion": "Me Llama",
+            "interprete": "Beret",
+            "alumno": "Alejandro Leal",
+            "orden": "19"
+        },
+        {
+            "numero": "64",
+            "cancion": "Starships",
+            "interprete": " Nicki Minaj",
+            "alumno": "Alejandro Leal",
+            "orden": "19"
+        },
+        {
+            "numero": "65",
+            "cancion": "Si por mí fuera",
+            "interprete": "Beret",
+            "alumno": "Dani Silva",
+            "orden": "17"
+        },
+        {
+            "numero": "66",
+            "cancion": "FUEGO",
+            "interprete": "ESTOPA",
+            "alumno": "Sandra Ruiz",
+            "orden": "17"
+        },
+        {
+            "numero": "67",
+            "cancion": "Total eclipse of the heart ",
+            "interprete": "Bonnie Tyler ",
+            "alumno": "Selena Prats",
+            "orden": "15"
+        },
+        {
+            "numero": "68",
+            "cancion": "Sufrir es crecer",
+            "interprete": "SHÉ",
+            "alumno": "Raul Guillen",
+            "orden": "14"
+        },
+        {
+            "numero": "69",
+            "cancion": "You Need To Calm Down",
+            "interprete": "Taylor Swift",
+            "alumno": "Maria Peris",
+            "orden": "12"
+        },
+        {
+            "numero": "70",
+            "cancion": "Loki | Destripando la Historia",
+            "interprete": "Pascu y Rodri",
+            "alumno": "Maria Peris",
+            "orden": "11"
+        },
+        {
+            "numero": "71",
+            "cancion": "Tusa",
+            "interprete": "Karol G, Nicky Minaj",
+            "alumno": "Elena Vidal García",
+            "orden": "11"
+        },
+        {
+            "numero": "72",
+            "cancion": "Can we dance? ",
+            "interprete": "The vamps",
+            "alumno": "Esther Casas",
+            "orden": "10"
+        },
+        {
+            "numero": "73",
+            "cancion": "Desde cero",
+            "interprete": "Beret y Melendi",
+            "alumno": "Ruben Jimenez",
+            "orden": "10"
+        },
+        {
+            "numero": "74",
+            "cancion": "Back in Black",
+            "interprete": "AC/DC",
+            "alumno": "David Balsalobre",
+            "orden": "8"
+        },
+        {
+            "numero": "75",
+            "cancion": "Si Estuviésemos Juntos",
+            "interprete": "Bad Buuny",
+            "alumno": "Adrian Garcia",
+            "orden": "8"
+        },
+        {
+            "numero": "76",
+            "cancion": "Memories",
+            "interprete": "Maroon 5",
+            "alumno": "Elena Vidal García",
+            "orden": "7"
+        },
+        {
+            "numero": "77",
+            "cancion": "Livin' La Vida Loca",
+            "interprete": "Ricky Martin",
+            "alumno": "Toni Exposito",
+            "orden": "6"
+        },
+        {
+            "numero": "78",
+            "cancion": "Lo siento",
+            "interprete": "Beret",
+            "alumno": "Raul Guillen",
+            "orden": "4"
+        }
+    ]
+}
