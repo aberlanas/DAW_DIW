@@ -1,43 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie');
 body {
-    background-color: #F24236;
+    background-color: #aa1bb0;
     width: 100%;
     font-family: 'Cookie', cursive;
     color: #fff;
-}
-
-.drop {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    opacity: 0;
-}
-
-.snow {
-    height: 8px;
-    width: 8px;
-    border-radius: 100%;
-    background-color: #FFF;
-    box-shadow: 0 0 10px #FFF
-}
-
-.animate {
-    animation: falling 8.5s infinite ease-in;
-}
-
-@keyframes falling {
-    0% {
-        top: 0;
-        opacity: 1;
-    }
-    100% {
-        top: 1500px;
-        opacity: 0
-    }
+    text-shadow: 2px 2px 3px black; 
 }
 
 h1 {
     text-align: center;
+    text-shadow: #450580;
 }
 
 canciones {
@@ -45,6 +17,8 @@ canciones {
     grid-template-columns: repeat(20, 1fr);
     gap: 5px;
     margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 cancion {
@@ -54,6 +28,7 @@ cancion {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
     transition: font-size 1s;
 }
 
@@ -62,10 +37,11 @@ cancion .escondido {
 }
 
 zona {
-    display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
-    grid-template-rows: 100px;
-    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:10px;
 }
 
 ruleta {
@@ -84,14 +60,13 @@ resultado {
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: Courier New;
-    font-size: 17px;
+    font-size: 40px;
     padding: 32px 20px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #450580;
 }
 
-btirar {
+btirar, bcorto, blargo {
     box-shadow: 3px 4px 3px 0px #520a82;
     background: linear-gradient(to bottom, #a920c4 5%, #b338f0 100%);
     background-color: #a920c4;
@@ -100,37 +75,36 @@ btirar {
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: Courier New;
-    font-size: 17px;
+    font-size: 40px;
     padding: 32px 20px;
+    margin: 4px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #450580;
 }
 
-btirar:hover {
+bazul,brojo,bamarillo,bverde{
+    box-shadow: 3px 4px 3px 0px #520a82;
+    background: linear-gradient(to bottom, #a920c4 5%, #b338f0 100%);
+    background-color: #a920c4;
+    border-radius: 18px;
+    border: 1px solid #8619cf;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 12px 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #450580;
+}
+
+btirar:hover,bcorto:hover,blargo:hover,bazul:hover,brojo:hover,bamarillo:hover,bverde:hover {
     background: linear-gradient(to bottom, #b338f0 5%, #a920c4 100%);
     background-color: #b338f0;
 }
 
-btirar:active {
+btirar:active,bcorto:active,blargo:active {
     position: relative;
     top: 1px;
-}
-
-puntosPregunta {
-    box-shadow: 3px 4px 3px 0px #520a82;
-    background: linear-gradient(to bottom, #dfa4eb 5%, #aa1ff0 100%);
-    background-color: #dfa4eb;
-    border-radius: 18px;
-    border: 1px solid #46136b;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Courier New;
-    font-size: 17px;
-    padding: 32px 20px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #450580;
 }
 
 equipos {
@@ -138,139 +112,37 @@ equipos {
     flex-direction: column;
 }
 
-bverde {
-    box-shadow: 3px 4px 3px 0px #3dc21b;
-    background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-    background-color: #44c767;
-    border-radius: 7px;
-    border: 4px solid #18ab29;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Courier New;
-    font-size: 17px;
-    padding: 5px 16px;
-    text-decoration: none;
-    text-shadow: 0px 15px 11px #2f6627;
-}
-
-bverde:hover {
-    background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-    background-color: #5cbf2a;
-}
-
-bverde:active {
-    position: relative;
-    top: 1px;
-}
-
-brojo {
-    box-shadow: 3px 4px 3px 0px #8a2a21;
-    background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
-    background-color: #c62d1f;
-    border-radius: 7px;
-    border: 4px solid #d02718;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Courier New;
-    font-size: 17px;
-    padding: 5px 16px;
-    text-decoration: none;
-    text-shadow: 0px 15px 11px #810e05;
-}
-
-brojo:hover {
-    background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-    background-color: #f24437;
-}
-
-brojo:active {
-    position: relative;
-    top: 1px;
-}
-
-bamarillo {
-    box-shadow: 3px 4px 3px 0px #c0b625;
-    background: linear-gradient(to bottom, #e0cc12 5%, #e9e513 100%);
-    background-color: #c0b625;
-    border-radius: 7px;
-    border: 4px solid #c0b625;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Courier New;
-    font-size: 17px;
-    padding: 5px 16px;
-    text-decoration: none;
-    text-shadow: 0px 15px 11px #c0b625;
-}
-
-bamarillo:hover {
-    background: linear-gradient(to bottom, #c0b625 5%, #c0b625 100%);
-    background-color: #c0b625;
-}
-
-bamarillo:active {
-    position: relative;
-    top: 1px;
-}
-
-bazul {
-    box-shadow: 3px 4px 3px 0px #0c3ae0;
-    background: linear-gradient(to bottom, #0c3af0 5%, #0c3af0 100%);
-    background-color: #0c3ae0;
-    border-radius: 7px;
-    border: 4px solid #04195f;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Courier New;
-    font-size: 17px;
-    padding: 5px 16px;
-    text-decoration: none;
-    text-shadow: 0px 15px 11px #0d1f72;
-}
-
-bazul:hover {
-    background: linear-gradient(to bottom, #0c3ae0 5%, #0c3ae0 100%);
-    background-color: #0c3ae0;
-}
-
-bazul:active {
-    position: relative;
-    top: 1px;
-}
-
-presentador {
-    background-image: url("imgs/patxi.jpeg");
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: center center;
+.presentador {
+    width: 100px;
 }
 
 marcador {
-    background: lightgrey;
+    
     display: flex;
     flex-direction: column;
+    align-items:center;
+    width:200px;
 }
 
-rojo {
+podium{
+    font-size:40px;
+}
+
+.rojo {
     background-color: red;
-    width: 100%;
 }
 
-azul {
+.azul {
     background-color: blue;
-    width: 100%;
+
 }
 
-verde {
+.verde {
     background-color: green;
-    width: 100%;
+
 }
 
-amarillo {
+.amarillo {
     background-color: yellow;
-    width: 100%;
+
 }

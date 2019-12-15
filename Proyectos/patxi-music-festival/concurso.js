@@ -3,10 +3,13 @@
 // author : Angel Berlanas Vicente
 // email  : <berlanas_ang@gva.es>
 
-let puntRojo = 0;
-let puntVerde = 0;
-let puntAmarillo = 0;
-let puntAzul = 0;
+let puntuaciones = new Object();
+puntuaciones.rojo = 0;
+puntuaciones.verde = 0;
+puntuaciones.azul =0;
+puntuaciones.amarillo = 0;
+
+let vCanciones = [];
 
 function zoomIn() {
     console.log(this);
@@ -40,12 +43,15 @@ function replenishBoard(json) {
         // Zona de eventos
         item.addEventListener("mouseover", zoomIn);
 
-
+        // Anyadimos la cancion y al set de canciones
         document.querySelector("canciones").appendChild(item);
+        vCanciones.push(cancion.numero);
 
     });
-}
 
+
+
+}
 
 function buildBoard() {
     fetch('canciones.json')
@@ -57,41 +63,71 @@ function buildBoard() {
 }
 
 
-
-function snow(num, speed) {
-    if (num > 0) {
-        setTimeout(function() {
-            $('#drop_' + randomInt(1, 250)).addClass('animate');
-            num--;
-            snow(num, speed);
-        }, speed);
+function sortObject(obj) {
+    var arr = [];
+    for (var prop in obj) {
+        if (obj.hasOwnProperty(prop)) {
+            arr.push({
+                'key': prop,
+                'value': obj[prop]
+            });
+        }
     }
-};
+    arr.sort(function(a, b) { return b.value - a.value; });
+    //arr.sort(function(a, b) { a.value.toLowerCase().localeCompare(b.value.toLowerCase()); }); //use this to sort as strings
+    return arr; // returns array
+}
 
-function snowDrop(num, position) {
-    if (num > 0) {
-        var drop = '<div class="drop snow" id="drop_' + num + '"></div>';
+function refrescaMarcador(){
+    let marcador=document.querySelector("marcador");
+    marcador.innerHTML="";
+    let marcadorOrdenado= sortObject(puntuaciones);
+    marcadorOrdenado.forEach(item => {
+        console.log(item);
+        let podium=document.createElement("podium");
+        podium.classList.add(item.key);
+        podium.innerText=item.value;
+        marcador.appendChild(podium);
+    });
+}
 
-        $('body').append(drop);
-        $('#drop_' + num).css('left', position);
-        num--;
-        snowDrop(num, randomInt(60, 1280));
-    }
-};
+function dameCancion(){
+    console.log(" - Dame Cancion");
 
-function randomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-};
+    let randomCancion = Math.floor(Math.random() * vCanciones.length-1) + 1 ;
+    let nextCancion = vCanciones[randomCancion];
 
+    vCanciones.splice(randomCancion,1);
+
+    document.querySelector("resultado").textContent=nextCancion;
+}
+
+function sumaPuntos(){
+    let auxPuntos = document.querySelector("input[name='puntos']").value;
+    let equipo = this.dataset.equipo;
+    
+    puntuaciones[equipo] += parseInt(auxPuntos);
+
+    refrescaMarcador();
+}
+
+function bindEvents(){
+    console.log(" * Asociando Eventos");
+    // Boton de tirar
+    document.querySelector("btirar").addEventListener("click",dameCancion);
+
+    document.querySelector("bazul").addEventListener("click",sumaPuntos);
+    document.querySelector("bverde").addEventListener("click",sumaPuntos);
+    document.querySelector("brojo").addEventListener("click",sumaPuntos);
+    document.querySelector("bamarillo").addEventListener("click",sumaPuntos);
+
+}
 
 
 function init() {
     buildBoard();
-    buildScore();
-
-    //make snow
-    snowDrop(150, randomInt(1035, 1280));
-    snow(150, 150);
+    //buildScore();
+    bindEvents();
 }
 
 window.onload = init;
