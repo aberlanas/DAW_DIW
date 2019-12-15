@@ -33,6 +33,7 @@ function replenishBoard(json) {
         escondidos.innerHTML = cancion.cancion + "<br>" + cancion.interprete + "<br>" + cancion.alumno;
         item.appendChild(escondidos);
 
+        item.dataset.numero = cancion.numero;   
         item.dataset.cancion = cancion.cancion;
         item.dataset.interprete = cancion.interprete;
 
@@ -102,6 +103,15 @@ function dameCancion(){
     document.querySelector("resultado").textContent=nextCancion;
 }
 
+function marcaCancion(equipo){
+    let auxCancion = parseInt(document.querySelector("resultado").innerHTML);
+   
+    let auxDivCancion = document.querySelector(`[data-numero="${auxCancion}"]`);
+    console.log(auxDivCancion);
+    auxDivCancion.classList.add(equipo);
+    console.log(auxDivCancion);
+}
+
 function sumaPuntos(){
     let auxPuntos = document.querySelector("input[name='puntos']").value;
     let equipo = this.dataset.equipo;
@@ -109,6 +119,8 @@ function sumaPuntos(){
     puntuaciones[equipo] += parseInt(auxPuntos);
 
     refrescaMarcador();
+    marcaCancion(this.dataset.equipo);
+
 }
 
 function bindEvents(){
