@@ -9,7 +9,7 @@ body {
 
 
 body {
-    background-color: #6b92b9;
+    background-color: #9e1c1c;
     background-image: url('http://i.imgur.com/BiSmXaq.png'), url('http://i.imgur.com/XHuy0NJ.png'), url('http://i.imgur.com/okpRxJU.png');
     -webkit-animation: snow 20s linear infinite;
     -moz-animation: snow 20s linear infinite;
@@ -20,7 +20,7 @@ body {
 h1 {
     text-align: center;
     text-shadow: #450580;
-    
+    font-size: 40px;
 }
 
 input[type=text]{
@@ -102,6 +102,19 @@ btirar, bcorto, blargo {
     text-shadow: 0px 1px 0px #450580;
 }
 
+bcorto,blargo{
+    padding: 12px 20px;
+    margin: 4px;
+}
+
+cortoylargo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
 bazul,brojo,bamarillo,bverde{
     box-shadow: 3px 4px 3px 0px #520a82;
     border-radius: 18px;
@@ -109,10 +122,15 @@ bazul,brojo,bamarillo,bverde{
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 22px;
     padding: 12px 20px;
     text-decoration: none;
+    text-align: center;
     text-shadow: 0px 1px 0px #450580;
+}
+
+bamarillo,brojo{
+    color:black;
 }
 
 blargo:hover,bazul:hover,brojo:hover,bamarillo:hover,bverde:hover{
@@ -130,12 +148,20 @@ btirar:active,bcorto:active,blargo:active {
 }
 
 equipos {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "verde azul"
+                         "amarillo rojo"  ;
+                         gap: 20px;
 }
+
+
 
 .presentador {
     width: 100px;
+    box-shadow: 3px 4px 3px 0px #46136b;
+    border-radius: 20px;
 }
 
 marcador {
@@ -180,33 +206,33 @@ podium{
 
 @-webkit-keyframes snow {
     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-    50% { background-color: #b4cfe0 }
+    50% { background-color: #9e1c1c }
     100% {
         background-position: 500px 1000px, 400px 400px, 300px 300px;
-        background-color: #6b92b9;
+        background-color: #9e1c1c;
     }
 }
 @-moz-keyframes snow {
     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-    50% { background-color: #b4cfe0 }
+    50% { background-color: #9e1c1c }
     100% {
         background-position: 500px 1000px, 400px 400px, 300px 300px;
-        background-color: #6b92b9;
+        background-color: #9e1c1c;
     }
 }
 @-ms-keyframes snow {
     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-    50% { background-color: #b4cfe0 }
+    50% { background-color: #9e1c1c }
     100% {
         background-position: 500px 1000px, 400px 400px, 300px 300px;
-        background-color: #6b92b9;
+        background-color: #9e1c1c;
     }
 }
 @keyframes snow {
     0% { background-position: 0px 0px, 0px 0px, 0px 0px }
-    50% { background-color: #b4cfe0 }
+    50% { background-color: #9e1c1c }
     100% {
         background-position: 500px 1000px, 400px 400px, 300px 300px;
-        background-color: #6b92b9;
+        background-color: #9e1c1c;
     }
 }
