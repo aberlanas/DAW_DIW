@@ -9,59 +9,36 @@ puntuaciones.verde = 0;
 puntuaciones.azul =0;
 puntuaciones.amarillo = 0;
 
+const maxCanciones = 78;
+
+let vPaths = [];
 let vCanciones = [];
 
 function zoomIn() {
     console.log(this);
     let textoEscondido = this.querySelector(".escondido");
     console.log(textoEscondido);
-    textoEscondido.classList.toggle(".escondido");
+    textoEscondido.classList.toggle("escondido");
 }
 
-function replenishBoard(json) {
+function replenishBoard() {
 
-    console.log(json);
-
-    json.Sheet1.forEach(cancion => {
-
+    for (i = 0;i<maxCanciones;i++){
         let item = document.createElement("cancion");
-
-        item.innerHTML = cancion.numero;
-
-        let escondidos = document.createElement("p");
-        escondidos.classList.toggle("escondido");
-        escondidos.innerHTML = cancion.cancion + "<br>" + cancion.interprete + "<br>" + cancion.alumno;
-        item.appendChild(escondidos);
-
-        item.dataset.numero = cancion.numero;   
-        item.dataset.cancion = cancion.cancion;
-        item.dataset.interprete = cancion.interprete;
-
-
-        item.dataset.corto = 10;
-
-
-        // Zona de eventos
-        item.addEventListener("mouseover", zoomIn);
-
-        // Anyadimos la cancion y al set de canciones
+        item.innerHTML = i+1;
         document.querySelector("canciones").appendChild(item);
-        vCanciones.push(cancion.numero);
+        vCanciones.push(i+1);
 
-    });
-
-
-
+    }
 }
 
 function buildBoard() {
-    fetch('canciones.json')
-        .then(response => response.json())
-        .then(auxjson => {
-            json = auxjson;
-            replenishBoard(json);
-        });
+
+            replenishBoard();
+            
+    
 }
+
 
 
 function sortObject(obj) {
@@ -122,6 +99,29 @@ function sumaPuntos(){
 
 }
 
+function playLargo(){
+    let auxCancion = document.querySelector("resultado").innerHTML;
+    document.querySelector("audio").src="canciones/"+auxCancion+".mp3";
+
+    document.querySelector("audio").play();
+    document.querySelector("audio").removeEventListener("canplaythrough",paratediez, false); 
+}
+
+function paratediez() {
+    setTimeout(function(){
+        document.querySelector("audio").pause();
+    },10000);
+}
+
+function playCorto(){
+    let auxCancion = document.querySelector("resultado").innerHTML;
+    document.querySelector("audio").src="canciones/"+auxCancion+".mp3";
+    document.querySelector("audio").play();
+
+    document.querySelector("audio").addEventListener("canplaythrough",paratediez, false); 
+
+}
+
 function bindEvents(){
     console.log(" * Asociando Eventos");
     // Boton de tirar
@@ -132,12 +132,13 @@ function bindEvents(){
     document.querySelector("brojo").addEventListener("click",sumaPuntos);
     document.querySelector("bamarillo").addEventListener("click",sumaPuntos);
 
+    document.querySelector("bcorto").addEventListener("click",playCorto);
+    document.querySelector("blargo").addEventListener("click",playLargo);
 }
 
 
 function init() {
     buildBoard();
-    //buildScore();
     bindEvents();
 }
 
