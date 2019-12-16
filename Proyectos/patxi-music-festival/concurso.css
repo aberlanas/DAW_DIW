@@ -7,9 +7,27 @@ body {
     text-shadow: 2px 2px 3px black; 
 }
 
+
+body {
+    background-color: #6b92b9;
+    background-image: url('http://i.imgur.com/BiSmXaq.png'), url('http://i.imgur.com/XHuy0NJ.png'), url('http://i.imgur.com/okpRxJU.png');
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+}
+
 h1 {
     text-align: center;
     text-shadow: #450580;
+    
+}
+
+input[type=text]{
+    font-family: 'Cookie', cursive;
+    font-size: 50pt;
+    text-align: center;
+    width: 70px;
 }
 
 canciones {
@@ -19,6 +37,7 @@ canciones {
     margin-top: 100px;
     margin-left: 10px;
     margin-right: 10px;
+    ;
 }
 
 cancion {
@@ -30,6 +49,7 @@ cancion {
     align-items: center;
     font-size: 30px;
     transition: font-size 1s;
+    border-radius: 5px
 }
 
 cancion .escondido {
@@ -84,8 +104,6 @@ btirar, bcorto, blargo {
 
 bazul,brojo,bamarillo,bverde{
     box-shadow: 3px 4px 3px 0px #520a82;
-    background: linear-gradient(to bottom, #a920c4 5%, #b338f0 100%);
-    background-color: #a920c4;
     border-radius: 18px;
     border: 1px solid #8619cf;
     display: inline-block;
@@ -97,7 +115,11 @@ bazul,brojo,bamarillo,bverde{
     text-shadow: 0px 1px 0px #450580;
 }
 
-btirar:hover,bcorto:hover,blargo:hover,bazul:hover,brojo:hover,bamarillo:hover,bverde:hover {
+blargo:hover,bazul:hover,brojo:hover,bamarillo:hover,bverde:hover{
+    background: linear-gradient(to bottom, white 5%, darkgrey 100%);
+}
+
+btirar:hover,bcorto:hover {
     background: linear-gradient(to bottom, #b338f0 5%, #a920c4 100%);
     background-color: #b338f0;
 }
@@ -126,6 +148,12 @@ marcador {
 
 podium{
     font-size:40px;
+    margin:10px;
+    padding: 5px auto;
+    width: 100px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 3px 4px 3px 0px #46136b;
 }
 
 .rojo {
@@ -134,15 +162,51 @@ podium{
 
 .azul {
     background-color: blue;
-
 }
 
 .verde {
     background-color: green;
-
 }
 
 .amarillo {
     background-color: yellow;
+}
 
+
+
+
+/**/
+
+
+@-webkit-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+@-moz-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+@-ms-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
+}
+@keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    50% { background-color: #b4cfe0 }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+        background-color: #6b92b9;
+    }
 }

@@ -104,12 +104,11 @@ function dameCancion(){
 }
 
 function marcaCancion(equipo){
+
     let auxCancion = parseInt(document.querySelector("resultado").innerHTML);
-   
     let auxDivCancion = document.querySelector(`[data-numero="${auxCancion}"]`);
-    console.log(auxDivCancion);
     auxDivCancion.classList.add(equipo);
-    console.log(auxDivCancion);
+    
 }
 
 function sumaPuntos(){

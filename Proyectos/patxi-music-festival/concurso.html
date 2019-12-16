@@ -16,10 +16,10 @@
     <zona>
 
         <marcador>
-            <podium>Puntos Verdes</podium>
-            <podium>Puntos Rojos</podium>
-            <podium>Puntos Azules</podium>
-            <podium>Puntos Amarillos</podium>
+            <podium class="verde">--</podium>
+            <podium class="rojo">--</podium> 
+            <podium class="azul">--</podium >
+            <podium class="amarillo">--</podium>
         </marcador>
 
         <presentador>
@@ -41,17 +41,17 @@
             </sonando>
 
             <puntosPregunta>
-                <input type="text" value="10" name="puntos">
+                <input type="text" value="10" name="puntos" maxlength="3">
             </puntosPregunta>
 
             <equipos_1>
-                <bverde data-equipo="verde">Al Verde</bverde>
-                <brojo data-equipo="rojo">Al Rojo</brojo>
+                <bverde data-equipo="verde" class="verde">Al Verde</bverde>
+                <brojo data-equipo="rojo" class="rojo">Al Rojo</brojo>
              
             </equipos_1>
             <equipos_2>
-                <bazul data-equipo="azul">Al Azul</bazul>
-                <bamarillo data-equipo="amarillo">Al Amarillo</bamarillo>
+                <bazul data-equipo="azul" class="azul">Al Azul</bazul>
+                <bamarillo data-equipo="amarillo" class="amarillo">Al Amarillo</bamarillo>
             </equipos_2>
       
 
