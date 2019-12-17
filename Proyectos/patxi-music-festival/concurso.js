@@ -21,7 +21,7 @@ function zoomIn() {
     textoEscondido.classList.toggle("escondido");
 }
 
-function replenishBoard() {
+function buildBoard() {
 
     for (i = 0;i<maxCanciones;i++){
         let item = document.createElement("cancion");
@@ -31,14 +31,6 @@ function replenishBoard() {
 
     }
 }
-
-function buildBoard() {
-
-            replenishBoard();
-            
-    
-}
-
 
 
 function sortObject(obj) {
