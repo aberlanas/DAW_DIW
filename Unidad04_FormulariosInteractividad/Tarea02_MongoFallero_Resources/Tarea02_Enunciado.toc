@@ -1,0 +1,3 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Requisitos Generales}{1}% 
+\contentsline {subsection}{\numberline {1.1}Lenguajes}{1}% 

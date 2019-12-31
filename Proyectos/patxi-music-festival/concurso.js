@@ -27,6 +27,7 @@ function buildBoard() {
         let item = document.createElement("cancion");
         item.innerHTML = i+1;
         document.querySelector("canciones").appendChild(item);
+        item.dataset.numero=i+1;
         vCanciones.push(i+1);
 
     }
