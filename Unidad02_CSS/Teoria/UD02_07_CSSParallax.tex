@@ -1,0 +1,173 @@
+% Created 2019-11-11 lun 15:32
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[newfloat]{minted}
+\usepackage{minted}
+\usepackage{xcolor}
+\usemintedstyle{monokai}    %% sets default for all source-code blocks
+\definecolor{bg}{HTML}{555555}
+\setminted{bgcolor=bg}
+\hypersetup{colorlinks=true,linkcolor=black}
+\author{Angel Berlanas}
+\date{\today}
+\title{UD02 - Paralaje en CSS}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.2.2 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+
+\section{Efectos de Paralaje en CSS}
+\label{sec-1}
+
+\subsection{¿En qué consiste?}
+\label{sec-1-1}
+
+El efecto de Paralaje es la simulación en un entorno 2D de que estamos
+observando a través de una ventana un mundo en 3 Dimensiones, donde dependiendo
+de la lejania del objeto respecto al observador, este se desplaza a diferente
+velocidad. 
+
+Es el efecto de mirar a través de la ventana de un tren, los objetos que se
+encuentran próximos a nosotros parecen desplazarse a una velocidad mayor,
+mientras que los más lejanos apenas se mueven.
+
+\subsection{Maneras de implementarlo}
+\label{sec-1-2}
+
+Se tratar de algo bastante complejo respecto a lo visto anteriormente en
+clase, si buscamos en \emph{Internet} \verb~efecto de paralaje JS~, veremos multitud de
+librerias ya realizadas que con mayor o menor éxito y posibilidad de
+configuración se adaptan \emph{a nuestras necesidades}.
+
+Con el objetivo de plantear las \textbf{bases} de como funciona este tipo de efecto,
+vamos a decantarnos por una implementación del efecto en CSS Puro (\emph{Pure CSS}),
+que nos permitirá no \emph{distraernos} con el código en \verb~JS~. Sin duda a medida que
+el desarrollador en ciernes (el alumn@), vaya desarrollando sus habilidades,
+buscará soluciones más complejas y vistosas que le permitirán un mayor
+despliegue de su talento. Por ahora\ldots{}CSS es nuestro amigo.
+
+\newpage
+\subsection{HTML}
+\label{sec-1-3}
+
+\begin{minted}[]{html}
+<body>
+	<div class="navbar"><span>Paralaje en CSS</span></div>  
+	<div class="parallax-wrapper">
+	    <div class="content">
+		<p>Lorem ipsum dolor sit amet,... 
+		   ....
+		   Donec in justo eu ligula semper.</p>
+	    </div>
+	</div>
+	<div class="regular-wrapper">
+	    <div class="content">
+		<p>Lorem ipsum dolor sit amet,...
+		   .... 
+		   Donec in justo eu ligula semper.</p>
+	    </div>
+	</div>
+</body>
+\end{minted}
+
+Comenzamos con poner el fondo al 100\%.
+
+\begin{minted}[]{css}
+.parallax-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    box-sizing: border-box;
+}
+.regular-wrapper {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    background-image: url("/your-bkg.png");
+}
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
+    background: #aaa;
+}
+\end{minted}
+
+Pasamos a ponerlo absoluto
+
+
+\begin{minted}[]{css}
+.parallax-wrapper::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-image: url("/ruta-al-background.png");
+    position: absolute;
+    z-index: -1;
+}
+\end{minted}
+
+
+Vamos añadiendo a los contenidos el código \verb~CSS~:
+
+\begin{minted}[]{css}
+html {
+    overflow: hidden;
+}
+body {
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.parallax-wrapper {
+    transform-style: preserve-3d;
+}
+\end{minted}
+
+
+Transformamos y escalamos antes.
+
+\begin{minted}[]{css}
+.parallax-wrapper::before {
+    transform:translateZ(-1px) scale(2);
+}
+\end{minted}
+
+Antes de esto modificamos el efecto.
+
+\begin{minted}[]{css}
+.parallax-wrapper::before {
+    z-index: -1;
+}
+.regular-wrapper {
+    z-index: 2;
+    position: relative;
+}
+\end{minted}
+% Emacs 25.2.2 (Org mode 8.2.10)
+\end{document}

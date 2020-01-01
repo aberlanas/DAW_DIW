@@ -4,7 +4,7 @@ PDFS
 .sass-cache
 _minted*
 *.solucion
-*.tex
+.tex
 *.tex~
 *.org~
 #*#

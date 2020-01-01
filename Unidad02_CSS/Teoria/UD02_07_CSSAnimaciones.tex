@@ -1,0 +1,206 @@
+% Created 2019-11-14 jue 16:16
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[newfloat]{minted}
+\hypersetup{colorlinks=true,linkcolor=black}
+\author{Angel Berlanas}
+\date{\today}
+\title{UD02 - Animaciones CSS}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.2.2 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Animaciones CSS}
+\label{sec-1}
+
+\subsection{¿Qué son las Animaciones CSS?}
+\label{sec-1-1}
+
+Las animaciones CSS3 permiten animar la transición entre un estilo CSS y
+otro, son muy similares a las \verb~transiciones~ que vimos en clases anteriores. 
+
+Las animaciones constan de dos componentes: un estilo que describe la
+animación CSS y un conjunto de fotogramas que indican su estado inicial y final,
+así como posibles puntos intermedios en la misma.
+
+\subsection{Propiedades}
+\label{sec-1-2}
+
+A continuación vamos a ver las diferentes propiedades que pueden tener las
+\textbf{Animaciones CSS}, como vereís se trata de conceptos muy similares a los que
+están descritos en los apartados anteriores.
+
+\subsubsection{animation-name}
+\label{sec-1-2-1}
+
+Se trata de la propiedad que establece el nombe de la regla (\verb~@keyframes~) que
+describe los fotogramas de la aplicación.
+
+Pueden especificarse más de uno, en ese caso irán separados por \textasciitilde{},\textasciitilde{}.
+
+\subsubsection{animation-duration}
+\label{sec-1-2-2}
+
+Especificado en \emph{segundos} lo que dura la animación \textbf{completa}.
+
+\subsubsection{animation-iteration-count}
+\label{sec-1-2-3}
+
+Indica cuantas veces debe realizarse la animación.
+
+Los valores posibles son:
+
+\begin{itemize}
+\item \verb~infinite~
+\item \verb~<number>~
+\item $x^2x$
+\end{itemize}
+
+Donde \verb~<number>~ establece un número de iteraciones, se pueden ponder decimales,
+y se aplicará ese porcentaje de la animación.
+
+\begin{minted}[]{css}
+animation-iteration-count: 2.3;
+\end{minted}
+
+Realizará la animación 2 veces completas y \textbf{un tercio} de la misma.
+
+\subsubsection{animation-timing-function}
+\label{sec-1-2-4}
+
+Se trata del mismo concepto que vimos en las transiciones, \emph{cómo cambia}
+\emph{en el tiempo} la propia animación, acelerándose o frenándose según se
+especifique.
+
+Este parámetro puede ser establecido en cada uno de los \verb~@keyframes~ que tenga
+la animación.
+
+Y aquí también podemos usar \verb~cubic-bezier~ como posibles valores:
+
+\begin{center}
+\begin{tabular}{l}
+Valores\\
+\hline
+ease-in\\
+ease-out\\
+ease-in-out\\
+linear\\
+cubic-bezier\\
+\end{tabular}
+\end{center}
+
+
+\subsubsection{@keyframes}
+\label{sec-1-2-5}
+
+\verb~@keyframes~ es la parte en la que programamos la animación, indicando mediante
+una serie de palabras \emph{clave} y los porcentajes de la animación.
+
+\begin{minted}[]{css}
+@keyframes pixar {
+
+   from {
+	top:100px;
+	animation-timing-function:ease-in;
+   }
+   50%{
+       top:125px;
+       animation-timing-function:ease-out;
+   }
+   to {
+	top:150px;
+   }
+}
+\end{minted}
+
+\subsubsection{Un ejemplo completo}
+\label{sec-1-2-6}
+
+\newpage
+\begin{minted}[]{css}
+.elemento {
+    width: 142px;
+    height: 142px;
+    background-color: #00AA66;
+    position: relative;
+    margin: 0 auto;
+    animation-name: saltarin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes saltarin {
+    from {
+	top: 150px;
+	animation-timing-function: ease-out;
+    }
+    25% {
+	top: 50px;
+	animation-timing-function: ease-in;
+    }
+    50% {
+	top: 200px;
+	animation-timing-function: ease-out;
+    }
+    75% {
+	top: 75px;
+	animation-timing-function: ease-in;
+    }
+    to {
+	top: 150px;
+    }
+}
+\end{minted}
+
+
+\subsubsection{Ejercicio 13 : ¡Estan vivos!¡Vivooooos!}
+\label{sec-1-2-7}
+
+La investigación de los pergaminos ha concluido con éxito. Los \emph{Seres de
+Sedefkar} están despertando y ya son capaces de realizar pequeñas tareas.
+
+Utilizando dos \emph{papiros} que se ha encontrado en la Biblioteca de la Universidad
+de Miskatonic, que están escritos en \verb~JS~ y \verb~CSS~. Los investigadores deben
+recomponer los fragmentos perdidos que permitirán indicar a los diferentes \emph{Seres de}
+\emph{Sedefkar} cuál será su tarea, ya que si no los controlarámos los \emph{Seres de
+Sedefkar} se unirán bajo la voluntad de Cthulhu y acabarán con la cordura de los
+investigadores.
+
+Sobre los pergaminos anteriores añadiremos dos áreas, que al hacer click sobre
+ellas, nos permitirán indicarle la acción sobre los \emph{Seres de Sedefkar}.
+
+\begin{itemize}
+\item Se estableceran dos \emph{glifos de órdenes} en la parte superior del tablero, al
+lado del botón que hacer surgir las cajas. El primero hará girar al \emph{Ser de
+Sedefkar} y el segundo hará un recorrido en V y volverá al origen.
+\item Si el \emph{Ser de Sedefkar} está visible ha de hacer caso, en caso contrario, la
+orden se pierde.
+\item Si el \emph{Ser de Sedefkar} ya está ejecutando una orden, debe dejar de
+ejecutarla y pasar a realizar la nueva orden.
+\item Si se hace click fuera de un \emph{Ser de Sedefkar} la orden también se pierde.
+\item (\textbf{Opcional}) Establecer una tercera orden que hace el \emph{Ser de Sedefkar} deje
+de hacer \emph{cosas}.
+\end{itemize}
+% Emacs 25.2.2 (Org mode 8.2.10)
+\end{document}
