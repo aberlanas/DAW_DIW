@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2019.12.31)  31 DEC 2019 09:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=latex 2020.1.1)  1 JAN 2020 16:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -159,11 +159,11 @@ LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
  3121 strings out of 494492
- 41226 string characters out of 6175464
+ 41226 string characters out of 6175466
  110542 words of memory out of 5000000
  6799 multiletter control sequences out of 15000+600000
  14306 words of font info for 34 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  27i,6n,32p,571b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Tarea02_Enunciado.dvi (2 pages, 3820 bytes).
+Output written on Tarea02_Enunciado.dvi (2 pages, 3804 bytes).

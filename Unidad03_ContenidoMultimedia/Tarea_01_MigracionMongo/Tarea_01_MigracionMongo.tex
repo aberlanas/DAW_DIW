@@ -1,0 +1,80 @@
+% Created 2019-11-18 lun 10:38
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage[newfloat]{minted}
+\hypersetup{colorlinks=true,linkcolor=black}
+\author{Angel Berlanas}
+\date{\today}
+\title{UD03 - Migración a PostgreSQL}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 25.2.2 (Org mode 8.2.10)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Introducción}
+\label{sec-1}
+
+Después de ver todos los pasos que se han seguido para conseguir 
+realizar la migración desde un servicio basado en MongoDB a PostgreSQL, el
+\emph{director} del \emph{Heraldo de Miskatonic}, el periódico de la Universidad de
+Miskatonic, ha decidido migrar su periódico para no quedarse \emph{atras} de la
+modernidad.
+
+El \emph{director} ha llegado al equipo de desarrolladores y les ha encargado la
+enorme tarea de realizar la migración, les ha dado 1 semana, ya que considera
+que si los del \emph{periodicucho} The Guardian lo han hecho en unos meses, a sus
+\emph{developers} no les puede costar más de una semana.
+
+\section{Plan de acción}
+\label{sec-2}
+
+Los desarrolladores no sabían que hacer\ldots{}hasta que se les ha ocurrido que van
+a darle al \emph{director} \textbf{exactamente} lo que quiere, una interfaz con un único
+botón que al pulsarlo el directo \emph{migrará} los datos y todo funcionará a la
+perfección.
+
+La única esperanza es preparar en \emph{una semana} esta interfaz. Sin embargo hay
+una serie de reglas que no podemos romper.
+
+\section{Restricciones}
+\label{sec-3}
+
+No sabemos todavía cuantos pasos tendrá la migración, ya que el \emph{director} va
+cambiando de parecer a cada rato, lo único en lo que nos podemos basar es que
+cada uno de esos pasos tendrá un \verb~data-step~ que nos indicará en qué orden se
+ejecutará.
+
+No podemos tocar el código \verb~html~ que nos suministran, así como debemos
+respetar los métodos que aparecen escritos en el fichero \verb~js~ y \verb~css~.
+
+\begin{minted}[]{javascript}
+function startMigration(){
+
+    // Fragmentos perdidos
+    // ^(;,;)^
+}
+\end{minted}
+
+¡Mucha suerte a tod@s!
+% Emacs 25.2.2 (Org mode 8.2.10)
+\end{document}
