@@ -5,6 +5,8 @@ PDFS
 _minted*
 *.solucion
 .tex
+.out
+.toc
 *.tex~
 *.org~
 #*#

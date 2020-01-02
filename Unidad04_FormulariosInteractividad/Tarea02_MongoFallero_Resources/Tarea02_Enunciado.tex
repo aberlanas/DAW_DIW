@@ -10,6 +10,20 @@
 \usepackage{graphicx}
 
 \usepackage{listings}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}
+\fancyhead[C]{\includegraphics[width=\textwidth]{imgs/header_europa}}
 
 % Comandos
 
@@ -27,25 +41,18 @@
 \maketitle
 
 \begin{abstract}
-Resumen de las diferentes característica y requisitos de las tres empresas que participan en el contrato de MongoFallero. 
+Resumen de las diferentes característica y requisitos de las empresas que participan en el contrato de MongoFallero. 
 \end{abstract}
 
 \tableofcontents
 
 \section{Requisitos Generales}
 
-\begin{itemize}
-    \item Lenguajes
-    \item Herramientas
-    \item Mobile First
-    \item Comentarios
-\end{itemize}
-
 \subsection{Lenguajes}
 
-Para la realización de las hojas de estilo que aplicarán a nuestra aplicación de MongoFallero debemos contar con el uso de \textit{SaSS} que nos permitirá realizar las hojas de estilo necesarias para adecuarnos a las tres empresas ganadoras y aplicar tan solo aquella que se desee en el momento del exámen (quería decir \textit{venta del producto}). De tal manera que tendremos que tener preparados los estilos haciendo uso de las posibilidades que nos da \textit{SaSS} para poder obtener esta flexibilidad.
+Para la realización de las hojas de estilo que aplicarán a nuestra aplicación de MongoFallero debemos contar con el uso de \textit{SaSS} que nos permitirá realizar las hojas de estilo necesarias para adecuarnos a las empresas ganadoras y aplicar tan solo aquella que se desee en el momento del exámen (quería decir \textit{venta del producto}). De tal manera que tendremos que tener preparados los estilos haciendo uso de las posibilidades que nos da \textit{SaSS} para poder obtener esta flexibilidad.
 
-A continuación se detallan los requisitos de diseño de cada una de las tres empresas que pugnan por la aplicación, debemos de ser capaces de modificando \textit{una sola variable} en el \texttt{.scss}.
+A continuación se detallan los requisitos de diseño de cada una de lasempresas que pugnan por la aplicación, debemos de ser capaces de modificando \textit{una sola variable} en el \texttt{.scss}.
 
 Durante la evaluación del ejercicio se pedirá que se modifique esa \texttt{variable} y que se recompilen los ficheros \texttt{css} con ayuda de \textit{SaSS}, o cualquier variación de esto:
 
@@ -60,13 +67,75 @@ Una vez compilado de forma ágil y \textit{sin errores} el profesor pasará a co
 
 Recordad que el objetivo de esta actividad es demostrar que \textit{habéis aprendido} y que tenéis las destrezas necesarias.
 
-\includegraphics{imgs/practice.eps}
+\includegraphics[width=\textwidth]{imgs/practice}
 
+\subsection{Herramientas}
+
+Debemos utilizar un editor de código y las librerias adecuadas para poner en marcha todo lo necesario.
+
+Además deberemos tenerlo todo el GitHub, de tal manera que podamos hacer más adelante un \textit{despliegue} en \textbf{Heroku}.
+
+El uso y dominio de la línea de comandos es un \textit{requisito}.
 
 \section{Estructura de un proyecto SaSS}
 
-http://thesassway.com/beginner/how-to-structure-a-sass-project
+Cuando trabajamos con herramientas más complejas, como puede ser SaSS, y teniendo en cuenta que lo más probable es que trabajemos como \textit{equipo}, es conveniente seguir una estructura concreta para organizar los diferentes ficheros.
 
+Un posible ejemplo es el descrito en la página de SaSS, tenéis más ejemplos en los recursos que os adjunto:
+
+\begin{itemize}
+  \item \href{http://thesassway.com/beginner/how-to-structure-a-sass-project}{How-To Structure}.
+  \item \href{https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization}{SaSS Estético y Arquitectura}
+\end{itemize}
+
+Los nombres de los ficheros son \textit{auto-explicativos}, así que vamos a utilizarlos para nuestro proyecto de las fallas, de tal manera que quede \textit{compartimentado} todo de manera correcta y sencilla de leer \textit{y evaluar}.
+
+\section{Empresas (themes)}
+
+Debemos tener preparados los siguientes estilos (que deben ser generados mediante \texttt{sass}:
+
+\subsection{ Evil Corp }
+
+Una de las empresas más importantes del sector, pero que tiene algún problema con sus métodos de selección de personal.
+
+\includegraphics[width=\textwidth]{imgs/evilcorp}
+
+La \textit{Guia de Estilo} de la empresa requiere de lo siguiente.
+
+\begin{itemize}
+
+\item Los colores de la página han de ser complementarios del logo de la empresa.
+\item Logo de EvilCorp siempre en la parte superior izquierda.
+\item Logo de EvilCorp como fondo del botón de menú cuando se muestre como dispositivo móvil.
+\item Los filtros de las fallas han de marcarse como seleccionados a medida que se vayan completando, de tal manera que se sepa \textit{exactamente} cúales han sido seleccionados como filtros y cuales están con su valor por defecto.
+\item Las fallas con más de 4 en las puntuaciones han de aparecer con un borde diferente.
+\item Los directivos de EvilCorp \textit{solo} utilizan el móvil para comprobar que las páginas están bien diseñadas, pero se comprobará también que se muestra correctamente en la versión escritorio.
+  
+\end{itemize}
+
+
+\subsection{ Starbred Coffe }
+
+Sin duda, la empresa más famosa de todas. 
+
+\includegraphics[width=\textwidth]{imgs/cthulhu}
+
+La \textit{Guia de Estilo} de la empresa requiere de lo siguiente.
+
+\begin{itemize}
+
+\item Los colores de la página han de ser los mismos que la página de su filial (Starbucks) \href{https://www.starbucks.es/coffee}{Ejemplo}.
+\item Logo de Starbred siempre en la parte superior izquierda.
+\item Menú de hamburgesa normal cuando se muestre la versión movil.
+\item En la versión de escritorio los filtros aplicados han de aparecer en un cuadro superpuestos a la página aunque estemos haciendo scroll, de tal manera que sepamos en cada momento \textit{qué} estamos mostrando.
+\item Las fallas con más de 4 en las puntuaciones han de aparecer con un borde y un fondo diferente.
+\item Los directivos de Starbred \textit{solo} utilizan el escritorio para comprobar que las páginas están bien diseñadas, pero se comprobará también que se muestra correctamente en la versión móvil.
+  
+\end{itemize}
+
+
+
+Los logos e imágenes son los que se encuentran en la carpeta adjunta.
 
 
 \end{document}
