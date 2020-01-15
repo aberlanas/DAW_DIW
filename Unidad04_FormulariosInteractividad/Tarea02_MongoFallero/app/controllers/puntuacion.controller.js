@@ -17,6 +17,7 @@ exports.findAll = (req,res) => {
 // Crear y salvar
 exports.create = (req,res)=>{
 
+    console.log(req.body);
     // Validamos el puntuacion
     if (!req.body){
         console.log(req.body);
