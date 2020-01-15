@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+canvas{
+    border: 1px solid green;
+    box-shadow: 10px 5px 5px teal;
+}
