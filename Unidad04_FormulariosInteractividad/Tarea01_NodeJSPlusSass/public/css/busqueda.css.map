@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAKA,IAAK;EAED,IAAI,EAAc,0BAAgB;EAClC,gBAAgB,EANJ,IAAI;;AASpB,6BAAe;EACX,MAAM,EAAS,cAAc;EAC7B,OAAO,EAAQ,IAAI;EACnB,MAAM,EAAS,IAAQ;EACvB,aAAa,EAAE,IAAI;EACnB,KAAK,EAbM,IAAI;EAcf,WAAW,EAAI,yDAAyD;;AAKxE,cAAG;EACC,WAAW,EAAE,wCAAwC;AAIrD,6BAAG;EACC,UAAU,EAAE,IAAI;EAChB,KAAK,EAAO,IAAI",
+"sources": ["../../scss/busqueda.scss"],
+"names": [],
+"file": "busqueda.css"
+}
