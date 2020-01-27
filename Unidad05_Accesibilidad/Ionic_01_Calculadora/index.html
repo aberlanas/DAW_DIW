@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.9.1/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.9.1/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.9.1/css/ionic.bundle.css"/>
+
+  <script src="calculator.js"></script>
+
+  <title>Calculator!</title>
+</head>
+
+<body onload="onLoad()">
+  <ion-app>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Calculator</ion-title>
+        <ion-buttons slot="secondary">
+          <ion-button href="index.html?ionic:mode=md">Android</ion-button>
+        </ion-buttons>
+        <ion-buttons slot="primary">
+          <ion-button href="index.html?ionic:mode=ios">IOS</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Tamaño botones</ion-label>
+          <ion-select value="default" id="size">
+            <ion-select-option value="small">Pequeños</ion-select-option>
+            <ion-select-option value="default">Medianos</ion-select-option>
+            <ion-select-option value="large">Grandes</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Tipo botones</ion-label>
+          <ion-select value="solid" id="type">
+            <ion-select-option value="clear">Sin borde ni color</ion-select-option>
+            <ion-select-option value="outline">Sólo borde</ion-select-option>
+            <ion-select-option value="solid">Con color de fondo</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-grid>
+        <ion-row>
+          <ion-col><ion-button color="dark"><span id="result">0</span></ion-button></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><ion-button color="primary" onclick="add('1')">1</ion-button></ion-col>
+          <ion-col><ion-button color="primary" onclick="add('2')">2</ion-button></ion-col>
+          <ion-col><ion-button color="primary" onclick="add('3')">3</ion-button></ion-col>
+          <ion-col><ion-button color="tertiary" onclick="add('+')">+</ion-button></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><ion-button color="primary" onclick="add('4')">4</ion-button></ion-col>
+          <ion-col><ion-button color="primary" onclick="add('5')">5</ion-button></ion-col>
+          <ion-col><ion-button color="primary" onclick="add('6')">6</ion-button></ion-col>
+          <ion-col><ion-button color="tertiary" onclick="add('-')">-</ion-button></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col><ion-button color="primary" onclick="add('7')">7</ion-button></ion-col>
+          <ion-col><ion-button color="primary" onclick="add('8')">8</ion-button></ion-col>
+          <ion-col><ion-button color="primary" onclick="add('9')">9</ion-button></ion-col>
+          <ion-col><ion-button color="tertiary" onclick="add('*')">*</ion-button></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="9"><ion-button color="primary" onclick="add('0')">0</ion-button></ion-col>
+          <ion-col><ion-button color="tertiary" onclick="add('/')">/</ion-button></ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6"><ion-button color="danger" onclick="del()">AC</ion-button></ion-col>
+          <ion-col><ion-button color="primary" onclick="add('.')">.</ion-button></ion-col>
+          <ion-col><ion-button color="tertiary" onclick="calc()">=</ion-button></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-content>
+  </ion-app>
+</body>
+</html>
