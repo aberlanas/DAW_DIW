@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplos Básicos CANVAS - 01</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <header>
+        <h1> Ejemplos de Canvas Básico - 01</h1>
+    </header>
+
+    <main>
+        <canvas width="400" height="400">
+        </canvas>
+    </main>
+
+    <script>
+    let canvas = document.querySelector("canvas");
+
+    // hablemos de 2D y WebGL, por ahora 2D
+    let ctx = canvas.getContext("2d");
+
+    // Una vez tenemos el context
+    ctx.fillStyle="red";
+    
+    // Creemos un rectangulo
+    ctx.fillRect(10,10,100,100);
+    
+    // Solo el borde
+    ctx.strokeRect(110,110,20,20);
+
+    
+    // Cambiamos la linea
+    //ctx.lineWidth = 4; 
+    //ctx.strokeRect(130,130,20,20);
+
+
+    // Vamos haciendo camino, se hace camino al andar
+    /*
+    ctx.beginPath();
+    for (let y = 10; y < 100; y += 10) {
+        ctx.moveTo(300, y);
+        ctx.lineTo(390, y);
+    }
+    ctx.stroke();
+    */
+
+    // Vamos a ver un triangulillo
+    /*
+    ctx.fillStyle="purple";
+    ctx.beginPath();
+    ctx.moveTo(200, 200);
+    ctx.lineTo(150, 270);
+    ctx.lineTo(250, 270);
+    ctx.fill();
+    */
+
+    // Limpiamos esto 
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.restore();
+
+
+    /* Ejemplo de curva cuadrática y de bezier
+    ctx.moveTo(10, 90);
+
+    // control=(60,10) destino=(90,90);
+    //ctx.quadraticCurveTo(60, 10, 90, 90);
+    
+    // control 1 (10,10)  , control 2 (90,10) , destino (50,90);
+    ctx.bezierCurveTo(10,10,20,10, 100, 90);
+    //ctx.lineTo(60, 10);
+    ctx.closePath();
+    ctx.stroke();
+
+    // Arco
+    /*
+    The arc method is a way to draw a line that curves along the edge of 
+    a circle. It takes a pair of coordinates :
+     for the arc’s center, a radius, and then a start angle and end angle. 
+    */
+
+    //ctx.beginPath();
+    //ctx.arc(50,50,40,0,7);
+
+    //ctx.arc(150, 50, 40, 0, 0.5 * Math.PI);
+    //ctx.stroke();
+
+    const influenciaEstelar =[ 
+     { nombre: "Nyarlathotep", poder : 1200 , color: "lightgrey" },
+     { nombre: "ShubNigurath", poder : 1000 , color: "darkblue" },
+     { nombre: "Cthulhu", poder : 1300 , color: "purple" },
+     { nombre: "Azazoth", poder : 2000 , color: "black" }     
+    ];
+
+
+    let poderTotal = influenciaEstelar.reduce((suma,{poder}) => suma + poder,0);
+    console.log(poderTotal);
+
+
+    // Vamos a empezar arriba
+
+    let anguloActual = -0.5 * Math.PI;
+
+    for (let antiguo of influenciaEstelar){
+        let porcion = (antiguo.poder / poderTotal) * 2 * Math.PI;
+
+        ctx.beginPath();
+        console.log(antiguo.nombre);
+
+        ctx.arc(200,200,100,anguloActual,anguloActual+porcion);
+
+        anguloActual = anguloActual + porcion; 
+
+        ctx.lineTo(200,200);
+        //console.log(coords(ctx));
+
+        ctx.fillStyle = antiguo.color;
+        ctx.fill();
+        console.log(anguloActual);
+
+
+
+        //ctx.font = "28px Georgia";
+        //ctx.fillStyle = antiguo.color;
+        //ctx.fillText(antiguo.nombre, anguloActual,anguloActual+porcion);
+    }
+
+    </script>
+</body>
+</html>
