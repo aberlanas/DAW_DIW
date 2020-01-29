@@ -1,0 +1,89 @@
+#+TITLE: UD05 - React Session - Vol 1
+#+AUTHOR: Angel Berlanas
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black}
+
+* Disclaimer
+
+  Todos los apuntes que van a tener lugar en estas carpetas y sesiones 
+  han sido escritos con el objetivo de presentar a los alumnos de DAW una visión 
+  global y desde la humildad de aquel que se acerca a la montaña de conocimiento 
+  y con pocas herramientas comienza la escalada.
+
+  No todos los conceptos estan dominados, muchas de las tecnologías están fuera
+  de lo que llamaría /mi zona de comfort/, pero sin duda vale la pena practicar
+  y prepararse todo esto... 
+
+  Como dicen en algunas conferencias, vale la pena tener creatividad que
+  comodidad.
+
+  No espero más para los alumnos y los profesores que lleguen a leer esto, que
+  les ayude en la medida de lo posible.
+
+* ¿Qué es React?
+
+  La definición que nos aporta DuckDuckGo es: 
+
+  /React es una biblioteca Javascript de código abierto para crear/
+  /interfaces de usuario con el objetivo de animar al desarrollo /
+  /de aplicaciones en una sola  página. Es mantenido por Facebook,/
+  /Instagram y una comunidad de/
+  /desarrolladores independientes y compañías./
+
+  Que sea de código abierto y sea mantenida por /Facebook/ es algo bastante
+  curioso, pero la /comunidad/ es la /comunidad/.
+
+  #+CAPTION: Logo de React
+  [[./imgs/react-logo.png]]
+
+* Muchas maneras de acercarse a React
+
+  Existen muchas, tal y como aparecen descritas en su página web:
+
+  [[https://reactjs.org/][Pagina Oficial de ReactJS]]
+
+  De todas ellas, elegiremos que /creo/ más adecuada, que es la creación de una
+  página-app que será autocontenida.
+
+  [[https://reactjs.org/docs/create-a-new-react-app.html][Create a New React App]]
+  
+  Pasamos al turrón.
+  
+* Creando nuestra nueva App React
+
+** Motivos por los que esto mola  
+
+   Scaling to many files and components.
+   Using third-party libraries from npm.
+   Detecting common mistakes early.
+   Live-editing CSS and JS in development.
+   Optimizing the output for production.
+
+
+
+
+
+ 
+
+** Los Toolchains esos grandes desconocidos
+
+   *Un gestor de paquetes* : ~npm~ ^_^
+   *Un bundler*: ~webpack~ o ~parcel~, nos permite programar de manera modular y
+   luego juntarlo todo como $DEITY manda.
+   *Un compilador* : ~babel~ nos permite programar con JS Moderno y luego que
+   funcione en navegadores pleistozenicos.
+
+   [[https://reactjs.org/docs/create-a-new-react-app.html#creating-a-toolchain-from-scratch][Creando un Toolchain desde la rascadura]]
+
+
+** Inicializando nuestra APP
+
+   #+BEGIN_SRC bash
+  npx create-react-app my-app
+  cd my-app
+  npm start
+   #+END_SRC
+
+   Una vez realizado esto, nos pone en marcha un node en nuestro
+   /localhost:3000/
+   
+   Y amablement nos indica que comenzemos a editarla.

@@ -1,0 +1,113 @@
+% Created 2020-01-28 mar 19:08
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[newfloat]{minted}
+\hypersetup{colorlinks=true,linkcolor=black}
+\author{Angel Berlanas}
+\date{\today}
+\title{UD05 - React Session - Vol 1}
+\hypersetup{
+ pdfauthor={Angel Berlanas},
+ pdftitle={UD05 - React Session - Vol 1},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Disclaimer}
+\label{sec:org3ed8ffc}
+
+Todos los apuntes que van a tener lugar en estas carpetas y sesiones 
+han sido escritos con el objetivo de presentar a los alumnos de DAW una visión 
+global y desde la humildad de aquel que se acerca a la montaña de conocimiento 
+y con pocas herramientas comienza la escalada.
+
+No todos los conceptos estan dominados, muchas de las tecnologías están fuera
+de lo que llamaría \emph{mi zona de comfort}, pero sin duda vale la pena practicar
+y prepararse todo esto\ldots{} 
+
+Como dicen en algunas conferencias, vale la pena tener creatividad que
+comodidad.
+
+No espero más para los alumnos y los profesores que lleguen a leer esto, que
+les ayude en la medida de lo posible.
+
+\section{¿Qué es React?}
+\label{sec:org678cfa2}
+
+La definición que nos aporta DuckDuckGo es: 
+
+\emph{React es una biblioteca Javascript de código abierto para crear}
+\emph{interfaces de usuario con el objetivo de animar al desarrollo /
+/de aplicaciones en una sola  página. Es mantenido por Facebook,}
+\emph{Instagram y una comunidad de}
+\emph{desarrolladores independientes y compañías.}
+
+Que sea de código abierto y sea mantenida por \emph{Facebook} es algo bastante
+curioso, pero la \emph{comunidad} es la \emph{comunidad}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=.9\linewidth]{./imgs/react-logo.png}
+\caption{Logo de React}
+\end{figure}
+
+\section{Muchas maneras de acercarse a React}
+\label{sec:org2d5f14b}
+
+Existen muchas, tal y como aparecen descritas en su página web:
+
+\href{https://reactjs.org/}{Pagina Oficial de ReactJS}
+
+De todas ellas, elegiremos que \emph{creo} más adecuada, que es la creación de una
+página-app que será autocontenida.
+
+\href{https://reactjs.org/docs/create-a-new-react-app.html}{Create a New React App}
+
+Pasamos al turrón.
+
+\section{Creando nuestra nueva App React}
+\label{sec:org6778707}
+
+\subsection{Motivos por los que esto mola}
+\label{sec:orga299c1c}
+
+Scaling to many files and components.
+Using third-party libraries from npm.
+Detecting common mistakes early.
+Live-editing CSS and JS in development.
+Optimizing the output for production.
+
+
+
+
+
+
+
+\subsection{Inicializando nuestra APP}
+\label{sec:orgc319e5e}
+
+\begin{minted}[]{bash}
+npx create-react-app my-app
+cd my-app
+npm start
+\end{minted}
+\end{document}
