@@ -1,4 +1,4 @@
-% Created 2020-01-28 mar 19:08
+% Created 2020-01-29 mié 18:56
 % Intended LaTeX compiler: pdflatex
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
@@ -33,7 +33,7 @@
 
 
 \section{Disclaimer}
-\label{sec:org3ed8ffc}
+\label{sec:orgddb02e2}
 
 Todos los apuntes que van a tener lugar en estas carpetas y sesiones 
 han sido escritos con el objetivo de presentar a los alumnos de DAW una visión 
@@ -51,7 +51,7 @@ No espero más para los alumnos y los profesores que lleguen a leer esto, que
 les ayude en la medida de lo posible.
 
 \section{¿Qué es React?}
-\label{sec:org678cfa2}
+\label{sec:org47a3c40}
 
 La definición que nos aporta DuckDuckGo es: 
 
@@ -71,7 +71,7 @@ curioso, pero la \emph{comunidad} es la \emph{comunidad}.
 \end{figure}
 
 \section{Muchas maneras de acercarse a React}
-\label{sec:org2d5f14b}
+\label{sec:orgc47f906}
 
 Existen muchas, tal y como aparecen descritas en su página web:
 
@@ -85,10 +85,10 @@ página-app que será autocontenida.
 Pasamos al turrón.
 
 \section{Creando nuestra nueva App React}
-\label{sec:org6778707}
+\label{sec:org0fcb6d0}
 
 \subsection{Motivos por los que esto mola}
-\label{sec:orga299c1c}
+\label{sec:org9c386a0}
 
 Scaling to many files and components.
 Using third-party libraries from npm.
@@ -102,12 +102,29 @@ Optimizing the output for production.
 
 
 
+\subsection{Los Toolchains esos grandes desconocidos}
+\label{sec:org1375f3a}
+
+\textbf{Un gestor de paquetes} : \texttt{npm} \^{}\_\^{}
+\textbf{Un bundler}: \texttt{webpack} o \texttt{parcel}, nos permite programar de manera modular y
+luego juntarlo todo como \$DEITY manda.
+\textbf{Un compilador} : \texttt{babel} nos permite programar con JS Moderno y luego que
+funcione en navegadores pleistozenicos.
+
+\href{https://reactjs.org/docs/create-a-new-react-app.html\#creating-a-toolchain-from-scratch}{Creando un Toolchain desde la rascadura}
+
+
 \subsection{Inicializando nuestra APP}
-\label{sec:orgc319e5e}
+\label{sec:orgda8b651}
 
 \begin{minted}[]{bash}
 npx create-react-app my-app
 cd my-app
 npm start
 \end{minted}
+
+Una vez realizado esto, nos pone en marcha un node en nuestro
+\emph{localhost:3000}
+
+Y amablement nos indica que comenzemos a editarla.
 \end{document}
