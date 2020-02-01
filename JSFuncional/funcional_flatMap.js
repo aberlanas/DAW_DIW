@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const bebidas = [ "cafe","te","cerveza"];
-const bebidas2 = bebidas.map(bebida => [bebida,"yo"]).flat();
+const bebidas = [ "😣","🙄","😍"];
+const bebidas2 = bebidas.map(bebida => [bebida,"yo",33]).flat();
 console.log(bebidas);
 console.log(bebidas2);
