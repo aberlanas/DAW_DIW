@@ -10,6 +10,7 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1"
   },
+  "proxy": "https://pokeapi.co/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -30,6 +31,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "http://localhost:4000"
+  }
 }

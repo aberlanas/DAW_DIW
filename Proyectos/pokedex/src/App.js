@@ -3,13 +3,14 @@ import logo from './imgs/pokeapi_256.png';
 import './App.css';
 
 
-const API = 'https://localhost:3333/api/v2/';
+const API = 'http://localhost:3000/api/v2/';
 
 class Busqueda extends Component {
     constructor(props) {
         super(props);
         this.state = {
             pokemons: [],
+            pokelista:[],
             query: '',
         };
     }
@@ -23,14 +24,22 @@ class Busqueda extends Component {
                 const { results: pokemons } = json;
                 console.log(json);
                 this.setState({ pokemons });
-                //setting the data in the films state
+                const pokelista = pokemons.map((pokemon) => 
+                {
+                console.log(pokemon.name);
+                return (<li>{pokemon.name}</li>);
+                }
+            );
+                this.setState({pokelista});
             });
     }
 
     render() {
-        return ( < div className = "Patata" >
-            "Angel" <
-            /div>);
+        return ( 
+        <div className = "Patata" >
+            Angel : Angel
+        </div>
+        );
         }
 
 
