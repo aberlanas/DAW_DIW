@@ -6,21 +6,19 @@ import './App.css';
 const API = 'http://localhost:3000/api/v2/';
 
 class Pokemon extends Component {
-    
-    toni = this;
 
     constructor(props) {
         super(props);
         this.state = {
             image: ""
         };
-        this.muestraPokemon = this.muestraPokemon.bind(this);
+        // Ejemplo anterior a Ruben y Raul .
+        //this.muestraPokemon = this.muestraPokemon.bind(this);
     };
 
-
+    // La verdad, el poder, el heavy puede controlar.
     muestraPokemon = () => {
-        
-        console.log('Ruben tienes razon :',this.toni);
+        console.log('Ruben tienes razon :',this);
     }
 
     componentDidMount() {
@@ -28,7 +26,7 @@ class Pokemon extends Component {
         // Es un buen momento para cargar datos.
 
         const { url } = this.props;
-        console.log({url});
+  
         fetch(url)
             .then(res => res.json())
             .then(json => {
