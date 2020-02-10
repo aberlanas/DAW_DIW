@@ -5,66 +5,142 @@ import './App.css';
 
 const API = 'http://localhost:3000/api/v2/';
 
+class Pokemon extends Component {
+    
+    toni = this;
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            image: ""
+        };
+        this.muestraPokemon = this.muestraPokemon.bind(this);
+    };
+
+
+    muestraPokemon = () => {
+        
+        console.log('Ruben tienes razon :',this.toni);
+    }
+
+    componentDidMount() {
+        // Esto se ejecuta cuando tenemos el componente en el DOM.
+        // Es un buen momento para cargar datos.
+
+        const { url } = this.props;
+        console.log({url});
+        fetch(url)
+            .then(res => res.json())
+            .then(json => {
+
+                //console.log(json);
+                const image = json.sprites.front_default;
+                //console.log(json.sprites.front_default);
+                this.setState({ image });
+            });
+    }
+
+    render() {
+        const { nombre } = this.props;
+        const { image } = this.state;
+
+        return ( <
+            div >
+            <
+            div className = "pokeNombre" > { nombre } < /div> <
+            img src = { image }
+            alt = {" "}
+            onClick = { this.muestraPokemon } />
+            <
+            /div >
+
+        )
+
+    }
+}
+
+class Detalles extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            id: ""
+        };
+    }
+
+    render() {
+        return ( <
+            div > < /div>
+        );
+    }
+}
+
 class Busqueda extends Component {
     constructor(props) {
         super(props);
         this.state = {
             pokemons: [],
-            pokelista:[],
+            pokelista: [],
             query: '',
         };
     }
 
     componentDidMount() {
-        //First method to be called after components mount
-        //fetch the data from the server for the suggestion
+        // Esto se ejecuta cuando tenemos el componente en el DOM.
+        // Es un buen momento para cargar datos.
+
         fetch(`${API}/pokemon/`)
             .then(res => res.json())
             .then(json => {
                 const { results: pokemons } = json;
-                console.log(json);
                 this.setState({ pokemons });
-                const pokelista = pokemons.map((pokemon) => 
-                {
-                console.log(pokemon.name);
-                return (<li>{pokemon.name}</li>);
-                }
-            );
-                this.setState({pokelista});
             });
     }
 
     render() {
-        return ( 
-        <div className = "Patata" >
-            Angel : Angel
-        </div>
-        );
-        }
 
+        const { pokemons } = this.state;
 
-
-
-    }
-
-
-    function App() {
-        return ( <
-            div className = "App" >
-            <
-            header className = "App-header" >
-            <
-            img src = { logo }
-            className = "App-logo"
-            alt = "logo" / >
-            <
-            /header> <
-            Busqueda >
-
-            <
-            /Busqueda> <
-            /div>
+        return ( <ul className = "listaPokemons"> {
+                pokemons.map(pokemon =>
+                    <li key = { pokemon.name } >
+                    <Pokemon url = { pokemon.url }
+                    nombre = { pokemon.name }
+                    /> 
+                    </li>
+                )
+            }
+            </ul>
         );
     }
 
-    export default App;
+
+
+
+}
+
+
+function App() {
+    return ( <
+        div className = "App" >
+        <
+        header className = "App-header" >
+        <
+        img src = { logo }
+        className = "App-logo"
+        alt = "logo" / >
+        <
+        /header>  <
+        main >
+        <
+        Busqueda >
+        <
+        /Busqueda> <
+        Detalles >
+        <
+        /Detalles> < /
+        main > <
+        /div>
+    );
+}
+
+export default App;
