@@ -43,3 +43,9 @@ ffmpeg -i grunt.mkv -f webm -c:v libvpx -b:v 1M -acodec libvorbis example.webm -
 RestClient
 
 * https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/
+
+## React
+
+```
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```

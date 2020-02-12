@@ -5,29 +5,32 @@ import './App.css';
 
 const API = 'http://localhost:3000/api/v2/';
 
-class Pokemon extends Component{
+class Pokemon extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state ={
-            image : ""
+        this.state = {
+            image: ""
         };
-        this.muestraPokemon = this.muestraPokemon.bind(this);
+        // Ejemplo anterior a Ruben y Raul .
+        //this.muestraPokemon = this.muestraPokemon.bind(this);
     };
 
-    muestraPokemon() {
-        console.log('this is:', this);
-      }
+    // La verdad, el poder, el heavy puede controlar.
+    muestraPokemon = () => {
+        console.log('Ruben tienes razon :',this);
+    }
 
     componentDidMount() {
         // Esto se ejecuta cuando tenemos el componente en el DOM.
         // Es un buen momento para cargar datos.
 
-        const {url} = this.props;
+        const { url } = this.props;
+  
         fetch(url)
             .then(res => res.json())
             .then(json => {
-                
+
                 //console.log(json);
                 const image = json.sprites.front_default;
                 //console.log(json.sprites.front_default);
@@ -35,32 +38,36 @@ class Pokemon extends Component{
             });
     }
 
-    render(){
-        const {nombre} = this.props;
-        const {image} = this.state;
-        
-        return(
-            <div>
-                <div className="pokeNombre">{nombre}</div>
-                <img src={image} alt={nombre} onClick={this.muestraPokemon}></img>
-            </div>
+    render() {
+        const { nombre } = this.props;
+        const { image } = this.state;
+
+        return ( <
+            div >
+            <
+            div className = "pokeNombre" > { nombre } < /div> <
+            img src = { image }
+            alt = {" "}
+            onClick = { this.muestraPokemon } />
+            <
+            /div >
 
         )
 
     }
 }
 
-class Detalles extends Component{
-    constructor(props){
+class Detalles extends Component {
+    constructor(props) {
         super(props);
-        this.state={
-            id : ""
+        this.state = {
+            id: ""
         };
     }
 
-    render(){
-        return (
-        <div></div>
+    render() {
+        return ( <
+            div > < /div>
         );
     }
 }
@@ -70,7 +77,7 @@ class Busqueda extends Component {
         super(props);
         this.state = {
             pokemons: [],
-            pokelista:[],
+            pokelista: [],
             query: '',
         };
     }
@@ -88,46 +95,50 @@ class Busqueda extends Component {
     }
 
     render() {
-        
-        const {pokemons} = this.state;
 
-        return ( 
-            <ul className = "listaPokemons" >
-                {pokemons.map(pokemon =>
-                    <li key={pokemon.name}>
-                        <Pokemon url={pokemon.url} nombre={pokemon.name}/>
+        const { pokemons } = this.state;
+
+        return ( <ul className = "listaPokemons"> {
+                pokemons.map(pokemon =>
+                    <li key = { pokemon.name } >
+                    <Pokemon url = { pokemon.url }
+                    nombre = { pokemon.name }
+                    /> 
                     </li>
-                )}
-            
+                )
+            }
             </ul>
         );
-        }
-
-
-
-
     }
 
 
-    function App() {
-        return ( <
-            div className = "App" >
-            <
-            header className = "App-header" >
-            <
-            img src = { logo }
-            className = "App-logo"
-            alt = "logo" / >
-            <
-            /header> 
-            <main>
-            <Busqueda >
-            </Busqueda>
-            <Detalles>
-            </Detalles>
-            </main>
-            </div>
-        );
-    }
 
-    export default App;
+
+}
+
+
+function App() {
+    return ( <
+        div className = "App" >
+        <
+        header className = "App-header" >
+        <
+        img src = { logo }
+        className = "App-logo"
+        alt = "logo" / >
+        <
+        /header>  <
+        main >
+        <
+        Busqueda >
+        <
+        /Busqueda> <
+        Detalles >
+        <
+        /Detalles> < /
+        main > <
+        /div>
+    );
+}
+
+export default App;
