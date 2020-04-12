@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
+
+// Novedades sobre Express 4.16
+app.use(express.json()); 
 
 app.all('/*', function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
@@ -14,7 +16,7 @@ var router = express.Router();
 
 app.get('/api/registraUsuarios', function (req, res) {
     res.send({usuario:"Angel"});
-    console.log(req);
+    console.log(req.body);
     console.log(" Petición GET ");
   });
 
