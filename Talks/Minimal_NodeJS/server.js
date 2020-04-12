@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
 
 app.all('/*', function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
@@ -13,9 +12,10 @@ var port = process.env.PORT || 3000;        // set our port
 var router = express.Router();    
 
 app.get('/api/registraUsuarios', function (req, res) {
+  console.log(req);
+  console.log(" Petición GET ");
     res.send({usuario:"Angel"});
-    console.log(req);
-    console.log(" Petición GET ");
+
   });
 
 app.use('/static', express.static(__dirname + '/public'));
