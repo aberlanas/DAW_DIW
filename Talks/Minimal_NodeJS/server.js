@@ -1,26 +1,19 @@
-const express = require('express');
+const express = require("express");
+const cors = require("cors");
 const app = express();
+const cookieParser = require('cookie-parser');
 
-app.all('/*', function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Content-Type,accept,access_token,X-Requested-With');
-  next();
-});
+// Middlewares
+// Novedades sobre Express 4.16
+app.use(express.json());
+app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cookieParser());
 
-var port = process.env.PORT || 3000;        // set our port
+const port = process.env.PORT || 3000; // set our port
 
-var router = express.Router();    
-
-app.get('/api/registraUsuarios', function (req, res) {
-  console.log(req);
-  console.log(" Petición GET ");
-    res.send({usuario:"Angel"});
-
-  });
-
-app.use('/static', express.static(__dirname + '/public'));
+app.use("/", express.static(__dirname + "/public"));
+app.use("/api/users", require("./src/routes/users.routes.js"));
 
 app.listen(port, function () {
-    console.log('Example app listening on port 3000!');
-  });
-
+  console.log("Example app listening on port 3000!");
+});

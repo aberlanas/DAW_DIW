@@ -1,24 +1,30 @@
-const registralo = () =>{
-    console.log("Se ha registrado");
-    const formulario = document.querySelector('form');
-    const formData = new FormData(formulario);
-    console.log(formData.get("nombre"));
-    console.log(formData.get("cookies"));
+function registralo(ev) {
+  ev.preventDefault();
 
-    const resultado = fetch('/api/registraUsuarios',formData).then(
-        (response ) => {
-        return response.json();
-        }
-        ).then( 
-        (miJson) => {
-        console.log(miJson);
-        }
-        );
+  console.log("Se ha registrado");
+  let formulario = document.querySelector("form");
+  let formData = new FormData(formulario);
+  let url = "/api/users/register";
+  //formData.method="POST";
+
+  console.log(formData.get("nombre"));
+  console.log(formData.get("cookies"));
+
+  fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(formData), 
+    headers:{
+      'Content-Type': 'application/json'
     }
-
-
-const init = () => {
-    document.querySelector('input[type="button"]').addEventListener("click",registralo);
+  }).then(res => res.json())
+  .catch(error => console.error('Error:', error))
+  .then(response => console.log('Success:', response));
 }
 
-window.onload=init();
+function init() {
+  document
+    .querySelector('input[type="submit"]')
+    .addEventListener("click", registralo);
+}
+
+window.onload = init;
