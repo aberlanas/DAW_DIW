@@ -5,14 +5,15 @@ function registralo(ev) {
   let formulario = document.querySelector("form");
   let formData = new FormData(formulario);
   let url = "/api/users/register";
-  //formData.method="POST";
 
-  console.log(formData.get("nombre"));
-  console.log(formData.get("cookies"));
-
+  let info = {
+    name: formData.get("name"),
+    cookies: formData.get("cookies")
+  }
+  
   fetch(url, {
     method: 'POST',
-    body: JSON.stringify(formData), 
+    body:  JSON.stringify(info),
     headers:{
       'Content-Type': 'application/json'
     }

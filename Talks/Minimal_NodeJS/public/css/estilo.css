@@ -4,18 +4,20 @@ body, html {
     margin: 0;
     padding: 0;
     display:table;
+    background-image: url("https://picsum.photos/1920/1080/?blur=1&grayscale");
 }
 body {
     display:table-cell;
     vertical-align:middle;
 }
 form {
-
-    display:table;/* shrinks to fit content */
+    display:table;
     margin:auto;
     border: 1px solid grey;
     border-radius: 15px;
     text-align: center;
+    background-color:rgba(200, 200, 200, 0.7);
+    width: 500px;
 }
 
 form li {

@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=s, initial-scale=1.0" />
-    <title>Ejemplo de Servidor NODE JS</title>
+    <meta name="viewport" content="initial-scale=1.0" />
+    <title>Ejemplo de Servidor NODE JS - Congreso FP Informática</title>
     <style>
       @import url("./css/estilo.css");
     </style>
@@ -11,21 +11,21 @@
   </head>
   <body>
     <div class="flex-container-body"  >
-    <form method="GET" action="/api/crearPersona" >
-      <h1>Sign Up</h1>
+    <form method="POST" action="/api/crearPersona" >
+      <h1>Iniciar Sesión</h1>
       <ul>
-        <li><input type="text" name="nombre" /></li>
+        <li><input type="text" name="name" /></li>
         <li>
-          <label
-            ><input
+          <label>
+            <input
               type="checkbox"
               name="cookies"
               value="cookies"
-            />Cookies</label
-          >
+            />Cookies
+          </label>
         </li>
         <li>
-          <input type="submit" label="Acepto" name="Acepto" value="Acepto" />
+          <input type="submit" label="Acepto" name="acepto" value="Acepto" />
         </li>
       </ul>
     </form>
