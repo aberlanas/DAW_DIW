@@ -25,7 +25,7 @@ PD_PATH="ProgramacionDidactica"
 
 #
 # UD : Nombres de las Unidades
-
+UD00_NAME="Unidad00_Proyectos"
 UD01_NAME="Unidad01_Introduccion"
 UD02_NAME="Unidad02_CSS"
 UD03_NAME="Unidad03-CSS3"
@@ -128,10 +128,41 @@ make_pd(){
 }
 
 
+# 
+# Make memorias
+#
+make_memoria(){
+
+    UDPRACTICAS="${1}"
+    echo " * Practicas : ${UDPRACTICAS}"
+    NUMP=1
+    for ejer in $(ls -1 Memoria_*.md ); do 
+        NUM=$(echo $ejer | cut -d "_" -f2 | cut -d "." -f1)
+	NOMBRE=$(echo $ejer | cut -d "_" -f 3- | cut -d "." -f1)
+	say_working "Memoria $NUMP : $NOMBRE"
+        pandoc --template ${TEMPLATE_TEX} ${PANDOC_OPTIONS} --toc  -o ${PDF_PATH}/${UDPRACTICAS}_Memoria_"${NUMP}"_"${NOMBRE}".pdf $ejer
+        let NUMP=NUMP+1
+    done
+
+}
+
+
 
 # 
 # Make Unidades
 # 
+make_UD00(){
+
+    cd ${UD00_NAME}
+ 
+    make_memoria ${UD00_NAME}
+    cd ..
+    
+    move_pdfs ${UD00_NAME}
+}
+
+
+
 
 make_UD01(){
 
@@ -276,6 +307,9 @@ make_UD12(){
 case $1 in 
     "PD")
         make_pd
+        ;;
+    "00")
+        make_UD00
         ;;
     "01")
         make_UD01     
